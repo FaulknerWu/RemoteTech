@@ -1,0 +1,5 @@
+# Changelog for RemoteTech
+
+1.4.1 - Restructured for reupload.
+Used DeepL to update translations for ChineseSimplified, French, German
+
