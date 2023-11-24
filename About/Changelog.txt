@@ -1,5 +1,8 @@
 # Changelog for RemoteTech
 
+1.4.2 - Hardened foam wall will now be selectable with no errors
+
+
 1.4.1 - Restructured for reupload.
 Used DeepL to update translations for ChineseSimplified, French, German
 

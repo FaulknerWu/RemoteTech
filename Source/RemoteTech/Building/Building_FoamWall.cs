@@ -22,7 +22,7 @@ public class Building_FoamWall : Mineable, IThingHolder
 
     public ThingOwner GetDirectlyHeldThings()
     {
-        return trappedInventory;
+        return trappedInventory?.Any() == true ? trappedInventory : [];
     }
 
     public void GetChildHolders(List<IThingHolder> outChildren)
@@ -78,7 +78,7 @@ public class Building_FoamWall : Mineable, IThingHolder
 
     public override void Destroy(DestroyMode mode)
     {
-        if (mode == DestroyMode.KillFinalize && trappedInventory != null)
+        if (mode == DestroyMode.KillFinalize && trappedInventory?.Any() == true)
         {
             trappedInventory.TryDropAll(Position, Map, ThingPlaceMode.Direct);
         }
@@ -136,7 +136,14 @@ public class Building_FoamWall : Mineable, IThingHolder
 
     private List<Thing> CrushThingsUnderWall(Thing wall)
     {
-        var thingsList = wall.Map.thingGrid.ThingsListAt(wall.Position).Where(t => t != wall).ToList();
+        var things = wall.Map.thingGrid.ThingsListAt(wall.Position);
+        if (things == null || !things.Any())
+        {
+            return [];
+        }
+
+        var thingsList = things.Where(t => t != wall).ToList();
+
         foreach (var thing in thingsList)
         {
             if (thing is Pawn pawn && !pawn.RaceProps.IsMechanoid && !pawn.Dead)
@@ -152,13 +159,19 @@ public class Building_FoamWall : Mineable, IThingHolder
             }
         }
 
-        return wall.Map.thingGrid.ThingsListAt(wall.Position).Where(t =>
-            t != wall && (t.def.category == ThingCategory.Item || t.def.category == ThingCategory.Pawn)).ToList();
+        things = wall.Map.thingGrid.ThingsListAt(wall.Position);
+        if (things == null || !things.Any())
+        {
+            return [];
+        }
+
+
+        return things.Where(t => t != wall && t.def.category is ThingCategory.Item or ThingCategory.Pawn).ToList();
     }
 
     public override string GetInspectString()
     {
-        return trappedInventory != null
+        return trappedInventory?.Any() == true
             ? string.Format("FoamWall_contents".Translate(), trappedInventory.ContentsString)
             : "";
     }
