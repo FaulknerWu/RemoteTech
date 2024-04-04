@@ -16,7 +16,7 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
     private const string WirelessUpgrageReferenceId = "WirelessDetonation";
     private const string AIUpgrageReferenceId = "AIController";
 
-    private readonly List<IntVec3> drawnCells = new List<IntVec3>();
+    private readonly List<IntVec3> drawnCells = [];
     private CachedValue<float> angleStat;
     private RadialGradientArea area;
     private CompUpgrade brainComp;
@@ -33,7 +33,7 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
     // saved
     private Arc slice;
     private CachedValue<float> speedStat;
-    private List<Pawn> trackedPawns = new List<Pawn>();
+    private List<Pawn> trackedPawns = [];
     private CompWiredDetonationSender wiredComp;
     private CompWirelessDetonationGridNode wirelessComp;
 
@@ -97,7 +97,7 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
 
         if (trackedPawns == null)
         {
-            trackedPawns = new List<Pawn>();
+            trackedPawns = [];
         }
 
         trackedPawns.RemoveAll(p => p == null);
@@ -251,9 +251,9 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
         UpdateUpgradeableStuff();
     }
 
-    public override void Draw()
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
         if (!PowerOn)
         {
             return;
@@ -320,16 +320,10 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
 
     #region support stuff
 
-    private struct Arc : IExposable
+    private struct Arc(float startAngle, float width) : IExposable
     {
-        public float StartAngle;
-        public float Width;
-
-        public Arc(float startAngle, float width)
-        {
-            StartAngle = Mathf.Repeat(startAngle, 360f);
-            Width = Mathf.Min(360f, width);
-        }
+        public float StartAngle = Mathf.Repeat(startAngle, 360f);
+        public float Width = Mathf.Min(360f, width);
 
         public Arc Rotate(float degrees)
         {
@@ -345,7 +339,7 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
 
     /// <summary>
     ///     A performance-friendly way to query a circular area of map cells in a given arc from the starting position.
-    ///     Cell angles are pre-calculated, allowing for sub-linear time queries.
+    ///     Cell angles are pre-calculated, allowing for sublinear time queries.
     /// </summary>
     private class RadialGradientArea
     {
@@ -364,17 +358,8 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
             return new Enumerable(cells, arc);
         }
 
-        public readonly struct Enumerable
+        public readonly struct Enumerable(CellAngle[] cells, Arc arc)
         {
-            private readonly CellAngle[] cells;
-            private readonly Arc arc;
-
-            public Enumerable(CellAngle[] cells, Arc arc)
-            {
-                this.cells = cells;
-                this.arc = arc;
-            }
-
             public Enumerator GetEnumerator()
             {
                 return new Enumerator(cells, AngleToIndex(arc.StartAngle), AngleToIndex(arc.StartAngle + arc.Width));
@@ -386,18 +371,9 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
             }
         }
 
-        public struct Enumerator
+        public struct Enumerator(CellAngle[] cells, int startIndex, int endIndex)
         {
-            private readonly CellAngle[] cells;
-            private readonly int endIndex;
-            private int index;
-
-            public Enumerator(CellAngle[] cells, int startIndex, int endIndex)
-            {
-                this.cells = cells;
-                this.endIndex = endIndex;
-                index = startIndex - 1;
-            }
+            private int index = startIndex - 1;
 
             public IntVec3 Current => cells[index % cells.Length].Cell;
 
@@ -407,16 +383,10 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
             }
         }
 
-        public struct CellAngle
+        public struct CellAngle(IntVec3 cell, float angle)
         {
-            public readonly IntVec3 Cell;
-            public readonly float Angle;
-
-            public CellAngle(IntVec3 cell, float angle)
-            {
-                Cell = cell;
-                Angle = angle;
-            }
+            public readonly IntVec3 Cell = cell;
+            public readonly float Angle = angle;
         }
     }
 }

@@ -7,6 +7,6 @@ namespace RemoteTech;
 
 public class BuildingProperties_FoamWall : BuildingProperties
 {
-    public readonly List<ThingDef> smoothVariants = new List<ThingDef>();
+    public readonly List<ThingDef> smoothVariants = [];
     public int smoothWorkAmount;
 }

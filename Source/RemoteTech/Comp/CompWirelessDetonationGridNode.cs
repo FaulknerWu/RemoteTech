@@ -299,32 +299,24 @@ public class CompWirelessDetonationGridNode : ThingComp
         globalRecacheId = Rand.Int;
     }
 
-    public struct TransmitterReceiverPair
+    public struct TransmitterReceiverPair(
+        CompWirelessDetonationGridNode transmitter,
+        IWirelessDetonationReceiver receiver)
     {
-        public readonly CompWirelessDetonationGridNode Transmitter;
-        public readonly IWirelessDetonationReceiver Receiver;
-
-        public TransmitterReceiverPair(CompWirelessDetonationGridNode transmitter, IWirelessDetonationReceiver receiver)
-        {
-            Transmitter = transmitter;
-            Receiver = receiver;
-        }
+        public readonly CompWirelessDetonationGridNode Transmitter = transmitter;
+        public readonly IWirelessDetonationReceiver Receiver = receiver;
     }
 
     // order-invariant node pair
-    public readonly struct NetworkGraphLink : IEquatable<NetworkGraphLink>
+    public readonly struct NetworkGraphLink(
+        CompWirelessDetonationGridNode first,
+        CompWirelessDetonationGridNode second,
+        bool canTraverse)
+        : IEquatable<NetworkGraphLink>
     {
-        public readonly CompWirelessDetonationGridNode First;
-        public readonly CompWirelessDetonationGridNode Second;
-        public readonly bool CanTraverse;
-
-        public NetworkGraphLink(CompWirelessDetonationGridNode first, CompWirelessDetonationGridNode second,
-            bool canTraverse)
-        {
-            First = first;
-            Second = second;
-            CanTraverse = canTraverse;
-        }
+        public readonly CompWirelessDetonationGridNode First = first;
+        public readonly CompWirelessDetonationGridNode Second = second;
+        public readonly bool CanTraverse = canTraverse;
 
         public override bool Equals(object obj)
         {

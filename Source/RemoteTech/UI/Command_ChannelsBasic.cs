@@ -8,11 +8,11 @@ namespace RemoteTech;
 public class Command_ChannelsBasic : Command
 {
     private static readonly Texture2D[] UITex_ChannelsBasic =
-    {
+    [
         Resources.Textures.rxUIChannelBasic1,
         Resources.Textures.rxUIChannelBasic2,
         Resources.Textures.rxUIChannelBasic3
-    };
+    ];
 
     private readonly Action<int> activateCallback;
     private readonly int selectedChannel;

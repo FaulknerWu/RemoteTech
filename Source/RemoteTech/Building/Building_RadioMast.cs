@@ -5,7 +5,7 @@ using Verse;
 namespace RemoteTech;
 
 /// <summary>
-///     This guy only blinks his overlay- the actual wireless routing is done using a comp.
+///     This guy only blinks his overlay-the actual wireless routing is done using a comp.
 /// </summary>
 /// <see cref="CompWirelessDetonationGridNode" />
 public class Building_RadioMast : Building
@@ -28,9 +28,9 @@ public class Building_RadioMast : Building
         compPower = GetComp<CompPowerTrader>();
     }
 
-    public override void Draw()
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
         if (compPower is not { PowerOn: true })
         {
             return;

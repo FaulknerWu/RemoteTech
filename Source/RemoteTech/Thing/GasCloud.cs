@@ -130,7 +130,7 @@ public class GasCloud : Thing
         Scribe_Values.Look(ref gasTicksProcessed, "ticks");
     }
 
-    public override void Draw()
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         if (!Find.TickManager.Paused)
         {
@@ -143,7 +143,7 @@ public class GasCloud : Thing
         spriteOffset = new Vector2(interpolatedOffsetX, interpolatedOffsetY);
         spriteScaleMultiplier = new Vector2(interpolatedScale, interpolatedScale);
         spriteRotation = interpolatedRotation;
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
     }
 
     private void UpdateInterpolatedValues()

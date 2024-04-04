@@ -167,7 +167,7 @@ public class Building_DetonatorWire : Building
         foreach (var adjacent in adjacents)
         {
             var candidatePos = adjacent + Position;
-            FireUtility.TryStartFireIn(candidatePos, map, Rand.Range(.4f, .6f));
+            FireUtility.TryStartFireIn(candidatePos, map, Rand.Range(.4f, .6f), null);
             created = map.thingGrid.ThingAt<Fire>(candidatePos);
             if (created != null)
             {

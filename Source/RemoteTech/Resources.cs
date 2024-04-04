@@ -8,7 +8,7 @@ using Verse;
 namespace RemoteTech;
 
 /// <summary>
-///     Auto-filled repository of all external resources referenced in the code
+///     Autofilled repository of all external resources referenced in the code
 /// </summary>
 public static class Resources
 {
@@ -205,7 +205,7 @@ public static class Resources
             private const float TxSize = 31f / 32f * Cell;
 
             public readonly Rect[] Keys =
-            {
+            [
                 new Rect(0f, Cell * 3, TxSize, TxSize),
                 new Rect(Cell, Cell * 3, TxSize, TxSize),
                 new Rect(Cell * 2, Cell * 3, TxSize, TxSize),
@@ -214,7 +214,7 @@ public static class Resources
                 new Rect(Cell * 2, Cell * 2, TxSize, TxSize),
                 new Rect(0f, Cell, TxSize, TxSize),
                 new Rect(Cell, Cell, TxSize, TxSize)
-            };
+            ];
 
             public readonly Rect OutlineHighlight = new Rect(Cell, 0f, TxSize, TxSize);
             public readonly Rect OutlineOff = new Rect(0f, 0f, TxSize, TxSize);

@@ -98,8 +98,8 @@ public class Building_FoamWall : Mineable, IThingHolder
             yield return new Command_Action
             {
                 icon = Resources.Textures.WallSmoothMenuIcon,
-                action = () => Find.WindowStack.Add(new FloatMenu(new List<FloatMenuOption>(
-                    wallProps.smoothVariants.Select(wallDef => new FloatMenuOption(wallDef.label.CapitalizeFirst(),
+                action = () => Find.WindowStack.Add(new FloatMenu([
+                    ..wallProps.smoothVariants.Select(wallDef => new FloatMenuOption(wallDef.label.CapitalizeFirst(),
                         () =>
                         {
                             var selectedWalls = Find.Selector.SelectedObjects.OfType<Building_FoamWall>()
@@ -110,7 +110,7 @@ public class Building_FoamWall : Mineable, IThingHolder
                                 wall.ToggleDesignation(Resources.Designation.rxFoamWallSmooth, true);
                             }
                         }))
-                ))),
+                ])),
                 defaultLabel = "FoamWall_smoothAction_label".Translate(),
                 defaultDesc = "FoamWall_smoothAction_desc".Translate()
             };

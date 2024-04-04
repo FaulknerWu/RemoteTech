@@ -164,31 +164,17 @@ public static class PlayerAvoidanceGrids
         return pathCostSum;
     }
 
-    private struct PlayerAvoidanceGrid
+    private struct PlayerAvoidanceGrid(Map map)
     {
-        public readonly int mapId;
-        public readonly ByteGrid byteGrid;
-        public readonly List<AvoidanceSource> sources;
-
-        public PlayerAvoidanceGrid(Map map)
-        {
-            mapId = map.uniqueID;
-            byteGrid = new ByteGrid(map);
-            sources = new List<AvoidanceSource>();
-        }
+        public readonly int mapId = map.uniqueID;
+        public readonly ByteGrid byteGrid = new ByteGrid(map);
+        public readonly List<AvoidanceSource> sources = new List<AvoidanceSource>();
     }
 
-    private struct AvoidanceSource
+    private struct AvoidanceSource(int thingId, int cellIndex, int addedCost)
     {
-        public readonly int thingId;
-        public readonly int cellIndex;
-        public readonly int addedCost;
-
-        public AvoidanceSource(int thingId, int cellIndex, int addedCost)
-        {
-            this.thingId = thingId;
-            this.cellIndex = cellIndex;
-            this.addedCost = addedCost;
-        }
+        public readonly int thingId = thingId;
+        public readonly int cellIndex = cellIndex;
+        public readonly int addedCost = addedCost;
     }
 }

@@ -82,7 +82,7 @@ public class Building_DetonatorManual : Building, IGraphicVariantProvider, IPawn
         }
     }
 
-    public override void Draw()
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         if (plungerExpireTime < Time.realtimeSinceStartup)
         {
@@ -90,7 +90,7 @@ public class Building_DetonatorManual : Building, IGraphicVariantProvider, IPawn
             plungerExpireTime = 0;
         }
 
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
     }
 
     // quick detonation option for drafted pawns

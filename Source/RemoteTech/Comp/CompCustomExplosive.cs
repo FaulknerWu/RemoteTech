@@ -91,7 +91,7 @@ public class CompCustomExplosive : ThingComp
         }
     }
 
-    public override void PostPreApplyDamage(DamageInfo dInfo, out bool absorbed)
+    public override void PostPreApplyDamage(ref DamageInfo dInfo, out bool absorbed)
     {
         absorbed = false;
         if (dInfo.Def.ExternalViolenceFor(parent) && dInfo.Amount >= parent.HitPoints)

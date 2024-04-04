@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 
 namespace RemoteTech;
 
@@ -18,7 +19,7 @@ public abstract class CompDetonationGridNode : ThingComp
         }
 
         cachedPosition = parent.Position;
-        parent.Map.mapDrawer.MapMeshDirty(parent.Position, MapMeshFlag.Buildings);
+        parent.Map.mapDrawer.MapMeshDirty(parent.Position, MapMeshFlagDefOf.Buildings);
     }
 
     public override void PostDeSpawn(Map map)
@@ -26,7 +27,7 @@ public abstract class CompDetonationGridNode : ThingComp
         base.PostDeSpawn(map);
         if (cachedPosition.IsValid)
         {
-            map.mapDrawer.MapMeshDirty(cachedPosition, MapMeshFlag.Buildings);
+            map.mapDrawer.MapMeshDirty(cachedPosition, MapMeshFlagDefOf.Buildings);
         }
     }
 

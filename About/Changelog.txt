@@ -1,5 +1,8 @@
 # Changelog for RemoteTech
 
+1.5.0 - Mod updated for 1.5 and passed autotests
+
+
 1.4.2 - Hardened foam wall will now be selectable with no errors
 
 

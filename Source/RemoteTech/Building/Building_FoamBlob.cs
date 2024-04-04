@@ -101,10 +101,10 @@ public class Building_FoamBlob : Building
         }
     }
 
-    public override void Draw()
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         UpdateScale();
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
     }
 
     public override string GetInspectString()

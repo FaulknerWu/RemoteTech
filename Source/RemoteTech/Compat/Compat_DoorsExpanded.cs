@@ -92,7 +92,7 @@ internal static class Compat_DoorsExpanded
         }
 
         var methodName = $"{parentType.FullName}.get_{field.Name}";
-        var setterMethod = new DynamicMethod(methodName, typeof(bool), new[] { typeof(Building) }, true);
+        var setterMethod = new DynamicMethod(methodName, typeof(bool), [typeof(Building)], true);
         var gen = setterMethod.GetILGenerator();
         gen.Emit(OpCodes.Ldarg_0); // push Building
         gen.Emit(OpCodes.Castclass, parentType); // cast to Building_DoorExpanded

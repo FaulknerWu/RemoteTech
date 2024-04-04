@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using RimWorld;
+using Verse;
 
 namespace RemoteTech;
 
@@ -23,6 +24,6 @@ public class CompLinkGridMember : ThingComp
     private void UpdateLinkGrid(Map map)
     {
         map.linkGrid.Notify_LinkerCreatedOrDestroyed(parent);
-        map.mapDrawer.MapMeshDirty(parent.Position, MapMeshFlag.Things, true, false);
+        map.mapDrawer.MapMeshDirty(parent.Position, MapMeshFlagDefOf.Things, true, false);
     }
 }

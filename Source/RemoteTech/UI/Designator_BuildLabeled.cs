@@ -6,13 +6,9 @@ namespace RemoteTech;
 /// <summary>
 ///     A Designator_Build with a replaceable label.
 /// </summary>
-public class Designator_BuildLabeled : Designator_Build
+public class Designator_BuildLabeled(BuildableDef entDef) : Designator_Build(entDef)
 {
     public string replacementLabel;
-
-    public Designator_BuildLabeled(BuildableDef entDef) : base(entDef)
-    {
-    }
 
     public override string Label => replacementLabel ?? base.Label;
 }

@@ -12,17 +12,13 @@ namespace RemoteTech;
 ///     Lowering the cap circumvents the trader gassing exploit that allows to rob a trader,
 ///     release them, and end up with net positive faction goodwill in the end.
 /// </summary>
-public class FactionGoodwillCaps : WorldComponent
+public class FactionGoodwillCaps(World world) : WorldComponent(world)
 {
     public const int DefaultMinNegativeGoodwill = -100;
     public const int NegativeGoodwillCap = -5000;
-    private HashSet<int> betrayedFactions = new HashSet<int>();
+    private HashSet<int> betrayedFactions = [];
 
     private Dictionary<int, int> goodwillCaps = new Dictionary<int, int>();
-
-    public FactionGoodwillCaps(World world) : base(world)
-    {
-    }
 
     public static FactionGoodwillCaps GetFromWorld()
     {
@@ -46,7 +42,7 @@ public class FactionGoodwillCaps : WorldComponent
 
         if (betrayedFactions == null)
         {
-            betrayedFactions = new HashSet<int>();
+            betrayedFactions = [];
         }
     }
 
@@ -63,7 +59,7 @@ public class FactionGoodwillCaps : WorldComponent
         }
 
         var factionId = faction.loadID;
-        return goodwillCaps.TryGetValue(factionId, out var cap) ? cap : DefaultMinNegativeGoodwill;
+        return goodwillCaps.GetValueOrDefault(factionId, DefaultMinNegativeGoodwill);
     }
 
     public bool HasPlayerBetrayedFaction(Faction faction)

@@ -95,7 +95,7 @@ public class Plant_Sparkweed : Plant
         {
             if (!BlockedByIgnitionSuppressor())
             {
-                FireUtility.TryStartFireIn(Position, Map, Rand.Range(0.15f, 0.4f));
+                FireUtility.TryStartFireIn(Position, Map, Rand.Range(0.15f, 0.4f), null);
             }
 
             doEffects = true;
@@ -105,7 +105,7 @@ public class Plant_Sparkweed : Plant
         {
             if (!BlockedByIgnitionSuppressor())
             {
-                pawn.TryAttachFire(Rand.Range(0.15f, 0.25f));
+                pawn.TryAttachFire(Rand.Range(0.15f, 0.25f), null);
             }
 
             doEffects = true;

@@ -20,7 +20,7 @@ public class PlaceWorker_RoofBreakerExplosive : PlaceWorker
     private static readonly Color IneffectivePlacementColor = new Color(1f, 0.9215686f, 0.01568628f, .5f);
     private static readonly Color EffectivePlacementColor = new Color(0f, 1f, 0f, .5f);
     private static readonly Color OtherEffectiveAreasColor = new Color(.3f, .7f, .3f, .15f);
-    private static readonly List<IntVec3> cellBuffer = new List<IntVec3>();
+    private static readonly List<IntVec3> cellBuffer = [];
 
     public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)
     {

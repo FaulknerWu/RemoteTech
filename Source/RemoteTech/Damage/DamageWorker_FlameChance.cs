@@ -19,7 +19,7 @@ public class DamageWorker_FlameChance : DamageWorker_AddInjury
 
         if (!dinfo.InstantPermanentInjury)
         {
-            victim.TryAttachFire(Rand.Range(0.15f, 0.25f));
+            victim.TryAttachFire(Rand.Range(0.15f, 0.25f), null);
         }
 
         if (victim is Pawn pawn && pawn.Faction == Faction.OfPlayer)
@@ -36,7 +36,7 @@ public class DamageWorker_FlameChance : DamageWorker_AddInjury
         base.ExplosionAffectCell(explosion, c, damagedThings, ignoredThings, canThrowMotes);
         if (ShouldCreateFire())
         {
-            FireUtility.TryStartFireIn(c, explosion.Map, Rand.Range(0.2f, 0.6f));
+            FireUtility.TryStartFireIn(c, explosion.Map, Rand.Range(0.2f, 0.6f), null);
         }
     }
 
