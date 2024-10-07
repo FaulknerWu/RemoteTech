@@ -15,9 +15,15 @@ public class JobGiver_RedButtonFever : ThinkNode_JobGiver
 
     public override Job TryGiveJob(Pawn pawn)
     {
-        var targets = pawn.Map.listerBuildings.allBuildingsColonist
+        var possibleBuildings = pawn.Map.listerBuildings.allBuildingsColonist;
+        var targets = possibleBuildings?
             .Where(b => b is IRedButtonFeverTarget { RedButtonFeverCanInteract: true })
             .Select(b => new Pair<Building, float>(b, b.Position.DistanceTo(pawn.Position))).ToArray();
+        if (targets == null)
+        {
+            return null;
+        }
+
         if (targets.Length > 0)
         {
             var furthestDistance = targets.Max(p => p.Second);

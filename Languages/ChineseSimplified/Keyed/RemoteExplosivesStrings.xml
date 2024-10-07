@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DetonatorTable_detonate_label>引爆</DetonatorTable_detonate_label>
   <DetonatorTable_detonate_desc>引爆所有范围内相同频道的已打开保险的遥控炸药。</DetonatorTable_detonate_desc>

@@ -14,6 +14,7 @@ public class WorkGiver_IPawnDetonateable : WorkGiver_Scanner
     public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
     {
         var buildings = pawn.Map.listerBuildings.allBuildingsColonist;
+
         foreach (var building in buildings)
         {
             if (building is IPawnDetonateable)

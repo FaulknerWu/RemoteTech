@@ -8,6 +8,6 @@ public class MentalStateWorker_RedButtonFever : MentalStateWorker
 {
     public override bool StateCanOccur(Pawn pawn)
     {
-        return pawn.Map.listerBuildings.allBuildingsColonist.OfType<IRedButtonFeverTarget>().Any();
+        return pawn.Map.listerBuildings.allBuildingsColonist?.OfType<IRedButtonFeverTarget>().Any() == true;
     }
 }

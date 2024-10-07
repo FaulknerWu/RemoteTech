@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DetonatorTable_detonate_label>Detonate</DetonatorTable_detonate_label>
   <DetonatorTable_detonate_desc>Detonates all armed remote explosives on the same channel in range.</DetonatorTable_detonate_desc>
@@ -14,7 +14,7 @@
   <RemoteExplosive_channelChanger_label>Channel {0}{1}</RemoteExplosive_channelChanger_label>
   <RemoteExplosive_channel_switching> (switching)</RemoteExplosive_channel_switching>
   <RemoteExplosive_detonatorChannelChanger_desc>Sets the detonation channel. Only explosives on the same channel can be detonated.</RemoteExplosive_detonatorChannelChanger_desc>
-  <RemoteExplosive_channelKeypad_buttonTip>{0}\n&lt;color=#888888&gt;Shift-click selects all.&lt;/color&gt;</RemoteExplosive_channelKeypad_buttonTip>
+  <RemoteExplosive_channelKeypad_buttonTip>{0}\n&lt;color=#888888>Shift-click selects all.&lt;/color></RemoteExplosive_channelKeypad_buttonTip>
   <RemoteExplosive_autoReplace_label>Auto replace</RemoteExplosive_autoReplace_label>
   <RemoteExplosive_autoReplace_desc>If enabled, this building will be automatically re-placed after being destroyed.</RemoteExplosive_autoReplace_desc>
   <DetonatorTable_component_label>Install channels</DetonatorTable_component_label>

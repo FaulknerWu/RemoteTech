@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <PortableDetonatorRange.label>起爆器范围</PortableDetonatorRange.label>
   <PortableDetonatorRange.description>便携式起爆器的信号所能达到的距离。离远点比较好，除非你想故意炸掉某样东西。</PortableDetonatorRange.description>

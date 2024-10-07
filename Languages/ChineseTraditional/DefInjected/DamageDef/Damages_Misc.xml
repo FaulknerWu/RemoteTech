@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <FoamWallRekt.label>被困</FoamWallRekt.label>
   <FoamWallRekt.deathMessage>{0}死於硬化的泡沫牆中。</FoamWallRekt.deathMessage>

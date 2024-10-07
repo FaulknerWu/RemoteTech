@@ -65,7 +65,7 @@ public class Dialog_SensorSettings : Window
     {
         base.PostClose();
         // assign modified fields to all selected sensors
-        foreach (var obj in Find.Selector.SelectedObjects.Union(new[] { sensor }))
+        foreach (var obj in Find.Selector.SelectedObjects.Union([sensor]))
         {
             if (obj is not ISensorSettingsProvider s)
             {

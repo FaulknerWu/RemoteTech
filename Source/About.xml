@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Remote Tech</name>
   <author>UnlimitedHugs</author>
@@ -12,11 +12,11 @@
   <packageId>UnlimitedHugs.RemoteTech</packageId>
   <description>Version: 2.4.0
 	
-&lt;size=20&gt;Description&lt;/size&gt;
+&lt;size=20>Description&lt;/size>
 Remote Tech is a rich content mod focused on remotely detonated explosives. These allow to set up more effective and strategic base defenses, mine for resources, and many other things.
 Early colonies and tribal settlements will benefit from low-tech makeshift explosives that can be made with renewable materials, while the late-game is extended with advanced chemical charges and automated defenses.
 
-&lt;size=20&gt;How to use&lt;/size&gt;
+&lt;size=20>How to use&lt;/size>
 Start by researching "Makeshift Explosives" from the Remote Tech tab- this gives you access to basic explosives that can be made using the campfire and crafting spot. Place them using the build menu (Remote Tech category), them trigger them using detonator wire connected to a manual detonator.
 More advanced explosives can be purchased from traders or crafted at the explosives workshop. After unlocking the remote detonator, explosives can be triggered via radio signal. The remote detonator can be upgraded with channels to divide your placed explosives into groups, to be triggered separately.
 Follow the Remote Tech research tree to unlock more powerful technologies.
