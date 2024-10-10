@@ -1,7 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <DetonateExplosives.reportString>正在引爆炸药。</DetonateExplosives.reportString>
-  <SwitchRemoteExplosive.reportString>正在开关遥控炸药。</SwitchRemoteExplosive.reportString>
-  <InstallChannelsComponent.reportString>正在安装遥控频道零件。</InstallChannelsComponent.reportString>
-  <DryDetonatorWire.reportString>正在干燥起爆导线。</DryDetonatorWire.reportString>
+  
+  <!-- EN: Detonating explosives. -->
+  <rxDetonateExplosives.reportString>正在引爆炸药。</rxDetonateExplosives.reportString>
+  
+  <!-- EN: Drying off detonator wire. -->
+  <rxDryDetonatorWire.reportString>正在干燥雷管导线。</rxDryDetonatorWire.reportString>
+  
+  <!-- EN: Installing upgrade. -->
+  <rxInstallUpgrade.reportString>正在安装升级。</rxInstallUpgrade.reportString>
+  
+  <!-- EN: Triggering TargetA. -->
+  <rxRedButtonFever.reportString>正在触发目标A。</rxRedButtonFever.reportString>
+  
+  <!-- EN: Smoothing foam wall. -->
+  <rxSmoothFoamWall.reportString>正在平滑泡沫墙。</rxSmoothFoamWall.reportString>
+  
+  <!-- EN: Switching TargetA. -->
+  <rxSwitchThing.reportString>正在切换到目标A。</rxSwitchThing.reportString>
+  
 </LanguageData>

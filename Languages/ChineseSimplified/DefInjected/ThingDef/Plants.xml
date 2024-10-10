@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <PlantSparkweed.label>火花草</PlantSparkweed.label>
-  <PlantSparkweed.description>来源未知的稀有植物。当被触碰时，其茎干还有可燃的橙色粉末。这种粉末接触空气会燃烧，产生极热的火化并点燃周围的区域。
-被栽培作为低级炸药和火药来源。</PlantSparkweed.description>
+  
+  <!-- EN: sparkweed -->
+  <rxPlantSparkweed.label>火花草</rxPlantSparkweed.label>
+  <!-- EN: A curious plant of unknown origin. Its stems contain a flammable orange powder that is released when the plant is disturbed. The powder ignites on contact with air, producing hot sparks that can set fire to the surrounding area.\nIt is cultivated as a source of low-grade explosive and gunpowder.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxPlantSparkweed.description>一种来源不明的奇异植物。其茎含有易燃的橙色粉末，当植物受到扰动时释放。这种粉末与空气接触后会点燃，产生热火花，可能会引燃周围区域。它被种植作为低级炸药和火药的来源。</rxPlantSparkweed.description>
+  
 </LanguageData>

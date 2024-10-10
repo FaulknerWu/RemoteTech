@@ -1,10 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <SleepingGas.label>催眠瓦斯</SleepingGas.label>
-  <SleepingGas.stages.0.label>
-  </SleepingGas.stages.0.label>
-  <SleepingGas.stages.1.label>犯困</SleepingGas.stages.1.label>
-  <SleepingGas.stages.2.label>困倦</SleepingGas.stages.2.label>
-  <SleepingGas.stages.3.label>昏昏欲睡</SleepingGas.stages.3.label>
-  <SleepingGas.stages.4.label>失去知觉</SleepingGas.stages.4.label>
+  
+  <!-- EN: sleeping gas -->
+  <rxSleepingGas.label>催眠瓦斯</rxSleepingGas.label>
+  <!-- EN: Effects of inhaled sleeping gas. As concentration increases, the body becomes less capable until eventually falling asleep.\n\nRecovers naturally over time, but only if no additional gas is inhaled.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxSleepingGas.description>吸入麻醉气体的效果。随着浓度增加，身体机能逐渐减弱，最终进入睡眠状态。\n\n如果不再吸入额外的气体，身体会随着时间自然恢复。</rxSleepingGas.description>
+  <!-- EN: tired -->
+  <rxSleepingGas.stages.tired.label>犯困</rxSleepingGas.stages.tired.label>
+  <!-- EN: drowsy -->
+  <rxSleepingGas.stages.drowsy.label>困倦</rxSleepingGas.stages.drowsy.label>
+  <!-- EN: sleepy -->
+  <rxSleepingGas.stages.sleepy.label>昏昏欲睡</rxSleepingGas.stages.sleepy.label>
+  <!-- EN: out cold -->
+  <rxSleepingGas.stages.out_cold.label>失去知觉</rxSleepingGas.stages.out_cold.label>
+  
 </LanguageData>

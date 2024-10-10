@@ -1,6 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <Gas_Sleeping.label>催眠瓦斯云雾</Gas_Sleeping.label>
-  <Gas_Sleeping.description>当生物暴露于其中足够长时间后会倒下。
-在露天区域会迅速消散。</Gas_Sleeping.description>
+  
+  <!-- EN: sleeping gas cloud -->
+  <rxGas_Sleeping.label>催眠瓦斯云</rxGas_Sleeping.label>
+  <!-- EN: Knocks out living organisms after enough exposure.\nRapidly dissipates when under an open sky.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxGas_Sleeping.description>足够暴露后使生物体失去知觉。在开放天空下迅速消散。</rxGas_Sleeping.description>
+  
+  <!-- EN: refined sleeping gas cloud -->
+  <rxGas_SleepingRefined.label>精致催眠瓦斯云</rxGas_SleepingRefined.label>
+  <!-- EN: Knocks out living organisms after enough exposure.\nRapidly dissipates when under an open sky.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxGas_SleepingRefined.description>足够暴露后使生物体失去知觉。在开放天空下迅速消散。</rxGas_SleepingRefined.description>
+  
 </LanguageData>

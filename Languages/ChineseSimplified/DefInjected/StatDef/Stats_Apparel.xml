@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <PortableDetonatorRange.label>起爆器范围</PortableDetonatorRange.label>
-  <PortableDetonatorRange.description>便携式起爆器的信号所能达到的距离。离远点比较好，除非你想故意炸掉某样东西。</PortableDetonatorRange.description>
-  <PortableDetonatorNumUses.label>起爆器激活次数</PortableDetonatorNumUses.label>
-  <PortableDetonatorNumUses.description>便携式起爆器在电池耗尽前的可使用次数。</PortableDetonatorNumUses.description>
+  
+  <!-- EN: Detonator activations -->
+  <rxPortableDetonatorNumUses.label>起爆器激活次数</rxPortableDetonatorNumUses.label>
+  <!-- EN: How many times a portable detonator can be activated before the battery runs dry.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxPortableDetonatorNumUses.description>便携式起爆器在电池耗尽前可以激活的次数。</rxPortableDetonatorNumUses.description>
+  
 </LanguageData>
