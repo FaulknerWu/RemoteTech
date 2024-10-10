@@ -1,54 +1,43 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
   <!-- EN: crushed charcoal -->
   <rxCharcoal.label>木炭</rxCharcoal.label>
   <!-- EN: An efficient fuel made by burning wood in low-oxygen conditions. Becomes a great additive for explosives when crushed into powder.\nCan be made at a campfire or a fueled stove.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxCharcoal.description>通过在低氧环境中燃烧木材制成的高效燃料。磨成粉末后是很好的炸药添加剂。可以在营火或燃料炉上制作。</rxCharcoal.description>
-  
   <!-- EN: explosive pouch -->
   <rxExplosivePouch.label>炸药包</rxExplosivePouch.label>
   <!-- EN: A primitive explosive charge made from volatile powder mixture wrapped in animal leather.\nPlace as a building from the Explosives menu to use.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxExplosivePouch.description>用挥发性粉末混合物包裹在动物皮革中制成的原始炸药。可从炸药菜单中作为建筑放置使用。</rxExplosivePouch.description>
-  
   <!-- EN: mining explosive -->
   <rxMiningExplosiveComponent.label>矿用炸药</rxMiningExplosiveComponent.label>
   <!-- EN: The main part of a remote mining explosive.\nPlace as a building from the Explosives menu to use.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMiningExplosiveComponent.description>远程矿用炸药的主要组件。可从炸药菜单中作为建筑放置使用。</rxMiningExplosiveComponent.description>
-  
   <!-- EN: remote explosive -->
   <rxRemoteBomb.label>远程炸药</rxRemoteBomb.label>
   <!-- EN: Explosive trap with a remote trigger.\nPlace as a building from the Explosives menu to use.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteBomb.description>带有远程触发的爆炸陷阱。可从炸药菜单中作为建筑放置使用。</rxRemoteBomb.description>
-  
   <!-- EN: EMP remote explosive -->
   <rxRemoteEmpBomb.label>远程EMP炸药</rxRemoteEmpBomb.label>
   <!-- EN: A single-use electromagnetic pulse generator.\nPlace as a building from the Explosives menu to use.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteEmpBomb.description>一次性电磁脉冲发生器。可从炸药菜单中作为建筑放置使用。</rxRemoteEmpBomb.description>
-  
   <!-- EN: incendiary remote explosive -->
   <rxRemoteFireBomb.label>远程燃烧炸药</rxRemoteFireBomb.label>
   <!-- EN: A canister filled with flammable chemicals with a radio trigger.\nPlace as a building from the Explosives menu to use.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteFireBomb.description>装有易燃化学品的罐子，带有无线电触发器。可从炸药菜单中作为建筑放置使用。</rxRemoteFireBomb.description>
-  
   <!-- EN: sealing foam canister -->
   <rxRemoteFoamCan.label>密封泡沫罐</rxRemoteFoamCan.label>
   <!-- EN: A remotely triggered canister containing sealing foam.\nPlace as a building from the Explosives menu to use.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteFoamCan.description>含有密封泡沫的远程触发罐。可从炸药菜单中作为建筑放置使用。</rxRemoteFoamCan.description>
-  
   <!-- EN: refined sleeping gas canister -->
   <rxRemoteRefinedSleepingGasCan.label>精致催眠瓦斯罐</rxRemoteRefinedSleepingGasCan.label>
   <!-- EN: A remotely triggered canister filled with refined sleeping gas. Significantly more potent than common sleeping gas.\nPlace as a building from the Explosives menu to use.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteRefinedSleepingGasCan.description>含有精致催眠瓦斯的远程触发罐。比普通催眠瓦斯更有效。可从炸药菜单中作为建筑放置使用。</rxRemoteRefinedSleepingGasCan.description>
-  
   <!-- EN: sleeping gas canister -->
   <rxRemoteSleepingGasCan.label>催眠瓦斯罐</rxRemoteSleepingGasCan.label>
   <!-- EN: A remotely triggered canister containing sleeping gas.\nPlace as a building from the Explosives menu to use.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteSleepingGasCan.description>含有催眠瓦斯的远程触发罐。可从炸药菜单中作为建筑放置使用。</rxRemoteSleepingGasCan.description>
-  
   <!-- EN: sparkpowder -->
   <rxSparkpowder.label>火花粉</rxSparkpowder.label>
   <!-- EN: Harvested from Sparkweed plants and specially preserved to prevent spontaneous combustion. Keep away from fire.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxSparkpowder.description>从火花草植物中采集并经过特殊保存，以防止自燃。请远离火源。</rxSparkpowder.description>
-  
 </LanguageData>

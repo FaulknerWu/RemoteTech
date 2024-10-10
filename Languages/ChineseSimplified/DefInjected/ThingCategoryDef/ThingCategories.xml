@@ -1,10 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
   <!-- EN: explosives -->
   <rxExplosives.label>炸药</rxExplosives.label>
-  
   <!-- EN: ingredients -->
   <rxExplosivesIngredients.label>炸药原料</rxExplosivesIngredients.label>
-  
 </LanguageData>

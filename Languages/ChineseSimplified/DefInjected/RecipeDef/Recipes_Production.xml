@@ -1,165 +1,141 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
   <!-- EN: extract gold from slag -->
   <rxExtractGoldFromSlag.label>熔炼金渣块</rxExtractGoldFromSlag.label>
   <!-- EN: Use heat and strong electromagnets to separate useful metal from slag chunks.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxExtractGoldFromSlag.description>用强热和电磁铁从金渣块中提取出黄金。</rxExtractGoldFromSlag.description>
   <!-- EN: Smelting gold from slag. -->
   <rxExtractGoldFromSlag.jobString>正在熔炼金渣块。</rxExtractGoldFromSlag.jobString>
-  
   <!-- EN: make crushed charcoal -->
   <rxMakeCharcoal.label>制作木炭</rxMakeCharcoal.label>
   <!-- EN: Make charcoal from wood logs.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeCharcoal.description>将原木制成木炭。</rxMakeCharcoal.description>
   <!-- EN: Making charcoal. -->
   <rxMakeCharcoal.jobString>正在制作木炭。</rxMakeCharcoal.jobString>
-  
   <!-- EN: make explosive pouch -->
   <rxMakeExplosivePouch.label>制作炸药包</rxMakeExplosivePouch.label>
   <!-- EN: Craft an explosive pouch.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeExplosivePouch.description>制作一个炸药包。</rxMakeExplosivePouch.description>
   <!-- EN: Making explosive pouch. -->
   <rxMakeExplosivePouch.jobString>正在制作炸药包。</rxMakeExplosivePouch.jobString>
-  
   <!-- EN: make mining explosive -->
   <rxMakeMiningExplosiveComponent.label>制作矿用炸药</rxMakeMiningExplosiveComponent.label>
   <!-- EN: Craft a mining explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeMiningExplosiveComponent.description>制作一个矿用炸药。</rxMakeMiningExplosiveComponent.description>
   <!-- EN: Making mining explosive. -->
   <rxMakeMiningExplosiveComponent.jobString>正在制作矿用炸药。</rxMakeMiningExplosiveComponent.jobString>
-  
   <!-- EN: make mining explosive -->
   <rxMakeMiningExplosiveComponent_rxSparkpowder.label>制作矿用炸药</rxMakeMiningExplosiveComponent_rxSparkpowder.label>
   <!-- EN: Craft a mining explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeMiningExplosiveComponent_rxSparkpowder.description>制作一个矿用炸药。</rxMakeMiningExplosiveComponent_rxSparkpowder.description>
   <!-- EN: Making mining explosive. -->
   <rxMakeMiningExplosiveComponent_rxSparkpowder.jobString>正在制作矿用炸药。</rxMakeMiningExplosiveComponent_rxSparkpowder.jobString>
-  
   <!-- EN: make mining explosive -->
   <rxMakeMiningExplosiveComponent_Steel.label>制作矿用炸药</rxMakeMiningExplosiveComponent_Steel.label>
   <!-- EN: Craft a mining explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeMiningExplosiveComponent_Steel.description>制作一个矿用炸药。</rxMakeMiningExplosiveComponent_Steel.description>
   <!-- EN: Making mining explosive. -->
   <rxMakeMiningExplosiveComponent_Steel.jobString>正在制作矿用炸药。</rxMakeMiningExplosiveComponent_Steel.jobString>
-  
   <!-- EN: make mining explosive -->
   <rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.label>制作矿用炸药</rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.label>
   <!-- EN: Craft a mining explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.description>制作一个矿用炸药。</rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.description>
   <!-- EN: Making mining explosive. -->
   <rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.jobString>正在制作矿用炸药。</rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.jobString>
-  
   <!-- EN: make remote explosive -->
   <rxMakeRemoteBomb.label>制作遥控炸药</rxMakeRemoteBomb.label>
   <!-- EN: Craft a deployable remote explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteBomb.description>制作一个遥控炸药。</rxMakeRemoteBomb.description>
   <!-- EN: Making deployable remote explosive. -->
   <rxMakeRemoteBomb.jobString>正在制作遥控炸药。</rxMakeRemoteBomb.jobString>
-  
   <!-- EN: make remote explosive -->
   <rxMakeRemoteBomb_rxSparkpowder.label>制作遥控炸药</rxMakeRemoteBomb_rxSparkpowder.label>
   <!-- EN: Craft a deployable remote explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteBomb_rxSparkpowder.description>制作一个遥控炸药。</rxMakeRemoteBomb_rxSparkpowder.description>
   <!-- EN: Making deployable remote explosive. -->
   <rxMakeRemoteBomb_rxSparkpowder.jobString>正在制作遥控炸药。</rxMakeRemoteBomb_rxSparkpowder.jobString>
-  
   <!-- EN: make remote explosive -->
   <rxMakeRemoteBomb_Steel.label>制作遥控炸药</rxMakeRemoteBomb_Steel.label>
   <!-- EN: Craft a deployable remote explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteBomb_Steel.description>制作一个遥控炸药。</rxMakeRemoteBomb_Steel.description>
   <!-- EN: Making deployable remote explosive. -->
   <rxMakeRemoteBomb_Steel.jobString>正在制作遥控炸药。</rxMakeRemoteBomb_Steel.jobString>
-  
   <!-- EN: make remote explosive -->
   <rxMakeRemoteBomb_Steel_rxSparkpowder.label>制作遥控炸药</rxMakeRemoteBomb_Steel_rxSparkpowder.label>
   <!-- EN: Craft a deployable remote explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteBomb_Steel_rxSparkpowder.description>制作一个遥控炸药。</rxMakeRemoteBomb_Steel_rxSparkpowder.description>
   <!-- EN: Making deployable remote explosive. -->
   <rxMakeRemoteBomb_Steel_rxSparkpowder.jobString>正在制作遥控炸药。</rxMakeRemoteBomb_Steel_rxSparkpowder.jobString>
-  
   <!-- EN: make remote EMP charge -->
   <rxMakeRemoteEmpBomb.label>制作遥控EMP炸药</rxMakeRemoteEmpBomb.label>
   <!-- EN: Craft a remote EMP charge.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteEmpBomb.description>制作一个遥控EMP炸药。</rxMakeRemoteEmpBomb.description>
   <!-- EN: Making remote EMP charge. -->
   <rxMakeRemoteEmpBomb.jobString>正在制作遥控EMP炸药。</rxMakeRemoteEmpBomb.jobString>
-  
   <!-- EN: make remote EMP charge -->
   <rxMakeRemoteEmpBomb_Steel.label>制作遥控EMP炸药</rxMakeRemoteEmpBomb_Steel.label>
   <!-- EN: Craft a remote EMP charge.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteEmpBomb_Steel.description>制作一个遥控EMP炸药。</rxMakeRemoteEmpBomb_Steel.description>
   <!-- EN: Making remote EMP charge. -->
   <rxMakeRemoteEmpBomb_Steel.jobString>正在制作遥控EMP炸药。</rxMakeRemoteEmpBomb_Steel.jobString>
-  
   <!-- EN: make incendiary remote explosive -->
   <rxMakeRemoteFireBomb.label>制作遥控燃烧炸药</rxMakeRemoteFireBomb.label>
   <!-- EN: Craft a deployable incendiary remote explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteFireBomb.description>制作一个遥控燃烧炸药。</rxMakeRemoteFireBomb.description>
   <!-- EN: Making deployable incendiary remote explosive. -->
   <rxMakeRemoteFireBomb.jobString>正在制作遥控燃烧炸药。</rxMakeRemoteFireBomb.jobString>
-  
   <!-- EN: make incendiary remote explosive -->
   <rxMakeRemoteFireBomb_rxSparkpowder.label>制作遥控燃烧炸药</rxMakeRemoteFireBomb_rxSparkpowder.label>
   <!-- EN: Craft a deployable incendiary remote explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteFireBomb_rxSparkpowder.description>制作一个遥控燃烧炸药。</rxMakeRemoteFireBomb_rxSparkpowder.description>
   <!-- EN: Making deployable incendiary remote explosive. -->
   <rxMakeRemoteFireBomb_rxSparkpowder.jobString>正在制作遥控燃烧炸药。</rxMakeRemoteFireBomb_rxSparkpowder.jobString>
-  
   <!-- EN: make incendiary remote explosive -->
   <rxMakeRemoteFireBomb_Steel.label>制作遥控燃烧炸药</rxMakeRemoteFireBomb_Steel.label>
   <!-- EN: Craft a deployable incendiary remote explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteFireBomb_Steel.description>制作一个遥控燃烧炸药。</rxMakeRemoteFireBomb_Steel.description>
   <!-- EN: Making deployable incendiary remote explosive. -->
   <rxMakeRemoteFireBomb_Steel.jobString>正在制作遥控燃烧炸药。</rxMakeRemoteFireBomb_Steel.jobString>
-  
   <!-- EN: make incendiary remote explosive -->
   <rxMakeRemoteFireBomb_Steel_rxSparkpowder.label>制作遥控燃烧炸药</rxMakeRemoteFireBomb_Steel_rxSparkpowder.label>
   <!-- EN: Craft a deployable incendiary remote explosive.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteFireBomb_Steel_rxSparkpowder.description>制作一个遥控燃烧炸药。</rxMakeRemoteFireBomb_Steel_rxSparkpowder.description>
   <!-- EN: Making deployable incendiary remote explosive. -->
   <rxMakeRemoteFireBomb_Steel_rxSparkpowder.jobString>正在制作遥控燃烧炸药。</rxMakeRemoteFireBomb_Steel_rxSparkpowder.jobString>
-  
   <!-- EN: make sealing foam canister -->
   <rxMakeRemoteFoamCan.label>制作密封泡沫罐</rxMakeRemoteFoamCan.label>
   <!-- EN: Craft a sealing foam canister.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteFoamCan.description>制作一个密封泡沫罐。</rxMakeRemoteFoamCan.description>
   <!-- EN: Making sealing foam canister. -->
   <rxMakeRemoteFoamCan.jobString>正在制作密封泡沫罐。</rxMakeRemoteFoamCan.jobString>
-  
   <!-- EN: make sealing foam canister -->
   <rxMakeRemoteFoamCan_Steel.label>制作密封泡沫罐</rxMakeRemoteFoamCan_Steel.label>
   <!-- EN: Craft a sealing foam canister.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteFoamCan_Steel.description>制作一个密封泡沫罐。</rxMakeRemoteFoamCan_Steel.description>
   <!-- EN: Making sealing foam canister. -->
   <rxMakeRemoteFoamCan_Steel.jobString>正在制作密封泡沫罐。</rxMakeRemoteFoamCan_Steel.jobString>
-  
   <!-- EN: make refined sleeping gas canister -->
   <rxMakeRemoteRefinedSleepingGasCan.label>制作精致催眠瓦斯罐</rxMakeRemoteRefinedSleepingGasCan.label>
   <!-- EN: Craft a refined sleeping gas canister.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteRefinedSleepingGasCan.description>制作一个精致催眠瓦斯罐。</rxMakeRemoteRefinedSleepingGasCan.description>
   <!-- EN: Making refined sleeping gas canister. -->
   <rxMakeRemoteRefinedSleepingGasCan.jobString>正在制作精致催眠瓦斯罐。</rxMakeRemoteRefinedSleepingGasCan.jobString>
-  
   <!-- EN: make refined sleeping gas canister -->
   <rxMakeRemoteRefinedSleepingGasCan_Steel.label>制作精致催眠瓦斯罐</rxMakeRemoteRefinedSleepingGasCan_Steel.label>
   <!-- EN: Craft a refined sleeping gas canister.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteRefinedSleepingGasCan_Steel.description>制作一个精致催眠瓦斯罐。</rxMakeRemoteRefinedSleepingGasCan_Steel.description>
   <!-- EN: Making refined sleeping gas canister. -->
   <rxMakeRemoteRefinedSleepingGasCan_Steel.jobString>正在制作精致催眠瓦斯罐。</rxMakeRemoteRefinedSleepingGasCan_Steel.jobString>
-  
   <!-- EN: make sleeping gas canister -->
   <rxMakeRemoteSleepingGasCan.label>制作催眠瓦斯罐</rxMakeRemoteSleepingGasCan.label>
   <!-- EN: Craft a canister containing sleeping gas.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteSleepingGasCan.description>制作一个催眠瓦斯罐。</rxMakeRemoteSleepingGasCan.description>
   <!-- EN: Making sleeping gas canister. -->
   <rxMakeRemoteSleepingGasCan.jobString>正在制作催眠瓦斯罐。</rxMakeRemoteSleepingGasCan.jobString>
-  
   <!-- EN: make sleeping gas canister -->
   <rxMakeRemoteSleepingGasCan_Steel.label>制作催眠瓦斯罐</rxMakeRemoteSleepingGasCan_Steel.label>
   <!-- EN: Craft a canister containing sleeping gas.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMakeRemoteSleepingGasCan_Steel.description>制作一个催眠瓦斯罐。</rxMakeRemoteSleepingGasCan_Steel.description>
   <!-- EN: Making sleeping gas canister. -->
   <rxMakeRemoteSleepingGasCan_Steel.jobString>正在制作催眠瓦斯罐。</rxMakeRemoteSleepingGasCan_Steel.jobString>
-  
 </LanguageData>

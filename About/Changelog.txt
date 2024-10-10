@@ -1,5 +1,8 @@
 # Changelog for RemoteTech
 
+1.5.2 - Updated Chinese translations by FaulknerWu
+
+
 1.5.1 - Fixed an issue with the red button break
 
 

@@ -1,59 +1,47 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
   <!-- EN: fracturing efficiency -->
   <rxExplosiveChunkYield.label>破裂效率</rxExplosiveChunkYield.label>
   <!-- EN: How efficient this explosive is at producing usable chunks when breaking stone.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxExplosiveChunkYield.description>这种炸药在破碎岩石时产生石块的效率如何。</rxExplosiveChunkYield.description>
-  
   <!-- EN: mining yield -->
   <rxExplosiveMiningYield.label>采矿量</rxExplosiveMiningYield.label>
   <!-- EN: How efficient this explosive is at breaking resource-rich rocks.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxExplosiveMiningYield.description>这种炸药在破碎富含资源的岩石时产生资源的效率如何。</rxExplosiveMiningYield.description>
-  
   <!-- EN: wood breaking yield -->
   <rxExplosiveWoodYield.label>木材破碎产量</rxExplosiveWoodYield.label>
   <!-- EN: How efficient this explosive is at producing usable wood from destroyed trees. Explosive forestry is best forestry.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxExplosiveWoodYield.description>这种炸药在摧毁树木后生产可用木材的效率如何。</rxExplosiveWoodYield.description>
-  
   <!-- EN: power capacity -->
   <rxPowerCapacity.label>电量容量</rxPowerCapacity.label>
   <!-- EN: The amount of power this battery can store.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxPowerCapacity.description>该电池可以存储的电量。</rxPowerCapacity.description>
-  
   <!-- EN: power consumption -->
   <rxPowerConsumption.label>电力消耗</rxPowerConsumption.label>
   <!-- EN: The amount of power consumed by this building. Produces power when the value is negative.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxPowerConsumption.description>该建筑消耗的电量。当值为负时产生电力。</rxPowerConsumption.description>
-  
   <!-- EN: sensor angle -->
   <rxSensorAngle.label>传感器角度</rxSensorAngle.label>
   <!-- EN: The angle in which the sensor can simultaneously detect targets.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxSensorAngle.description>传感器能够检测目标的最大范围。</rxSensorAngle.description>
-  
   <!-- EN: sensor range -->
   <rxSensorRange.label>传感器范围</rxSensorRange.label>
   <!-- EN: The maximum range at which the sensor is able to detect targets.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxSensorRange.description>传感器能够检测目标的最大范围。</rxSensorRange.description>
-  
   <!-- EN: sensor rotation speed -->
   <rxSensorSpeed.label>传感器旋转速度</rxSensorSpeed.label>
   <!-- EN: How fast the sensor rotates (degrees per second).\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxSensorSpeed.description>传感器旋转的速度（每秒度数）。</rxSensorSpeed.description>
-  
   <!-- EN: detonator signal range -->
   <rxSignalRange.label>起爆器信号范围</rxSignalRange.label>
   <!-- EN: The radius in which a detonator is able to detect and detonate remote explosives.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxSignalRange.description>起爆器能够检测并引爆远程炸药的半径。</rxSignalRange.description>
-  
   <!-- EN: sun exposure -->
   <rxSunExposure.label>阳光接收量</rxSunExposure.label>
   <!-- EN: The amount of sunlight this solar panel receives. Boosts power production in the morning and evening hours.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxSunExposure.description>该太阳能板接收到的阳光量。在早晨和傍晚时提高发电量。</rxSunExposure.description>
-  
   <!-- EN: gas venting power -->
   <rxVentingPower.label>气体通风能力</rxVentingPower.label>
   <!-- EN: The amount gas concentration pushed by a vent per second.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxVentingPower.description>每秒通风口推动的气体浓度量。</rxVentingPower.description>
-  
 </LanguageData>

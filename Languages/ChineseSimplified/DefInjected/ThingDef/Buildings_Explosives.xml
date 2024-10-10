@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
   <!-- EN: explosives workshop -->
   <rxBench.label>炸药工作台</rxBench.label>
   <!-- EN: An electric-powered station equipped for crafting remotely detonated explosives.\nResearch different types of remote explosives to unlock available recipes.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
@@ -13,70 +12,59 @@
   <rxBench.comps.CompUpgrade-1.label>高质量工具</rxBench.comps.CompUpgrade-1.label>
   <!-- EN: Boost production speed by 25% by making harder and more precise tools. -->
   <rxBench.comps.CompUpgrade-1.effectDescription>通过制作更坚硬和精确的工具，将生产速度提高25%。</rxBench.comps.CompUpgrade-1.effectDescription>
-  
   <!-- EN: manual detonator -->
   <rxDetonatorManual.label>手动起爆器</rxDetonatorManual.label>
   <!-- EN: A simple plunger-type detonator. When activated, sends a pulse along the attached detonator wire to all connected explosives, lighting their fuses.\nRight-click with a drafted colonist for better timing.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxDetonatorManual.description>一个简单的活塞式起爆器。激活时，会沿着连接的引线发送脉冲到所有连接的炸药，点燃其引信。
   右键点击一个已选定的殖民者以获得更好的时机。</rxDetonatorManual.description>
-  
   <!-- EN: detonator wire -->
   <rxDetonatorWire.label>引线</rxDetonatorWire.label>
   <!-- EN: A special wire used to connect the manual detonator to makeshift explosives, remote explosives and IEDs. Can be placed under walls and other buildings.\nCan fail if used while wet.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxDetonatorWire.description>用于将手动起爆器连接到简易炸药、远程炸药和IED(?)的特殊线材。
   可以放置在墙壁和其他建筑物下。
   淋湿时可能失效。</rxDetonatorWire.description>
-  
   <!-- EN: detonator wire crossing -->
   <rxDetonatorWireCrossing.label>引线交叉</rxDetonatorWireCrossing.label>
   <!-- EN: Allows two detonator wires to cross without causing signal transmission between them.\n		Waterproof.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxDetonatorWireCrossing.description>允许两根引线交叉而不引起信号传输。
   防水。</rxDetonatorWireCrossing.description>
-  
   <!-- EN: makeshift explosive -->
   <rxExplosivePouchPlaced.label>简易炸药</rxExplosivePouchPlaced.label>
   <!-- EN: A primitive bomb made from explosive powder and animal leather.\nCraft at a crafting spot or tailoring bench.\nDetonate using a Manual Detonator and Detonator Wire.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxExplosivePouchPlaced.description>用炸药粉和动物皮革制成的原始炸弹。
   可在制作点或裁缝台制作。
   使用手动起爆器和引线引爆。</rxExplosivePouchPlaced.description>
-  
   <!-- EN: improved detonator wire -->
   <rxImprovedDetonatorWire.label>高级引线</rxImprovedDetonatorWire.label>
   <!-- EN: An improved version of the detonator wire for use with the manual detonator. Tougher, fully waterproof, and with a much lower signal transmission delay. \nCan be placed under walls and other buildings.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxImprovedDetonatorWire.description>手动起爆器使用的改进版引线。更坚固，完全防水，信号传输延迟更低。
   可以放置在墙壁和其他建筑物下。</rxImprovedDetonatorWire.description>
-  
   <!-- EN: fracturing explosive -->
   <rxMiningChargeChunks.label>破裂炸药</rxMiningChargeChunks.label>
   <!-- EN: A remote mining explosive that creates a lot of rock chunks.\nRequires a part crafted at the Explosives Workshop.\nDetonate from the Remote Explosives Console.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMiningChargeChunks.description>一种远程采矿炸药，会产生大量岩石碎块。
   需要在炸药工作台制作。从远程炸药控制台引爆。</rxMiningChargeChunks.description>
-  
   <!-- EN: clearing explosive -->
   <rxMiningChargeClearing.label>清场炸药</rxMiningChargeClearing.label>
   <!-- EN: A remote mining explosive that can clear a room-sized area without creating much rubble.\nRequires a part crafted at the Explosives Workshop.\nDetonate from the Remote Explosives Console.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMiningChargeClearing.description>一种远程采矿炸药，可以清理房间大小的区域而不产生太多碎石。
   需要在炸药工作台制作。从远程炸药控制台引爆。</rxMiningChargeClearing.description>
-  
   <!-- EN: shaped charge -->
   <rxMiningChargeShaped.label>聚能炸弹</rxMiningChargeShaped.label>
   <!-- EN: A specialized explosive that focuses its power upwards to attempt to break thick overhead mountain roof. It must be applied from the edge of the thick roof to be effective.\n\nThe white overlay shows nearby mountain roof, while the area around the charge is its effective radius. A green outline indicates that the charge is properly placed and will successfully break through the roof.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxMiningChargeShaped.description>一种专用炸药，将其威力向上集中以尝试破坏厚的山岩顶。必须在厚的山岩顶应用才能有效。
   白色覆盖显示附近的山顶，而炸药周围的区域是其有效半径。绿色轮廓表示炸药放置正确并将成功穿透山岩顶。</rxMiningChargeShaped.description>
-  
   <!-- EN: radio mast -->
   <rxRadioMast.label>无线电</rxRadioMast.label>
   <!-- EN: Extends the range of detonators, provided that the mast is within their range. Masts connect to each other, as well, making it possible to cover even large maps with a single detonator.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRadioMast.description>扩展起爆器的范围，只要天线在其范围内。天线也相互连接，使得可以用一个起爆器覆盖大地图。</rxRadioMast.description>
   <!-- EN: More power! -->
   <rxRadioMast.comps.CompUpgrade.label>更多能量！</rxRadioMast.comps.CompUpgrade.label>
-  
   <!-- EN: remote explosive charge -->
   <rxRemoteBombPlaced.label>远程炸药</rxRemoteBombPlaced.label>
   <!-- EN: An explosive canister with a radio trigger.\nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteBombPlaced.description>一个带无线电触发器的炸药罐。
   在炸药工作台制作。打开保险，然后从远程炸药控制台引爆。</rxRemoteBombPlaced.description>
-  
   <!-- EN: remote EMP charge -->
   <rxRemoteEmpBombPlaced.label>远程EMP炸药</rxRemoteEmpBombPlaced.label>
   <!-- EN: A single-use electromagnetic pulse generator.\nVery powerful against mechanoids.\nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
@@ -84,35 +72,30 @@
   对机械体非常有效。
   在炸药工作台制作。
   打开保险，然后从远程炸药控制台引爆。</rxRemoteEmpBombPlaced.description>
-  
   <!-- EN: remote incendiary charge -->
   <rxRemoteFireBombPlaced.label>远程燃烧炸药</rxRemoteFireBombPlaced.label>
   <!-- EN: A canister filled with flammable chemicals with a radio trigger.\nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteFireBombPlaced.description>一个装有易燃化学品的罐子，带无线电触发器。
   在炸药工作台制作。
   打开保险，然后从远程炸药控制台引爆。</rxRemoteFireBombPlaced.description>
-  
   <!-- EN: sealing foam can -->
   <rxRemoteFoamCanPlaced.label>密封泡沫罐</rxRemoteFoamCanPlaced.label>
   <!-- EN: A remotely triggered canister that releases a rapidly hardening foam. \nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteFoamCanPlaced.description>个远程触发的罐子，释放快速硬化的泡沫。
   在炸药工作台制作。
   打开保险，然后从远程炸药控制台引爆。</rxRemoteFoamCanPlaced.description>
-  
   <!-- EN: refined sleeping gas can -->
   <rxRemoteRefinedSleepingGasCanPlaced.label>精制催眠瓦斯罐</rxRemoteRefinedSleepingGasCanPlaced.label>
   <!-- EN: A remotely triggered canister filled with refined sleeping gas. Significantly more potent than common sleeping gas. \nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteRefinedSleepingGasCanPlaced.description>一个远程触发的罐子，装有精制催眠瓦斯。比普通催眠瓦斯更强效。
   在炸药工作台制作。
   打开保险，然后从远程炸药控制台引爆。</rxRemoteRefinedSleepingGasCanPlaced.description>
-  
   <!-- EN: sleeping gas can -->
   <rxRemoteSleepingGasCanPlaced.label>催眠瓦斯罐</rxRemoteSleepingGasCanPlaced.label>
   <!-- EN: A remotely triggered canister filled with sleeping gas. \nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
   <rxRemoteSleepingGasCanPlaced.description>一个远程触发的罐子，装有催眠瓦斯。
   在炸药工作台制作。
   打开保险，然后从远程炸药控制台引爆。</rxRemoteSleepingGasCanPlaced.description>
-  
   <!-- EN: remote detonator -->
   <rxTableDetonator.label>远程起爆器</rxTableDetonator.label>
   <!-- EN: A transmitter to detonate armed explosives in range.\nRight-click with a drafted colonist for better timing.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
@@ -130,5 +113,4 @@
   <rxTableDetonator.comps.CompUpgrade-2.label>空闲电力继电器</rxTableDetonator.comps.CompUpgrade-2.label>
   <!-- EN: The detonator will consume very little power when not in use. -->
   <rxTableDetonator.comps.CompUpgrade-2.effectDescription>起爆器在不使用时将消耗极少的电力。</rxTableDetonator.comps.CompUpgrade-2.effectDescription>
-  
 </LanguageData>

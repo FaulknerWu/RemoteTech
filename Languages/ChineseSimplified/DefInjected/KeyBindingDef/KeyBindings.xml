@@ -1,19 +1,13 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
   <!-- EN: Remote Tech Arm -->
   <rxArm.label>遥控炸药保险开关</rxArm.label>
-  
   <!-- EN: Remote Tech auto replace -->
   <rxAutoReplace.label>遥控炸药自动重置开关</rxAutoReplace.label>
-  
   <!-- EN: Detonator, explosives: Switch channel -->
   <rxNextChannel.label>起爆器、炸药：切换频道</rxNextChannel.label>
-  
   <!-- EN: Portable detonator: Detonate -->
   <rxPortableDetonatorDetonate.label>便携式起爆器：引爆</rxPortableDetonatorDetonate.label>
-  
   <!-- EN: Stationary detonator: Detonate -->
   <rxRemoteTableDetonate.label>固定式起爆器：引爆</rxRemoteTableDetonate.label>
-  
 </LanguageData>
