@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <FoamWallRekt.label>被困</FoamWallRekt.label>
-  <FoamWallRekt.deathMessage>{0}死于硬化的泡沫墙中。</FoamWallRekt.deathMessage>
-  <FlameBomb.label>火焰炸弹</FlameBomb.label>
-  <FlameBomb.deathMessage>{0}已被烧死。</FlameBomb.deathMessage>
-  <SuperEMP.label>EMP</SuperEMP.label>
-  <SuperEMP.deathMessage>{0}被EMP杀死了。</SuperEMP.deathMessage>
+  
+  <!-- EN: flame bomb -->
+  <rxFlameBomb.label>火焰炸弹</rxFlameBomb.label>
+  <!-- EN: {0} has burned to death. -->
+  <rxFlameBomb.deathMessage>{0}已被烧死。</rxFlameBomb.deathMessage>
+  
+  <!-- EN: trapped -->
+  <rxFoamWallStuck.label>被困</rxFoamWallStuck.label>
+  <!-- EN: {0} died in a solidifying foam wall. -->
+  <rxFoamWallStuck.deathMessage>{0}死于硬化的泡沫墙中。</rxFoamWallStuck.deathMessage>
+  
+  <!-- EN: EMP -->
+  <rxSuperEMP.label>EMP</rxSuperEMP.label>
+  <!-- EN: {0} has been EMPed to death. -->
+  <rxSuperEMP.deathMessage>{0}被EMP杀死了。</rxSuperEMP.deathMessage>
+  
 </LanguageData>

@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <RemoteExplosives.label>炸药</RemoteExplosives.label>
-  <RemoteExplosives.description>炸掉其它东西的物品。</RemoteExplosives.description>
+  
+  <!-- EN: Remote Tech -->
+  <rxRemoteTech.label>遥控科技</rxRemoteTech.label>
+  <!-- EN: Things for blowing up other things.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxRemoteTech.description>炸掉其它东西的物品。</rxRemoteTech.description>
+  
 </LanguageData>

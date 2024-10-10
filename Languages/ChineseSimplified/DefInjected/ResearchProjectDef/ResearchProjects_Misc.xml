@@ -1,28 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <MakeshiftExplosives.label>RE：简易炸药</MakeshiftExplosives.label>
-  <MakeshiftExplosives.description>让你可以使用可再生资源制作简易炸药。
+  
+  <!-- EN: Detonator Channels -->
+  <rxChannels.label>起爆器频道</rxChannels.label>
+  <rxChannels.description>解锁起爆器的频道使用。只有与起爆器在同一频道的炸药才能被引爆。这允许设置多条爆炸防线。
+  起爆器必须升级一个组件才能实现这一功能。</rxChannels.description>
+  
+  <!-- EN: Advanced Channels -->
+  <rxChannelsAdvanced.label>高级频道</rxChannelsAdvanced.label>
+  <rxChannelsAdvanced.description>信号传输的进步使得起爆器可以使用8个频道。起爆器还获得识别每个频道上炸药类型的能力。
+  起爆器必须升级高级组件才能实现这一功能。</rxChannelsAdvanced.description>
+  
+  <!-- EN: Remote EMP Charge -->
+  <rxEmpMine.label>遥控EMP炸药</rxEmpMine.label>
+  <rxEmpMine.description>解锁可用遥控起爆器引爆的EMP炸弹的制作。
+使用恰当的话，爆炸时会对机械体造成毁灭性打击。</rxEmpMine.description>
+  
+  <!-- EN: Gas Vent -->
+  <rxGasVent.label>气体通风口</rxGasVent.label>
+  <rxGasVent.description>虽然催眠气体是强大的工具，但一旦释放后很难移动。气体通风口可以解决这个问题——它允许在房间之间输送气体，并可用于创建气体分配路径。</rxGasVent.description>
+  
+  <!-- EN: Improved Detonator Wire -->
+  <rxImprovedDetWire.label>高级引线</rxImprovedDetWire.label>
+  <rxImprovedDetWire.description>解锁高级引线。完全防水，信号传输速度更快。
+  还包括起爆器导线交叉装置，可用于在不连接的情况下交叉导线。</rxImprovedDetWire.description>
+  
+  <!-- EN: Makeshift Explosives -->
+  <rxMakeshiftExplosives.label>简易炸药</rxMakeshiftExplosives.label>
+  <rxMakeshiftExplosives.description>让你可以使用可再生资源制作简易炸药。
 研究后： 
-- 可以种植「火化草」
-- 可以在篝火和燃料炉灶将原木制成「木炭」。
-- 可以在手工工作区和裁缝桌制作「炸药包」。
-- 可以建造用于起爆炸药的「手动起爆器」和「引爆导线」。</MakeshiftExplosives.description>
-  <RemoteDetonator.label>RE：遥控起爆器</RemoteDetonator.label>
-  <RemoteDetonator.description>让你可以建造「遥控起爆器」来起爆遥控炸药，以及用于制作炸药的「炸药工坊」。
-炸药工坊可制作「矿用炸药」，可部署为「断层炸药」或「清场炸药」。
-
-研究爆炸陷阱和燃烧陷阱后可以制作作战级遥控炸药。</RemoteDetonator.description>
-  <RemoteExplosivesChannels.label>RE：遥控炸药频道</RemoteExplosivesChannels.label>
-  <RemoteExplosivesChannels.description>解锁用于遥控炸药和起爆器的频道。只有与起爆器频道相同的炸药才会被引爆。这使你可以设置多路炸药防御。
-起爆器必须用零件升级后才能以这种方式工作。</RemoteExplosivesChannels.description>
-  <RemoteEmpMine.label>RE：遥控EMP炸药</RemoteEmpMine.label>
-  <RemoteEmpMine.description>解锁可用遥控起爆器引爆的EMP炸弹的制作。
-使用恰当的话，爆炸时会对机械体造成毁灭性打击。</RemoteEmpMine.description>
-  <RemoteChemicals.label>RE：遥控化学炸弹</RemoteChemicals.label>
-  <RemoteChemicals.description>解锁专用化学物质的遥控引爆罐体的制作。
-「密封泡沫」可制造墙体并堵住通道，而「催眠瓦斯」可使生物目标丧失行动能力。
-在密闭区域中使用能取得最好的效果。</RemoteChemicals.description>
-  <RemoteRoofBreaking.label>RE：山顶清除</RemoteRoofBreaking.label>
-  <RemoteRoofBreaking.description>使用高强度的复合材料将矿用炸药的毁灭性能量聚集起来。只要炸弹正确放置并瞄准上方时，即使是厚实的山岩顶也能被破坏。
-解锁建造「聚能炸弹」。</RemoteRoofBreaking.description>
+- 可以种植火化草。
+- 可以在篝火和燃料炉灶将原木制成木炭。
+- 可以在手工工作区和裁缝桌制作炸药包。
+- 可以建造用于起爆炸药的手动起爆器和引线。</rxMakeshiftExplosives.description>
+  
+  <!-- EN: Portable Power -->
+  <rxPortablePower.label>便携电源</rxPortablePower.label>
+  <rxPortablePower.description>在野外供电可能很棘手。那么，为什么不带上你的电网呢？内置电池的便携式太阳能板可能无法满足你对电力的需求，但它们会保持你的移动操作运行。
+允许建造便携电源单元。</rxPortablePower.description>
+  
+  <!-- EN: Proximity sensor -->
+  <rxProximitySensor.label>接近传感器</rxProximitySensor.label>
+  <rxProximitySensor.description>允许你建造接近传感器——一个可以检测其周围运动的小设备。
+连接到起爆器导线时，也可作为自动起爆器。</rxProximitySensor.description>
+  
+  <!-- EN: Detonator Network -->
+  <rxRadioMast.label>起爆网络</rxRadioMast.label>
+  <rxRadioMast.description>你不再需要离开沙发去冒险（以及面对飞散的弹片）来引爆炸药。现在你可以设置一个起爆网络，将你的起爆信号传递到宇宙的最远处。
+允许建造无线电塔。</rxRadioMast.description>
+  
+  <!-- EN: Refined Sleeping Gas -->
+  <rxRefinedSleepingGas.label>精制催眠气体</rxRefinedSleepingGas.label>
+  <rxRefinedSleepingGas.description>通过正确的成分和适当的混合比例，可以制造出更强效的催眠气体。</rxRefinedSleepingGas.description>
+  
+  <!-- EN: Remote Detonator -->
+  <rxRemoteDetonator.label>遥控起爆器</rxRemoteDetonator.label>
+  <rxRemoteDetonator.description>允许你建造一个可以引爆遥控炸药的控制台，以及一个制造它们的工作台。
+炸药工作台现在可以制作矿用炸药，可部署为破裂炸药或清场炸药。继续研究以制造战斗级遥控炸药。</rxRemoteDetonator.description>
+  
+  <!-- EN: Mountain Roof Removal -->
+  <rxRoofBreaking.label>山顶移除</rxRoofBreaking.label>
+  <rxRoofBreaking.description>采矿炸药的破坏力可以通过堆积强力复合材料放大。向上引爆时，可以打破厚重的山顶，只要炸药的位置正确。
+允许建造聚能炸弹。</rxRoofBreaking.description>
+  
+  <!-- EN: Sealing Foam -->
+  <rxSealingFoam.label>密封泡沫</rxSealingFoam.label>
+  <rxSealingFoam.description>允许创建可远程触发的密封泡沫罐。泡沫硬化成极其坚固的墙体，非常适合封闭通道和建造耐用的防御。</rxSealingFoam.description>
+  
+  <!-- EN: Sleeping Gas -->
+  <rxSleepingGas.label>催眠气体</rxSleepingGas.label>
+  <rxSleepingGas.description>允许创建可远程触发的催眠气体罐。用于在不杀死生物目标的情况下使其失去能力。
+在封闭区域使用效果最佳。</rxSleepingGas.description>
+  
 </LanguageData>

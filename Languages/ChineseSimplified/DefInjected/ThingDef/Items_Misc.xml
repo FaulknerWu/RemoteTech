@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <ChunkSlagGold.label>金渣块</ChunkSlagGold.label>
-  <ChunkSlagGold.description>黄金和钢铁融化在一起的渣块。熔炼器可将之分离再利用。</ChunkSlagGold.description>
+  
+  <!-- EN: gold slag chunk -->
+  <rxChunkSlagGold.label>金渣块</rxChunkSlagGold.label>
+  <!-- EN: A chunk of gold and steel melted together. A smelter might be able to separate them for reuse.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxChunkSlagGold.description>一块金和钢熔合在一起的碎块。熔炉可能能够将它们分离以供再利用。</rxChunkSlagGold.description>
+  
 </LanguageData>

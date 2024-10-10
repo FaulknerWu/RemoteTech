@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <RemoteExplosives.label>遥控炸药</RemoteExplosives.label>
-  <RemoteExplosives.description>遥控炸药（Remote Explosives）Mod的操作快捷键。</RemoteExplosives.description>
-  <RemoteExplosivesDetonator.label>遥控炸药引爆器</RemoteExplosivesDetonator.label>
-  <RemoteExplosivesDetonator.description>遥控炸药（Remote Explosives）Mod的操作快捷键。</RemoteExplosivesDetonator.description>
-  <RemoteExplosivesTools.label>遥控炸药工具</RemoteExplosivesTools.label>
-  <RemoteExplosivesTools.description>激活单位携带的遥控炸药（Remote Explosives）Mod的物品的快捷键。</RemoteExplosivesTools.description>
+  
+  <!-- EN: Remote Tech Detonator -->
+  <rxDetonator.label>遥控科技（Remote Tech）引爆器</rxDetonator.label>
+  <!-- EN: Shortcuts for actions in the Remote Tech mod.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxDetonator.description>遥控科技（Remote Tech）Mod中的操作快捷键。</rxDetonator.description>
+  
+  <!-- EN: Remote Tech -->
+  <rxRemoteTech.label>遥控科技（Remote Tech）</rxRemoteTech.label>
+  <!-- EN: Shortcuts for actions in the Remote Tech mod.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxRemoteTech.description>遥控科技（Remote Tech）Mod中的操作快捷键。</rxRemoteTech.description>
+  
+  <!-- EN: Remote Tech Tools -->
+  <rxTools.label>遥控科技（Remote Tech）工具</rxTools.label>
+  <!-- EN: Shortcuts for activation of Remote Tech items worn by pawns.\n\n<i><color=#66E0E4FF>Remote Tech (Continued)</color></i> -->
+  <rxTools.description>激活单位携带的遥控科技（Remote Tech）Mod中的物品的快捷键。</rxTools.description>
+  
 </LanguageData>

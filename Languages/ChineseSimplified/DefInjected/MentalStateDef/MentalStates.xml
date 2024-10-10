@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: red button fever -->
+  <rxRedButtonFever.label>引爆狂热</rxRedButtonFever.label>
+  <!-- EN: Mental state: Red button fever -->
+  <rxRedButtonFever.baseInspectLine>精神状态：引爆狂热</rxRedButtonFever.baseInspectLine>
+  <!-- EN: {0} has had it and is heading for the detonator.\n\n[PAWN_pronoun] must be stopped! -->
+  <rxRedButtonFever.beginLetter>{0} 已经崩溃，正前往引爆炸弹。\n\n必须阻止[PAWN_pronoun]！</rxRedButtonFever.beginLetter>
+  <!-- EN: {0} is no longer craving to trigger a detonator. -->
+  <rxRedButtonFever.recoveryMessage>{0} 不再渴望引爆炸弹。</rxRedButtonFever.recoveryMessage>
+  
+</LanguageData>
