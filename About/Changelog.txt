@@ -1,5 +1,8 @@
 # Changelog for RemoteTech
 
+1.5.3 - Fixed battery-bar for the portable solar panel
+
+
 1.5.2 - Updated Chinese translations by FaulknerWu
 
 

@@ -305,6 +305,7 @@ Tip: switches can be used to toggle vents remotely, as well as in groups.</descr
     <label>portable power unit</label>
     <description>High-tech solar panels combined with a battery bank. Lightweight and weatherproof- a great choice for camping trips and powering things in the field. The battery will retain its charge when uninstalled. The bar shows the charge level of the battery.</description>
     <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
       <texPath>rxPowerUnit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
