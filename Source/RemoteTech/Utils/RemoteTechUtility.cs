@@ -106,7 +106,7 @@ public static class RemoteTechUtility
             results.TryGetValue(pair.Receiver.CurrentChannel, out var list);
             if (list == null)
             {
-                list = new List<IWirelessDetonationReceiver>();
+                list = [];
                 results[pair.Receiver.CurrentChannel] = list;
             }
 

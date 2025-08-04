@@ -9,11 +9,11 @@ namespace RemoteTech.Patches;
 ///     Prevents the resource dropper from subtracting 1 from dropped resources when deconstructing explosives
 ///     This is hardcoded behavior, so we need a patch.
 /// </summary>
-[HarmonyPatch(typeof(GenLeaving), "GetBuildingResourcesLeaveCalculator", typeof(Thing), typeof(DestroyMode))]
-internal static class GenLeaving_GetLeaveCalculator_Patch
+[HarmonyPatch(typeof(GenLeaving), nameof(GenLeaving.GetBuildingResourcesLeaveCalculator), typeof(Thing),
+    typeof(DestroyMode))]
+internal static class GenLeaving_GetBuildingResourcesLeaveCalculator
 {
-    [HarmonyPostfix]
-    public static void FullRefundOnDeconstruct(Thing destroyedThing, DestroyMode mode, ref Func<int, int> __result)
+    public static void Postfix(Thing destroyedThing, DestroyMode mode, ref Func<int, int> __result)
     {
         if (mode == DestroyMode.Deconstruct && destroyedThing?.def != null &&
             destroyedThing.def.HasModExtension<FullDeconstructionRefund>())

@@ -13,7 +13,7 @@ public class Plant_Sparkweed : Plant
 {
     private const byte FriendlyPathCost = 150;
 
-    private List<Pawn> touchingPawns = new List<Pawn>(1);
+    private List<Pawn> touchingPawns = new(1);
 
     private SparkweedPlantDef CustomDef
     {
@@ -47,7 +47,7 @@ public class Plant_Sparkweed : Plant
         Scribe_Collections.Look(ref touchingPawns, "touchingPawns", LookMode.Reference);
         if (Scribe.mode == LoadSaveMode.LoadingVars && touchingPawns == null)
         {
-            touchingPawns = new List<Pawn>();
+            touchingPawns = [];
         }
     }
 

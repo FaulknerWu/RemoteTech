@@ -65,7 +65,7 @@ public class MoteProperties_GasCloud : MoteProperties
         Assert(AnimationAmplitude >= 0, "AnimationAmplitude must be at least zero");
     }
 
-    protected void Assert(bool check, string errorMessage)
+    private void Assert(bool check, string errorMessage)
     {
         if (!check)
         {

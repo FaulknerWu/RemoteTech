@@ -7,12 +7,10 @@ namespace RemoteTech.Patches;
 /// <summary>
 ///     Allows types extending CompPowerTrader to be recognized as power grid connectables
 /// </summary>
-[HarmonyPatch(typeof(ThingDef))]
-[HarmonyPatch("ConnectToPower", MethodType.Getter)]
-internal class ThingDef_ConnectToPower_Patch
+[HarmonyPatch(typeof(ThingDef), nameof(ThingDef.ConnectToPower), MethodType.Getter)]
+internal class ThingDef_ConnectToPower
 {
-    [HarmonyPostfix]
-    public static void AllowPolymorphicComps(ThingDef __instance, ref bool __result)
+    public static void Postfix(ThingDef __instance, ref bool __result)
     {
         if (__instance.EverTransmitsPower)
         {

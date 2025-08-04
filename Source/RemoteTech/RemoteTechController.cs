@@ -46,7 +46,7 @@ public class RemoteTechController : ModBase
     public SettingHandle<bool> SettingAutoArmMining { get; private set; }
     public SettingHandle<bool> SettingAutoArmUtility { get; private set; }
     public SettingHandle<bool> SettingMiningChargesForbid { get; private set; }
-    public SettingHandle<bool> SettingLowerStandingCap { get; set; }
+    public SettingHandle<bool> SettingLowerStandingCap { get; private set; }
     private SettingHandle<bool> SettingForbidReplaced { get; set; }
     private SettingHandle<int> SettingForbidTimeout { get; set; }
 
@@ -56,8 +56,7 @@ public class RemoteTechController : ModBase
 
     public int BlueprintForbidDuration => SettingForbidReplaced ? SettingForbidTimeout : 0;
 
-    public Dictionary<ThingDef, List<ThingDef>> MaterialToBuilding { get; } =
-        new Dictionary<ThingDef, List<ThingDef>>();
+    public Dictionary<ThingDef, List<ThingDef>> MaterialToBuilding { get; } = new();
 
     public override void DefsLoaded()
     {
@@ -87,7 +86,7 @@ public class RemoteTechController : ModBase
         return (T)objectCloneMethod.Invoke(obj, null);
     }
 
-    private void RemoveFoamWallsFromMeteoritePool()
+    private static void RemoveFoamWallsFromMeteoritePool()
     {
         // foam walls are mineable, but should not appear in a meteorite drop
         ThingSetMaker_Meteorite.nonSmoothedMineables.Remove(Resources.Thing.rxFoamWall);
@@ -187,7 +186,7 @@ public class RemoteTechController : ModBase
             {
                 return DefDatabase<RecipeDef>.AllDefs.Where(r =>
                     r.GetModExtension<MakeRecipeVariants>() is { } v &&
-                    v.CreateVariants.Contains(variant)).ToArray();
+                    (v.Variant & variant) != 0).ToArray();
             }
 
             // components to steel variants
@@ -268,7 +267,7 @@ public class RemoteTechController : ModBase
         if (!recipeOriginal.HasModExtension<MakeRecipeVariants>())
         {
             // mark original as a variant, as well
-            recipeOriginal.modExtensions = recipeOriginal.modExtensions ?? new List<DefModExtension>();
+            recipeOriginal.modExtensions = recipeOriginal.modExtensions ?? [];
             recipeOriginal.modExtensions.Add(new MakeRecipeVariants());
         }
 
@@ -277,7 +276,7 @@ public class RemoteTechController : ModBase
         if (variantExtension == null)
         {
             variantExtension = new MakeRecipeVariants();
-            recipeCopy.modExtensions = recipeCopy.modExtensions ?? new List<DefModExtension>();
+            recipeCopy.modExtensions = recipeCopy.modExtensions ?? [];
             recipeCopy.modExtensions.Add(variantExtension);
         }
 
@@ -376,7 +375,7 @@ public class RemoteTechController : ModBase
 
             foreach (var stat in relevantStats)
             {
-                var parts = stat.parts ?? (stat.parts = new List<StatPart>());
+                var parts = stat.parts ?? (stat.parts = []);
                 parts.Add(new StatPart_Upgradeable { parentStat = stat });
             }
         }
@@ -406,7 +405,7 @@ public class RemoteTechController : ModBase
                         continue;
                     }
 
-                    MaterialToBuilding.Add(def, new List<ThingDef>());
+                    MaterialToBuilding.Add(def, []);
                     break;
                 }
             }
@@ -449,7 +448,7 @@ public class RemoteTechController : ModBase
         return def;
     }
 
-    private void DrawDebugControls()
+    private static void DrawDebugControls()
     {
         var map = Find.CurrentMap;
         if (map == null)

@@ -22,7 +22,7 @@ public class Dialog_SensorSettings : Window
         draggable = true;
     }
 
-    public override Vector2 InitialSize => new Vector2(450f, 450f);
+    public override Vector2 InitialSize => new(450f, 450f);
 
     public override void DoWindowContents(Rect inRect)
     {

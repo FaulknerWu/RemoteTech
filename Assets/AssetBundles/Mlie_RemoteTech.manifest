@@ -1,0 +1,100 @@
+ManifestFileVersion: 0
+CRC: 3471218156
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 678186113e153a27ee7ecaf197989ae4
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ce3b6d18a872ca8039cd5eb3c4fb7ef5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 678186113e153a27ee7ecaf197989ae4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.RemoteTech/Sounds/rxFoamSolidify.wav
+- Assets/Data/Mlie.RemoteTech/Sounds/rxSensorChime.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIChannelBasic2.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxCanSleepingGasRefined.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxChargeIncendiary.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIChannelBasic3.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGoldSlag.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasCloud/CloudB.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxSensorBlip.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxCanFoam.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetonatorManual/detonator1.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxArmBeep.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxDesignationUpgrade.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxIgnite.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxFlare.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxMiningExplosiveClear.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxCraftingBench.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIDryOff.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxFoamWall/foamWallAtlas.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxProximitySensorArc.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDesignationDryOff.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIDetonatorPortable.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasMask/GasMask.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxDialClick.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasMask/GasMask_east.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxLeverCycle.wav
+- Assets/Data/Mlie.RemoteTech/Sounds/rxEmpCharge.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetonatorPortable.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetWire/crossingOverlay.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetWire/detWireIcon.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxSparkweed.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxBenchBase/baseFront1x2.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxBenchBase/baseSide1x1.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasVent/GasVent_east.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetonatorManual/detonator0.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIAutoReplace.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxCharcoal.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasMask/GasMask_north.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasMask/GasMask_south.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxMiningExplosivePart.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIUpgrade.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetWire/detWireBlueprintAtlas.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIDetonateManual.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasCloud/CloudA.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxCanSleepingGas.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetWire/connectionPointOverlay.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIArm.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetWire/detWireAtlas.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxRadioMast.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxPowerUnit.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxChargeMakeshift.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxElectricZap.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxFlareStrong.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxCavein.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxUISelectWire.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxFoamBlob.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetWireCrossing.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIChannelKeypadAtlas.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxFoamSpray.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetonatorTable.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxChargeEmp.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasCloud/CloudC.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxFlareGreen.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasVentArrow.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxCharge.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxFoamWall/foamWallIcon.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIChannelBasic1.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxBenchBase/baseFront1x3.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasVent/GasVent_south.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxUISensorSettings.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxMiningExplosiveShaped.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxMiningExplosiveChunks.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxSparkpowder.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxBeep.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxProximitySensor.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxGasVent/GasVent_north.png
+- Assets/Data/Mlie.RemoteTech/Sounds/rxGlassBreak.wav
+- Assets/Data/Mlie.RemoteTech/Textures/rxUIDetonate.png
+- Assets/Data/Mlie.RemoteTech/Textures/rxDetWire/detWireOverlayAtlas.png
+Dependencies: []

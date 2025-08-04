@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Detonator activations -->
+  <rxPortableDetonatorNumUses.label>Detonator activations</rxPortableDetonatorNumUses.label>
+  <!-- EN: How many times a portable detonator can be activated before the battery runs dry. -->
+  <rxPortableDetonatorNumUses.description>How many times a portable detonator can be activated before the battery runs dry.</rxPortableDetonatorNumUses.description>
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: gas mask -->
+  <rxApparel_GasMask.label>gas mask</rxApparel_GasMask.label>
+  <!-- EN: A mask that protects the wearer from toxic gasses and other air-borne contaminants.\nThe filters wear out fairly quickly, so it's recommended to wear this only when necessary. -->
+  <rxApparel_GasMask.description>A mask that protects the wearer from toxic gasses and other air-borne contaminants.
+The filters wear out fairly quickly, so it's recommended to wear this only when necessary.</rxApparel_GasMask.description>
+  <!-- EN: portable remote detonator -->
+  <rxApparel_PortableDetonator.label>portable remote detonator</rxApparel_PortableDetonator.label>
+  <!-- EN: A portable version of the detonator table for triggering remote explosives. Has limited range and runs on a non-rechargeable battery- but hey, you can almost fit it in your pocket. Almost.\nWorks only on channel 1, but can be upgraded once channels have been researched. Unequip to upgrade. -->
+  <rxApparel_PortableDetonator.description>A portable version of the detonator table for triggering remote explosives. Has limited range and runs on a non-rechargeable battery- but hey, you can almost fit it in your pocket. Almost.
+Works only on channel 1, but can be upgraded once channels have been researched. Unequip to upgrade.</rxApparel_PortableDetonator.description>
+  <!-- EN: Basic channels -->
+  <rxApparel_PortableDetonator.comps.CompUpgrade.label>Basic channels</rxApparel_PortableDetonator.comps.CompUpgrade.label>
+  <!-- EN: Enables the detonator to trigger explosives on 3 separate channels. -->
+  <rxApparel_PortableDetonator.comps.CompUpgrade.effectDescription>Enables the detonator to trigger explosives on 3 separate channels.</rxApparel_PortableDetonator.comps.CompUpgrade.effectDescription>
+</LanguageData>

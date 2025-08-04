@@ -59,7 +59,7 @@ public class SectionLayer_DetonationGrid : SectionLayer_Things
         base.DrawLayer();
     }
 
-    private bool DefHasGridComp(ThingDef def)
+    private static bool DefHasGridComp(ThingDef def)
     {
         var comps = def.comps;
         if (comps == null)

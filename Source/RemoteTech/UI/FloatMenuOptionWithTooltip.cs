@@ -9,7 +9,7 @@ namespace RemoteTech;
 public class FloatMenuOptionWithTooltip(
     string label,
     Action action,
-    TipSignal tooltip = new TipSignal(),
+    TipSignal tooltip = new(),
     MenuOptionPriority priority = MenuOptionPriority.Default,
     Action<Rect> mouseoverGuiAction = null,
     Thing revalidateClickTarget = null,

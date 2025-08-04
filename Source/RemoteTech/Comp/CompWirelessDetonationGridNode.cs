@@ -42,11 +42,11 @@ public class CompWirelessDetonationGridNode : ThingComp
         }
     }
 
-    public CompProperties_WirelessDetonationGridNode Props => props as CompProperties_WirelessDetonationGridNode;
+    private CompProperties_WirelessDetonationGridNode Props => props as CompProperties_WirelessDetonationGridNode;
 
-    public bool CanTransmit => Enabled && powerComp == null || powerComp.PowerOn;
+    private bool CanTransmit => Enabled && powerComp == null || powerComp.PowerOn;
 
-    public float Radius => parent.GetStatValue(Resources.Stat.rxSignalRange);
+    private float Radius => parent.GetStatValue(Resources.Stat.rxSignalRange);
 
     public IntVec3 Position => RemoteTechUtility.GetHighestHolderInMap(parent).Position;
 
@@ -68,7 +68,7 @@ public class CompWirelessDetonationGridNode : ThingComp
             if (candidate is ThingWithComps building
                 && (comp = building.GetComp<CompWirelessDetonationGridNode>()) != null
                 && building.Position.DistanceTo(pos) <= Mathf.Min(radius, comp.Radius)
-                && (endpoint == false || !comp.Props.endpoint))
+                && (!endpoint || !comp.Props.endpoint))
             {
                 yield return comp;
             }
@@ -97,9 +97,9 @@ public class CompWirelessDetonationGridNode : ThingComp
         }
     }
 
-    public override void PostDeSpawn(Map map)
+    public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
     {
-        base.PostDeSpawn(map);
+        base.PostDeSpawn(map, mode);
         globalRecacheId = Rand.Int;
     }
 
@@ -135,7 +135,7 @@ public class CompWirelessDetonationGridNode : ThingComp
     }
 
     // finds buildings as well as their comps
-    public IEnumerable<IWirelessDetonationReceiver> FindReceiversInNodeRange()
+    private IEnumerable<IWirelessDetonationReceiver> FindReceiversInNodeRange()
     {
         if (!CanTransmit)
         {
@@ -171,27 +171,27 @@ public class CompWirelessDetonationGridNode : ThingComp
         }
     }
 
-    public IEnumerable<NetworkGraphLink> GetAllNetworkLinks()
+    private IEnumerable<NetworkGraphLink> GetAllNetworkLinks()
     {
         var links = new HashSet<NetworkGraphLink>();
         TraverseNetwork(false, null, l => links.Add(l));
         return links;
     }
 
-    public IEnumerable<CompWirelessDetonationGridNode> GetReachableNetworkNodes()
+    private IEnumerable<CompWirelessDetonationGridNode> GetReachableNetworkNodes()
     {
         var nodes = new HashSet<CompWirelessDetonationGridNode>();
         TraverseNetwork(true, n => nodes.Add(n));
         return nodes;
     }
 
-    public List<CompWirelessDetonationGridNode> GetAdjacentNodes()
+    private List<CompWirelessDetonationGridNode> GetAdjacentNodes()
     {
         RecacheAdjacentNodesIfNeeded();
         return adjacentNodes;
     }
 
-    public void TraverseNetwork(bool reachableOnly, Action<CompWirelessDetonationGridNode> nodeCallback,
+    private void TraverseNetwork(bool reachableOnly, Action<CompWirelessDetonationGridNode> nodeCallback,
         Action<NetworkGraphLink> linkCallback = null)
     {
         var nodes = new HashSet<CompWirelessDetonationGridNode>();
@@ -271,7 +271,7 @@ public class CompWirelessDetonationGridNode : ThingComp
         var map = ThingOwnerUtility.GetRootMap(parent.ParentHolder);
         var center = Position;
         var radius = Radius;
-        adjacentNodes = adjacentNodes ?? new List<CompWirelessDetonationGridNode>();
+        adjacentNodes = adjacentNodes ?? [];
         adjacentNodes.Clear();
         lastRecacheTick = Find.TickManager.TicksGame;
         var candidates = map.listerBuildings.allBuildingsColonist;
@@ -287,7 +287,7 @@ public class CompWirelessDetonationGridNode : ThingComp
 
             var mutualMaxRange = Mathf.Min(radius, comp.Radius);
             if (building.Position.DistanceTo(center) <= mutualMaxRange
-                && (Props.endpoint == false || Props.endpoint != comp.Props.endpoint))
+                && (!Props.endpoint || Props.endpoint != comp.Props.endpoint))
             {
                 adjacentNodes.Add(comp);
             }

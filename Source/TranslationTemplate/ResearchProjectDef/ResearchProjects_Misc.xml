@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Detonator Channels -->
+  <rxChannels.label>Detonator Channels</rxChannels.label>
+  <!-- EN: Unlocks the use of channel on your remote explosives and the detonator. Only explosives on the same channel as the detonator can be triggered. This allows to set up multiple lines of explosive defenses.\nThe detonator must be upgraded with a component for this to work. -->
+  <rxChannels.description>Unlocks the use of channel on your remote explosives and the detonator. Only explosives on the same channel as the detonator can be triggered. This allows to set up multiple lines of explosive defenses.
+The detonator must be upgraded with a component for this to work.</rxChannels.description>
+  <!-- EN: Advanced Channels -->
+  <rxChannelsAdvanced.label>Advanced Channels</rxChannelsAdvanced.label>
+  <!-- EN: Advances in signal transmission allow the use of 8 channels for remote explosives. The detonator also gains the ability to identify the types of charges present on each channel.\nThe detonator must be upgraded with an advanced component for this to work. -->
+  <rxChannelsAdvanced.description>Advances in signal transmission allow the use of 8 channels for remote explosives. The detonator also gains the ability to identify the types of charges present on each channel.
+The detonator must be upgraded with an advanced component for this to work.</rxChannelsAdvanced.description>
+  <!-- EN: Remote EMP Charge -->
+  <rxEmpMine.label>Remote EMP Charge</rxEmpMine.label>
+  <!-- EN: Allows the creation of EMP charges that can be triggered with a remote detonator.\nWhile expensive, they can be devastating against mechanoids when properly used. -->
+  <rxEmpMine.description>Allows the creation of EMP charges that can be triggered with a remote detonator.
+While expensive, they can be devastating against mechanoids when properly used.</rxEmpMine.description>
+  <!-- EN: Gas Vent -->
+  <rxGasVent.label>Gas Vent</rxGasVent.label>
+  <!-- EN: While sleeping gas is a powerful tool, it can be difficult to move once deployed. The gas vent comes to the rescue- it allows to push gas between rooms and can be used to create gas distribution pathways.\nAllows the Gas Vent to be built. -->
+  <rxGasVent.description>While sleeping gas is a powerful tool, it can be difficult to move once deployed. The gas vent comes to the rescue- it allows to push gas between rooms and can be used to create gas distribution pathways.
+Allows the Gas Vent to be built.</rxGasVent.description>
+  <!-- EN: Improved Detonator Wire -->
+  <rxImprovedDetWire.label>Improved Detonator Wire</rxImprovedDetWire.label>
+  <!-- EN: Unlocks the improved detonator wire. Fully waterproof, and with much faster signal transmission.\nAlso includes the detonator wire crossing, which can be used to intersect wires without connecting them. -->
+  <rxImprovedDetWire.description>Unlocks the improved detonator wire. Fully waterproof, and with much faster signal transmission.
+Also includes the detonator wire crossing, which can be used to intersect wires without connecting them.</rxImprovedDetWire.description>
+  <!-- EN: Makeshift Explosives -->
+  <rxMakeshiftExplosives.label>Makeshift Explosives</rxMakeshiftExplosives.label>
+  <!-- EN: Allows you to make simple explosives out of renewable resources.\nOnce researched: \n- Sparkweed can be planted.\n- Charcoal can be made from wood logs at campfires and the fueled stove.\n- Explosive pouch can be made at a crafting spot or tailoring bench.\n- The manual detonator and detonator wire can be built to trigger the explosives. -->
+  <rxMakeshiftExplosives.description>Allows you to make simple explosives out of renewable resources.
+Once researched: 
+- Sparkweed can be planted.
+- Charcoal can be made from wood logs at campfires and the fueled stove.
+- Explosive pouch can be made at a crafting spot or tailoring bench.
+- The manual detonator and detonator wire can be built to trigger the explosives.</rxMakeshiftExplosives.description>
+  <!-- EN: Portable Power -->
+  <rxPortablePower.label>Portable Power</rxPortablePower.label>
+  <!-- EN: Powering things in the field can be tricky. So, why not take your power grid with you? Portable solar panels with a built-in battery may not quench your thirst for power, but they will keep your mobile operations running.\nAllows the Portable Power Unit to be built. -->
+  <rxPortablePower.description>Powering things in the field can be tricky. So, why not take your power grid with you? Portable solar panels with a built-in battery may not quench your thirst for power, but they will keep your mobile operations running.
+Allows the Portable Power Unit to be built.</rxPortablePower.description>
+  <!-- EN: Proximity sensor -->
+  <rxProximitySensor.label>Proximity sensor</rxProximitySensor.label>
+  <!-- EN: Allows you to build the proximity sensor- a small device that can detect movement in its immediate vicinity.\nAlso acts as an automated detonator when connected to detonator wire. -->
+  <rxProximitySensor.description>Allows you to build the proximity sensor- a small device that can detect movement in its immediate vicinity.
+Also acts as an automated detonator when connected to detonator wire.</rxProximitySensor.description>
+  <!-- EN: Detonator Network -->
+  <rxRadioMast.label>Detonator Network</rxRadioMast.label>
+  <!-- EN: No longer do you have to leave the couch and expose yourself to the elements (and stray shrapnel) just to trigger your explosives. Now you can set up a network of towers that can relay your detonator signal to the farthest reaches of the universe.\nAllows the Radio Mast to be built. -->
+  <rxRadioMast.description>No longer do you have to leave the couch and expose yourself to the elements (and stray shrapnel) just to trigger your explosives. Now you can set up a network of towers that can relay your detonator signal to the farthest reaches of the universe.
+Allows the Radio Mast to be built.</rxRadioMast.description>
+  <!-- EN: Refined Sleeping Gas -->
+  <rxRefinedSleepingGas.label>Refined Sleeping Gas</rxRefinedSleepingGas.label>
+  <!-- EN: With the right ingredients and proper mixing proportions, it's possible to make a significantly more potent variety of sleeping gas. -->
+  <rxRefinedSleepingGas.description>With the right ingredients and proper mixing proportions, it's possible to make a significantly more potent variety of sleeping gas.</rxRefinedSleepingGas.description>
+  <!-- EN: Remote Detonator -->
+  <rxRemoteDetonator.label>Remote Detonator</rxRemoteDetonator.label>
+  <!-- EN: Allows you to build a console that detonates remote explosives, as well as a workbench to manufacture them.\nThe explosives workshop can create mining explosives that can be deployed as Fracturing or Clearing charges.\nResearch IEDs to manufacture combat-grade remote explosives. -->
+  <rxRemoteDetonator.description>Allows you to build a console that detonates remote explosives, as well as a workbench to manufacture them.
+The explosives workshop can create mining explosives that can be deployed as Fracturing or Clearing charges.
+Research IEDs to manufacture combat-grade remote explosives.</rxRemoteDetonator.description>
+  <!-- EN: Mountain Roof Removal -->
+  <rxRoofBreaking.label>Mountain Roof Removal</rxRoofBreaking.label>
+  <!-- EN: The destructive power of mining explosives can be focused using strong composite materials. When aimed upwards, this allows to break even through thick mountain roof, as long as the charge is properly positioned.\nAllows the Shaped Charge to be built. -->
+  <rxRoofBreaking.description>The destructive power of mining explosives can be focused using strong composite materials. When aimed upwards, this allows to break even through thick mountain roof, as long as the charge is properly positioned.
+Allows the Shaped Charge to be built.</rxRoofBreaking.description>
+  <!-- EN: Sealing Foam -->
+  <rxSealingFoam.label>Sealing Foam</rxSealingFoam.label>
+  <!-- EN: Allows the creation of remotely triggered canisters that contain sealing foam. The foam hardens into exceptionally tough walls that are great for sealing off passages and constructing durable defenses. -->
+  <rxSealingFoam.description>Allows the creation of remotely triggered canisters that contain sealing foam. The foam hardens into exceptionally tough walls that are great for sealing off passages and constructing durable defenses.</rxSealingFoam.description>
+  <!-- EN: Sleeping Gas -->
+  <rxSleepingGas.label>Sleeping Gas</rxSleepingGas.label>
+  <!-- EN: Allows the creation of remotely triggered canisters that contain sleeping gas. Used for disabling biological targets without killing them.\nUse in enclosed areas for best results. -->
+  <rxSleepingGas.description>Allows the creation of remotely triggered canisters that contain sleeping gas. Used for disabling biological targets without killing them.
+Use in enclosed areas for best results.</rxSleepingGas.description>
+</LanguageData>

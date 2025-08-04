@@ -20,10 +20,7 @@ public class MapComponent_RemoteTech : MapComponent
     public override void ExposeData()
     {
         Scribe_Deep.Look(ref replaceWatcher, "replaceWatcher");
-        if (replaceWatcher == null)
-        {
-            replaceWatcher = new AutoReplaceWatcher();
-        }
+        replaceWatcher ??= new AutoReplaceWatcher();
 
         replaceWatcher.SetParentMap(map);
     }

@@ -184,7 +184,7 @@ public static class Resources
         public static readonly Texture2D InfoButtonIcon = ContentFinder<Texture2D>.Get("UI/Buttons/InfoButton");
 
         // defines sprite offsets within the channel keypad atlas
-        public static readonly KepadAtlas KeypadAtlasCoords = new KepadAtlas();
+        public static readonly KepadAtlas KeypadAtlasCoords = new();
 
         static Textures()
         {
@@ -206,19 +206,19 @@ public static class Resources
 
             public readonly Rect[] Keys =
             [
-                new Rect(0f, Cell * 3, TxSize, TxSize),
-                new Rect(Cell, Cell * 3, TxSize, TxSize),
-                new Rect(Cell * 2, Cell * 3, TxSize, TxSize),
-                new Rect(0f, Cell * 2, TxSize, TxSize),
-                new Rect(Cell, Cell * 2, TxSize, TxSize),
-                new Rect(Cell * 2, Cell * 2, TxSize, TxSize),
-                new Rect(0f, Cell, TxSize, TxSize),
-                new Rect(Cell, Cell, TxSize, TxSize)
+                new(0f, Cell * 3, TxSize, TxSize),
+                new(Cell, Cell * 3, TxSize, TxSize),
+                new(Cell * 2, Cell * 3, TxSize, TxSize),
+                new(0f, Cell * 2, TxSize, TxSize),
+                new(Cell, Cell * 2, TxSize, TxSize),
+                new(Cell * 2, Cell * 2, TxSize, TxSize),
+                new(0f, Cell, TxSize, TxSize),
+                new(Cell, Cell, TxSize, TxSize)
             ];
 
-            public readonly Rect OutlineHighlight = new Rect(Cell, 0f, TxSize, TxSize);
-            public readonly Rect OutlineOff = new Rect(0f, 0f, TxSize, TxSize);
-            public readonly Rect OutlineSelected = new Rect(Cell * 2, 0f, TxSize, TxSize);
+            public readonly Rect OutlineHighlight = new(Cell, 0f, TxSize, TxSize);
+            public readonly Rect OutlineOff = new(0f, 0f, TxSize, TxSize);
+            public readonly Rect OutlineSelected = new(Cell * 2, 0f, TxSize, TxSize);
         }
     }
 }

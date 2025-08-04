@@ -50,10 +50,7 @@ public class Building_FoamWall : Mineable, IThingHolder
             return;
         }
 
-        if (trappedInventory == null)
-        {
-            trappedInventory = new ThingOwner<Thing>(this, false);
-        }
+        trappedInventory ??= new ThingOwner<Thing>(this, false);
 
         foreach (var trappedThing in trappedThings)
         {
@@ -134,7 +131,7 @@ public class Building_FoamWall : Mineable, IThingHolder
         }
     }
 
-    private List<Thing> CrushThingsUnderWall(Thing wall)
+    private static List<Thing> CrushThingsUnderWall(Thing wall)
     {
         var things = wall.Map.thingGrid.ThingsListAt(wall.Position);
         if (things == null || !things.Any())

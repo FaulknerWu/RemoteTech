@@ -16,10 +16,10 @@ public class CompProperties_Upgrade : CompProperties
     public readonly int constructionSkillPrerequisite = 3;
 
     // an optional list of materials required for the upgrade
-    public readonly List<ThingDefCountClass> costList = new List<ThingDefCountClass>(0);
+    public readonly List<ThingDefCountClass> costList = [];
 
     // multipliers to stats that will come into effect once the upgrade has been completed
-    public readonly List<StatModifier> statModifiers = new List<StatModifier>(0);
+    public readonly List<StatModifier> statModifiers = [];
 
     // number of ticks to complete the upgrade work. Reduced by construction skill
     public readonly int workAmount = 1000;
@@ -119,7 +119,7 @@ public class CompProperties_Upgrade : CompProperties
         }
     }
 
-    public string GetPrerequisitesDescription(ThingDef parentDef)
+    private string GetPrerequisitesDescription(ThingDef parentDef)
     {
         if (_prerequisitesDescription != null)
         {
@@ -197,7 +197,7 @@ public class CompProperties_Upgrade : CompProperties
         }
     }
 
-    private string MakeSection(string str)
+    private static string MakeSection(string str)
     {
         return str.NullOrEmpty() ? str : $"\n{str}";
     }

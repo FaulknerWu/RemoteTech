@@ -8,11 +8,11 @@ namespace RemoteTech.Patches;
 /// <summary>
 ///     Prevents Sparkweed farms from generating in faction bases. Plants potatoes instead.
 /// </summary>
-[HarmonyPatch(typeof(SymbolResolver_CultivatedPlants), "DeterminePlantDef", typeof(CellRect))]
-internal class CultivatedPlants_DeterminePlantDef_Patch
+[HarmonyPatch(typeof(SymbolResolver_CultivatedPlants), nameof(SymbolResolver_CultivatedPlants.DeterminePlantDef),
+    typeof(CellRect))]
+internal class CultivatedPlants_DeterminePlantDef
 {
-    [HarmonyPostfix]
-    public static void ReplaceSparkweedWithPotatoes(ref ThingDef __result)
+    public static void Postfix(ref ThingDef __result)
     {
         if (__result == Resources.Thing.rxPlantSparkweed)
         {

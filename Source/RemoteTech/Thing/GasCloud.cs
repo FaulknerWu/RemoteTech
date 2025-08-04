@@ -24,15 +24,15 @@ public class GasCloud : Thing
 
     // this can be used to inject open/closed behavior for
     public static readonly Dictionary<Type, TraversibilityTest> TraversibleBuildings =
-        new Dictionary<Type, TraversibilityTest>
+        new()
         {
             { typeof(Building_Vent), (_, _) => true },
             { typeof(Building_Door), (d, _) => ((Building_Door)d).Open }
         };
 
     private static int GlobalOffsetCounter;
-    private static readonly List<GasCloud> adjacentBuffer = new List<GasCloud>(4);
-    private static readonly List<IntVec3> positionBuffer = new List<IntVec3>(4);
+    private static readonly List<GasCloud> adjacentBuffer = new(4);
+    private static readonly List<IntVec3> positionBuffer = new(4);
     private readonly ValueInterpolator interpolatedOffsetX;
     private readonly ValueInterpolator interpolatedOffsetY;
     private readonly ValueInterpolator interpolatedRotation;
@@ -52,7 +52,7 @@ public class GasCloud : Thing
 
     public Vector2 spriteOffset;
     public float spriteRotation;
-    public Vector2 spriteScaleMultiplier = new Vector2(1f, 1f);
+    public Vector2 spriteScaleMultiplier = new(1f, 1f);
 
     protected GasCloud()
     {
@@ -65,7 +65,7 @@ public class GasCloud : Thing
 
     public float Concentration => concentration;
 
-    public bool IsBlocked => !TileIsGasTraversible(Position, Map, this);
+    private bool IsBlocked => !TileIsGasTraversible(Position, Map, this);
 
     public override string LabelMouseover
     {
@@ -196,7 +196,7 @@ public class GasCloud : Thing
         }
     }
 
-    public void BeginSpreadingTransition(GasCloud parentCloud, IntVec3 targetPosition)
+    private void BeginSpreadingTransition(GasCloud parentCloud, IntVec3 targetPosition)
     {
         interpolatedOffsetX.value = parentCloud.Position.x - targetPosition.x;
         interpolatedOffsetY.value = parentCloud.Position.z - targetPosition.z;
@@ -243,13 +243,14 @@ public class GasCloud : Thing
         return 1f + Rand.Range(-gasProps.AnimationAmplitude, gasProps.AnimationAmplitude);
     }
 
-    private float GetRandomGasRotation()
+    private static float GetRandomGasRotation()
     {
         return Rand.Value * 360f;
     }
 
     // this is just a "current + difference / divider", but adjusted for frame rate
-    private float DoAdditiveEasing(float currentValue, float targetValue, float easingDivider, float frameDeltaTime)
+    private static float DoAdditiveEasing(float currentValue, float targetValue, float easingDivider,
+        float frameDeltaTime)
     {
         const float nominalFrameRate = 60f;
         var dividerMultiplier = frameDeltaTime < float.Epsilon ? 0 : 1f / nominalFrameRate / frameDeltaTime;
@@ -397,7 +398,7 @@ public class GasCloud : Thing
         }
     }
 
-    private bool TileIsGasTraversible(IntVec3 pos, Map map, GasCloud sourceCloud)
+    private static bool TileIsGasTraversible(IntVec3 pos, Map map, GasCloud sourceCloud)
     {
         if (!pos.InBounds(map) || !map.pathing.Normal.pathGrid.WalkableFast(pos))
         {

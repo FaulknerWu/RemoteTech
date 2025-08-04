@@ -112,7 +112,7 @@ public class Building_GasVent : Building
         }
     }
 
-    private void EqualizeHeat(Room room, float targetTemp, float rate)
+    private static void EqualizeHeat(Room room, float targetTemp, float rate)
     {
         var moveAmount = Mathf.Abs(room.Temperature - targetTemp) * rate;
         if (targetTemp < room.Temperature)

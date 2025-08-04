@@ -12,6 +12,7 @@ public class Alert_DetonatorWireFailure : Alert_Critical
     private int expireTick;
     private Fire wireFire;
 
+    // ReSharper disable once MemberCanBePrivate.Global
     public Alert_DetonatorWireFailure()
     {
         instance = this;

@@ -33,11 +33,8 @@ public class Building_RemoteExplosive : Building, ISwitchable, IWirelessDetonati
     {
         get
         {
-            if (_customProps == null)
-            {
-                _customProps = def.building as BuildingProperties_RemoteExplosive ??
-                               new BuildingProperties_RemoteExplosive();
-            }
+            _customProps ??= def.building as BuildingProperties_RemoteExplosive ??
+                             new BuildingProperties_RemoteExplosive();
 
             return _customProps;
         }
@@ -154,7 +151,7 @@ public class Building_RemoteExplosive : Building, ISwitchable, IWirelessDetonati
         }
     }
 
-    public void Arm()
+    private void Arm()
     {
         if (IsArmed)
         {
@@ -167,7 +164,7 @@ public class Building_RemoteExplosive : Building, ISwitchable, IWirelessDetonati
         isArmed = true;
     }
 
-    public void Disarm()
+    private void Disarm()
     {
         if (!IsArmed)
         {

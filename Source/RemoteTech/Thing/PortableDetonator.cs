@@ -50,7 +50,7 @@ public class PortableDetonator : Apparel
         Scribe_Values.Look(ref numUsesLeft, "numUsesLeft", -1);
         if (Scribe.mode == LoadSaveMode.PostLoadInit)
         {
-            // apparel does not get SpawnSetup calls, we can init here
+            // apparel does not get SpawnSetup calls, we can initialise here
             GetCompRefs();
         }
     }

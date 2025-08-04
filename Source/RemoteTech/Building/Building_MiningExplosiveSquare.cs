@@ -15,10 +15,10 @@ public class Building_MiningExplosiveSquare : Building_MiningExplosive
         var finalCells = new List<IntVec3>();
         var corners = new List<IntVec3>
         {
-            new IntVec3(position.x - radiusInt, 0, position.z - radiusInt),
-            new IntVec3(position.x + radiusInt, 0, position.z - radiusInt),
-            new IntVec3(position.x - radiusInt, 0, position.z + radiusInt),
-            new IntVec3(position.x + radiusInt, 0, position.z + radiusInt)
+            new(position.x - radiusInt, 0, position.z - radiusInt),
+            new(position.x + radiusInt, 0, position.z - radiusInt),
+            new(position.x - radiusInt, 0, position.z + radiusInt),
+            new(position.x + radiusInt, 0, position.z + radiusInt)
         };
         var cellRect = new CellRect(position.x - radiusInt, position.z - radiusInt, (radiusInt * 2) + 1,
             (radiusInt * 2) + 1);

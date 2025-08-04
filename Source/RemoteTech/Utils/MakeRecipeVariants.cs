@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using Verse;
 
 namespace RemoteTech;
@@ -10,11 +8,10 @@ namespace RemoteTech;
 /// </summary>
 public class MakeRecipeVariants : DefModExtension, ICloneable
 {
-    public List<RecipeVariantType> CreateVariants = new List<RecipeVariantType>();
     public RecipeVariantType Variant;
 
     public object Clone()
     {
-        return new MakeRecipeVariants { Variant = Variant, CreateVariants = CreateVariants.ToList() };
+        return new MakeRecipeVariants { Variant = Variant };
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: sleeping gas cloud -->
+  <rxGas_Sleeping.label>sleeping gas cloud</rxGas_Sleeping.label>
+  <!-- EN: Knocks out living organisms after enough exposure.\nRapidly dissipates when under an open sky. -->
+  <rxGas_Sleeping.description>Knocks out living organisms after enough exposure.
+Rapidly dissipates when under an open sky.</rxGas_Sleeping.description>
+  <!-- EN: refined sleeping gas cloud -->
+  <rxGas_SleepingRefined.label>refined sleeping gas cloud</rxGas_SleepingRefined.label>
+  <!-- EN: Knocks out living organisms after enough exposure.\nRapidly dissipates when under an open sky. -->
+  <rxGas_SleepingRefined.description>Knocks out living organisms after enough exposure.
+Rapidly dissipates when under an open sky.</rxGas_SleepingRefined.description>
+</LanguageData>

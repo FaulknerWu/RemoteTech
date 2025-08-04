@@ -27,7 +27,7 @@ public class PlaceWorker_GasVent : PlaceWorker
         DrawArrow(targetCell, rot, targetCell.Impassable(map) ? BlockedArrowColor : DefaultArrowColor);
     }
 
-    private void DrawArrow(IntVec3 pos, Rot4 rot, Color color)
+    private static void DrawArrow(IntVec3 pos, Rot4 rot, Color color)
     {
         var material =
             MaterialPool.MatFrom(Resources.Textures.rxGasVentArrow, ShaderDatabase.TransparentPostLight, color);

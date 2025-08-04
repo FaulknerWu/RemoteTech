@@ -20,7 +20,7 @@ public class ValueInterpolator : IExposable
     private float elapsedTime;
     public bool finished = true;
     private float initialValue;
-    public bool respectTimeScale;
+    private bool respectTimeScale;
     private float targetValue;
 
     public float value;

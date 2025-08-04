@@ -11,11 +11,11 @@ namespace RemoteTech;
 ///     Allows to maintain per-map avoidance grids for use by player pawns.
 ///     This enables things to create no-go zones that only colonists and their allies know about.
 ///     Buildings can already do this in vanilla, but this enables non-buildings to achieve the avoidance effect.
-///     Used patches: <see cref="PawnUtility_GetAvoidGrid_Patch" />, <see cref="PawnUtility_KnownDangerAt_Patch" />
+///     Used patches: <see cref="PawnUtility_TryGetAvoidGrid" />, <see cref="PawnUtility_KnownDangerAt" />
 /// </summary>
 public static class PlayerAvoidanceGrids
 {
-    private static readonly List<PlayerAvoidanceGrid> grids = new List<PlayerAvoidanceGrid>();
+    private static readonly List<PlayerAvoidanceGrid> grids = [];
 
     public static void AddAvoidanceSource(Thing source, int pathCost)
     {
@@ -73,7 +73,7 @@ public static class PlayerAvoidanceGrids
         return grid.byteGrid;
     }
 
-    public static bool ShouldAvoidCell(Map map, IntVec3 cell)
+    private static bool ShouldAvoidCell(Map map, IntVec3 cell)
     {
         if (map == null || !cell.InBounds(map) || !TryGetGridForMap(map.uniqueID, out var grid))
         {
@@ -167,8 +167,8 @@ public static class PlayerAvoidanceGrids
     private struct PlayerAvoidanceGrid(Map map)
     {
         public readonly int mapId = map.uniqueID;
-        public readonly ByteGrid byteGrid = new ByteGrid(map);
-        public readonly List<AvoidanceSource> sources = new List<AvoidanceSource>();
+        public readonly ByteGrid byteGrid = new(map);
+        public readonly List<AvoidanceSource> sources = [];
     }
 
     private struct AvoidanceSource(int thingId, int cellIndex, int addedCost)

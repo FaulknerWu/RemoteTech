@@ -10,7 +10,7 @@ namespace RemoteTech;
 public class CompRoofBreakerExplosive : CompMiningExplosive
 {
     private const int RoofFilthAmount = 3;
-    private readonly IntRange CollapseDelay = new IntRange(0, 120);
+    private readonly IntRange CollapseDelay = new(0, 120);
 
     protected override void Detonate()
     {
@@ -72,7 +72,7 @@ public class CompRoofBreakerExplosive : CompMiningExplosive
         }
     }
 
-    private void CollapseRockOnCell(IntVec3 cell, Map map)
+    private static void CollapseRockOnCell(IntVec3 cell, Map map)
     {
         CrushThingsUnderCollapsingRock(cell, map);
         var rock = GenSpawn.Spawn(Resources.Thing.rxCollapsedRoofRocks, cell, map);
@@ -82,7 +82,7 @@ public class CompRoofBreakerExplosive : CompMiningExplosive
         }
     }
 
-    private void CrushThingsUnderCollapsingRock(IntVec3 cell, Map map)
+    private static void CrushThingsUnderCollapsingRock(IntVec3 cell, Map map)
     {
         for (var i = 0; i < 2; i++)
         {

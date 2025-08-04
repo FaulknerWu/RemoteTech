@@ -20,11 +20,11 @@ public class CompAIPilotLight : ThingComp
     private const float OffsetAnimDuration = .5f;
     private const float OffsetDistance = .15f;
     private const float ReportStringCorruptChance = .008f;
-    private readonly ValueInterpolator blinkAnim = new ValueInterpolator(1f);
-    private readonly ValueInterpolator blinkSquintAnim = new ValueInterpolator(1f);
-    private readonly CachedValue<string> inspectString = new CachedValue<string>(MakeCorruptedInspectString, 10);
-    private readonly ValueInterpolator offsetXAnim = new ValueInterpolator();
-    private readonly ValueInterpolator offsetZAnim = new ValueInterpolator();
+    private readonly ValueInterpolator blinkAnim = new(1f);
+    private readonly ValueInterpolator blinkSquintAnim = new(1f);
+    private readonly CachedValue<string> inspectString = new(MakeCorruptedInspectString, 10);
+    private readonly ValueInterpolator offsetXAnim = new();
+    private readonly ValueInterpolator offsetZAnim = new();
 
     private bool _enabled = true;
 

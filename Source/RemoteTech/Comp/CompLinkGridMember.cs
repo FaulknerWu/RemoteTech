@@ -15,9 +15,9 @@ public class CompLinkGridMember : ThingComp
         UpdateLinkGrid(parent.Map);
     }
 
-    public override void PostDeSpawn(Map map)
+    public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
     {
-        base.PostDeSpawn(map);
+        base.PostDeSpawn(map, mode);
         UpdateLinkGrid(map);
     }
 

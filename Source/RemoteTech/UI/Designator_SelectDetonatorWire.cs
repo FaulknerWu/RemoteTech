@@ -27,7 +27,7 @@ public class Designator_SelectDetonatorWire : Designator
 
     public override string Desc => "WireDesignator_desc".Translate();
 
-    public override int DraggableDimensions => 2;
+    public override DrawStyleCategoryDef DrawStyleCategory => DefDatabase<DrawStyleCategoryDef>.GetNamed("Conduits");
 
     public override bool DragDrawMeasurements => true;
 
@@ -81,7 +81,7 @@ public class Designator_SelectDetonatorWire : Designator
         TryCloseArchitectMenu();
     }
 
-    private bool IsSelectable(Thing t)
+    private static bool IsSelectable(Thing t)
     {
         return t.def?.building is BuildingProperties_DetonatorWire;
     }
@@ -107,7 +107,7 @@ public class Designator_SelectDetonatorWire : Designator
         }
     }
 
-    private void TryCloseArchitectMenu()
+    private static void TryCloseArchitectMenu()
     {
         if (Find.Selector.NumSelected == 0)
         {

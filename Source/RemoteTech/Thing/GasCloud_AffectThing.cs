@@ -63,7 +63,7 @@ public abstract class GasCloud_AffectThing : GasCloud
 
     protected abstract void ApplyGasEffect(Thing thing, float strengthMultiplier);
 
-    protected float GetSensitivityStatMultiplier(Pawn pawn)
+    private float GetSensitivityStatMultiplier(Pawn pawn)
     {
         if (Props.toxicSensitivityStatPower > 0f)
         {
@@ -74,7 +74,7 @@ public abstract class GasCloud_AffectThing : GasCloud
         return 1f;
     }
 
-    protected float GetImmunizingApparelMultiplier(Pawn pawn)
+    private float GetImmunizingApparelMultiplier(Pawn pawn)
     {
         if (!(Props.immunizingApparelPower > float.Epsilon) || pawn.apparel == null)
         {

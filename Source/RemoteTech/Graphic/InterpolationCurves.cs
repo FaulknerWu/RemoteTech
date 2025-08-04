@@ -12,7 +12,7 @@ public static class InterpolationCurves
 {
     public delegate float Curve(float time);
 
-    public static readonly Dictionary<CurveType, Curve> AllCurves = new Dictionary<CurveType, Curve>
+    public static readonly Dictionary<CurveType, Curve> AllCurves = new()
     {
         { CurveType.Linear, Linear },
         { CurveType.QuadraticIn, Quadratic.In }, { CurveType.QuadraticOut, Quadratic.Out },
@@ -34,12 +34,12 @@ public static class InterpolationCurves
         { CurveType.BounceIn, Bounce.In }, { CurveType.BounceOut, Bounce.Out }, { CurveType.BounceInOut, Bounce.InOut }
     };
 
-    public static float Linear(float t)
+    private static float Linear(float t)
     {
         return t;
     }
 
-    public class Quadratic
+    private class Quadratic
     {
         public static float In(float t)
         {
@@ -62,7 +62,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Cubic
+    private class Cubic
     {
         public static float In(float t)
         {
@@ -85,7 +85,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Quartic
+    private class Quartic
     {
         public static float In(float t)
         {
@@ -108,7 +108,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Quintic
+    private class Quintic
     {
         public static float In(float t)
         {
@@ -131,7 +131,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Sinusoidal
+    private class Sinusoidal
     {
         public static float In(float t)
         {
@@ -149,7 +149,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Exponential
+    private class Exponential
     {
         public static float In(float t)
         {
@@ -182,7 +182,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Circular
+    private class Circular
     {
         public static float In(float t)
         {
@@ -205,7 +205,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Elastic
+    private class Elastic
     {
         public static float In(float t)
         {
@@ -248,7 +248,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Back
+    private class Back
     {
         private static readonly float s = 1.70158f;
         private static readonly float s2 = 2.5949095f;
@@ -274,7 +274,7 @@ public static class InterpolationCurves
         }
     }
 
-    public class Bounce
+    private class Bounce
     {
         public static float In(float t)
         {

@@ -9,7 +9,7 @@ namespace RemoteTech;
 /// </summary>
 public class CompChannelSelector : ThingComp, ISwitchable, IAutoReplaceExposable
 {
-    public const string DesiredChannelChangedSignal = "DesiredChannelChanged";
+    private const string DesiredChannelChangedSignal = "DesiredChannelChanged";
     public const string ChannelChangedSignal = "ChannelChanged";
     private readonly CachedValue<Dictionary<int, List<IWirelessDetonationReceiver>>> channelPopulation;
 
@@ -35,8 +35,8 @@ public class CompChannelSelector : ThingComp, ISwitchable, IAutoReplaceExposable
 
             parent.BroadcastCompSignal(DesiredChannelChangedSignal);
         };
-        channelPopulation = new CachedValue<Dictionary<int, List<IWirelessDetonationReceiver>>>(
-            () => readPopulation ? RemoteTechUtility.FindReceiversInNetworkRange(parent) : null
+        channelPopulation = new CachedValue<Dictionary<int, List<IWirelessDetonationReceiver>>>(() =>
+            readPopulation ? RemoteTechUtility.FindReceiversInNetworkRange(parent) : null
         );
     }
 
@@ -55,7 +55,7 @@ public class CompChannelSelector : ThingComp, ISwitchable, IAutoReplaceExposable
         }
     }
 
-    public int DesiredChannel
+    private int DesiredChannel
     {
         get => _desiredChannel;
         set

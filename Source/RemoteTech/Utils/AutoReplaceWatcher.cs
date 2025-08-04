@@ -20,10 +20,10 @@ public class AutoReplaceWatcher : IExposable
     private Map map;
 
     private List<ReplacementEntry>
-        pendingForbiddenBlueprints = new List<ReplacementEntry>(); // acts as a queue for lack of queue saving
+        pendingForbiddenBlueprints = []; // acts as a queue for lack of queue saving
 
     // saved
-    private List<ReplacementEntry> pendingSettings = new List<ReplacementEntry>();
+    private List<ReplacementEntry> pendingSettings = [];
 
     public LoadSaveMode ExposeMode { get; private set; } = LoadSaveMode.Inactive;
 
@@ -31,15 +31,9 @@ public class AutoReplaceWatcher : IExposable
     {
         Scribe_Collections.Look(ref pendingSettings, "pendingSettings", LookMode.Deep);
         Scribe_Collections.Look(ref pendingForbiddenBlueprints, "pendingForbiddenBlueprints", LookMode.Deep);
-        if (pendingSettings == null)
-        {
-            pendingSettings = new List<ReplacementEntry>();
-        }
+        pendingSettings ??= [];
 
-        if (pendingForbiddenBlueprints == null)
-        {
-            pendingForbiddenBlueprints = new List<ReplacementEntry>();
-        }
+        pendingForbiddenBlueprints ??= [];
     }
 
     public void SetParentMap(Map parentMap)

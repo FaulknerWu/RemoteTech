@@ -23,12 +23,12 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
     private CompChannelSelector channelsComp;
     private CompGlowerToggleable glowerComp;
     private bool isSelected;
-    public float lastTriggeredTick;
+    private float lastTriggeredTick;
     private CompAIPilotLight lightComp;
     private SensorSettings pendingSettings;
     private CompPowerTrader powerComp;
     private CachedValue<float> rangeStat;
-    private SensorSettings settings = new SensorSettings();
+    private SensorSettings settings = new();
 
     // saved
     private Arc slice;
@@ -95,16 +95,10 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
             return;
         }
 
-        if (trackedPawns == null)
-        {
-            trackedPawns = [];
-        }
+        trackedPawns ??= [];
 
         trackedPawns.RemoveAll(p => p == null);
-        if (settings == null)
-        {
-            settings = new SensorSettings();
-        }
+        settings ??= new SensorSettings();
     }
 
     public override void Tick()
@@ -175,7 +169,7 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
         isSelected = false;
     }
 
-    public void TriggerSensor(Pawn pawn)
+    private void TriggerSensor(Pawn pawn)
     {
         lastTriggeredTick = GenTicks.TicksGame;
         trackedPawns.Add(pawn);

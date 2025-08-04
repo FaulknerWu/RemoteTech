@@ -62,9 +62,9 @@ public class CompUpgrade : ThingComp, IThingHolder
         UpdateDesignation();
     }
 
-    public override void PostDeSpawn(Map map)
+    public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
     {
-        base.PostDeSpawn(map);
+        base.PostDeSpawn(map, mode);
         ingredients.TryDropAll(parent.Position, map, ThingPlaceMode.Near);
     }
 
@@ -80,10 +80,7 @@ public class CompUpgrade : ThingComp, IThingHolder
             Scribe_Deep.Look(ref ingredients, "ingredients", this);
         }
 
-        if (ingredients == null)
-        {
-            ingredients = new ThingOwner<Thing>(this);
-        }
+        ingredients ??= new ThingOwner<Thing>(this);
 
         Scribe.ExitNode();
     }
@@ -152,10 +149,7 @@ public class CompUpgrade : ThingComp, IThingHolder
         foreach (var comp in parent.AllComps)
         {
             var upgrade = comp as CompUpgrade;
-            if (firstUpgrade == null)
-            {
-                firstUpgrade = upgrade;
-            }
+            firstUpgrade ??= upgrade;
 
             if (upgrade is { Complete: true })
             {

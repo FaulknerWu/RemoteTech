@@ -65,14 +65,14 @@ public class WorkGiver_InstallUpgrade : WorkGiver_Scanner
         }
     }
 
-    private Thing TryFindHaulableOfDef(Pawn pawn, ThingDef haulableDef)
+    private static Thing TryFindHaulableOfDef(Pawn pawn, ThingDef haulableDef)
     {
+        return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(haulableDef),
+            PathEndMode.ClosestTouch, TraverseParms.For(pawn), maxIngredientSearchDist, SearchPredicate);
+
         bool SearchPredicate(Thing thing)
         {
             return !thing.IsForbidden(pawn) && pawn.CanReserve(thing);
         }
-
-        return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(haulableDef),
-            PathEndMode.ClosestTouch, TraverseParms.For(pawn), maxIngredientSearchDist, SearchPredicate);
     }
 }

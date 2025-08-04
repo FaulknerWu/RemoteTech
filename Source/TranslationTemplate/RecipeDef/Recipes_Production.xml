@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: extract gold from slag -->
+  <rxExtractGoldFromSlag.label>extract gold from slag</rxExtractGoldFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to separate useful metal from slag chunks. -->
+  <rxExtractGoldFromSlag.description>Use heat and strong electromagnets to separate useful metal from slag chunks.</rxExtractGoldFromSlag.description>
+  <!-- EN: Smelting gold from slag. -->
+  <rxExtractGoldFromSlag.jobString>Smelting gold from slag.</rxExtractGoldFromSlag.jobString>
+  <!-- EN: make crushed charcoal -->
+  <rxMakeCharcoal.label>make crushed charcoal</rxMakeCharcoal.label>
+  <!-- EN: Make charcoal from wood logs. -->
+  <rxMakeCharcoal.description>Make charcoal from wood logs.</rxMakeCharcoal.description>
+  <!-- EN: Making charcoal. -->
+  <rxMakeCharcoal.jobString>Making charcoal.</rxMakeCharcoal.jobString>
+  <!-- EN: make explosive pouch -->
+  <rxMakeExplosivePouch.label>make explosive pouch</rxMakeExplosivePouch.label>
+  <!-- EN: Craft an explosive pouch. -->
+  <rxMakeExplosivePouch.description>Craft an explosive pouch.</rxMakeExplosivePouch.description>
+  <!-- EN: Making explosive pouch. -->
+  <rxMakeExplosivePouch.jobString>Making explosive pouch.</rxMakeExplosivePouch.jobString>
+  <!-- EN: make mining explosive -->
+  <rxMakeMiningExplosiveComponent.label>make mining explosive</rxMakeMiningExplosiveComponent.label>
+  <!-- EN: Craft a mining explosive. -->
+  <rxMakeMiningExplosiveComponent.description>Craft a mining explosive.</rxMakeMiningExplosiveComponent.description>
+  <!-- EN: Making mining explosive. -->
+  <rxMakeMiningExplosiveComponent.jobString>Making mining explosive.</rxMakeMiningExplosiveComponent.jobString>
+  <!-- EN: make mining explosive -->
+  <rxMakeMiningExplosiveComponent_rxSparkpowder.label>make mining explosive</rxMakeMiningExplosiveComponent_rxSparkpowder.label>
+  <!-- EN: Craft a mining explosive. -->
+  <rxMakeMiningExplosiveComponent_rxSparkpowder.description>Craft a mining explosive.</rxMakeMiningExplosiveComponent_rxSparkpowder.description>
+  <!-- EN: Making mining explosive. -->
+  <rxMakeMiningExplosiveComponent_rxSparkpowder.jobString>Making mining explosive.</rxMakeMiningExplosiveComponent_rxSparkpowder.jobString>
+  <!-- EN: make mining explosive -->
+  <rxMakeMiningExplosiveComponent_Steel.label>make mining explosive</rxMakeMiningExplosiveComponent_Steel.label>
+  <!-- EN: Craft a mining explosive. -->
+  <rxMakeMiningExplosiveComponent_Steel.description>Craft a mining explosive.</rxMakeMiningExplosiveComponent_Steel.description>
+  <!-- EN: Making mining explosive. -->
+  <rxMakeMiningExplosiveComponent_Steel.jobString>Making mining explosive.</rxMakeMiningExplosiveComponent_Steel.jobString>
+  <!-- EN: make mining explosive -->
+  <rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.label>make mining explosive</rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.label>
+  <!-- EN: Craft a mining explosive. -->
+  <rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.description>Craft a mining explosive.</rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.description>
+  <!-- EN: Making mining explosive. -->
+  <rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.jobString>Making mining explosive.</rxMakeMiningExplosiveComponent_Steel_rxSparkpowder.jobString>
+  <!-- EN: make remote explosive -->
+  <rxMakeRemoteBomb.label>make remote explosive</rxMakeRemoteBomb.label>
+  <!-- EN: Craft a deployable remote explosive. -->
+  <rxMakeRemoteBomb.description>Craft a deployable remote explosive.</rxMakeRemoteBomb.description>
+  <!-- EN: Making deployable remote explosive. -->
+  <rxMakeRemoteBomb.jobString>Making deployable remote explosive.</rxMakeRemoteBomb.jobString>
+  <!-- EN: make remote explosive -->
+  <rxMakeRemoteBomb_rxSparkpowder.label>make remote explosive</rxMakeRemoteBomb_rxSparkpowder.label>
+  <!-- EN: Craft a deployable remote explosive. -->
+  <rxMakeRemoteBomb_rxSparkpowder.description>Craft a deployable remote explosive.</rxMakeRemoteBomb_rxSparkpowder.description>
+  <!-- EN: Making deployable remote explosive. -->
+  <rxMakeRemoteBomb_rxSparkpowder.jobString>Making deployable remote explosive.</rxMakeRemoteBomb_rxSparkpowder.jobString>
+  <!-- EN: make remote explosive -->
+  <rxMakeRemoteBomb_Steel.label>make remote explosive</rxMakeRemoteBomb_Steel.label>
+  <!-- EN: Craft a deployable remote explosive. -->
+  <rxMakeRemoteBomb_Steel.description>Craft a deployable remote explosive.</rxMakeRemoteBomb_Steel.description>
+  <!-- EN: Making deployable remote explosive. -->
+  <rxMakeRemoteBomb_Steel.jobString>Making deployable remote explosive.</rxMakeRemoteBomb_Steel.jobString>
+  <!-- EN: make remote explosive -->
+  <rxMakeRemoteBomb_Steel_rxSparkpowder.label>make remote explosive</rxMakeRemoteBomb_Steel_rxSparkpowder.label>
+  <!-- EN: Craft a deployable remote explosive. -->
+  <rxMakeRemoteBomb_Steel_rxSparkpowder.description>Craft a deployable remote explosive.</rxMakeRemoteBomb_Steel_rxSparkpowder.description>
+  <!-- EN: Making deployable remote explosive. -->
+  <rxMakeRemoteBomb_Steel_rxSparkpowder.jobString>Making deployable remote explosive.</rxMakeRemoteBomb_Steel_rxSparkpowder.jobString>
+  <!-- EN: make remote EMP charge -->
+  <rxMakeRemoteEmpBomb.label>make remote EMP charge</rxMakeRemoteEmpBomb.label>
+  <!-- EN: Craft a remote EMP charge. -->
+  <rxMakeRemoteEmpBomb.description>Craft a remote EMP charge.</rxMakeRemoteEmpBomb.description>
+  <!-- EN: Making remote EMP charge. -->
+  <rxMakeRemoteEmpBomb.jobString>Making remote EMP charge.</rxMakeRemoteEmpBomb.jobString>
+  <!-- EN: make remote EMP charge -->
+  <rxMakeRemoteEmpBomb_Steel.label>make remote EMP charge</rxMakeRemoteEmpBomb_Steel.label>
+  <!-- EN: Craft a remote EMP charge. -->
+  <rxMakeRemoteEmpBomb_Steel.description>Craft a remote EMP charge.</rxMakeRemoteEmpBomb_Steel.description>
+  <!-- EN: Making remote EMP charge. -->
+  <rxMakeRemoteEmpBomb_Steel.jobString>Making remote EMP charge.</rxMakeRemoteEmpBomb_Steel.jobString>
+  <!-- EN: make incendiary remote explosive -->
+  <rxMakeRemoteFireBomb.label>make incendiary remote explosive</rxMakeRemoteFireBomb.label>
+  <!-- EN: Craft a deployable incendiary remote explosive. -->
+  <rxMakeRemoteFireBomb.description>Craft a deployable incendiary remote explosive.</rxMakeRemoteFireBomb.description>
+  <!-- EN: Making deployable incendiary remote explosive. -->
+  <rxMakeRemoteFireBomb.jobString>Making deployable incendiary remote explosive.</rxMakeRemoteFireBomb.jobString>
+  <!-- EN: make incendiary remote explosive -->
+  <rxMakeRemoteFireBomb_rxSparkpowder.label>make incendiary remote explosive</rxMakeRemoteFireBomb_rxSparkpowder.label>
+  <!-- EN: Craft a deployable incendiary remote explosive. -->
+  <rxMakeRemoteFireBomb_rxSparkpowder.description>Craft a deployable incendiary remote explosive.</rxMakeRemoteFireBomb_rxSparkpowder.description>
+  <!-- EN: Making deployable incendiary remote explosive. -->
+  <rxMakeRemoteFireBomb_rxSparkpowder.jobString>Making deployable incendiary remote explosive.</rxMakeRemoteFireBomb_rxSparkpowder.jobString>
+  <!-- EN: make incendiary remote explosive -->
+  <rxMakeRemoteFireBomb_Steel.label>make incendiary remote explosive</rxMakeRemoteFireBomb_Steel.label>
+  <!-- EN: Craft a deployable incendiary remote explosive. -->
+  <rxMakeRemoteFireBomb_Steel.description>Craft a deployable incendiary remote explosive.</rxMakeRemoteFireBomb_Steel.description>
+  <!-- EN: Making deployable incendiary remote explosive. -->
+  <rxMakeRemoteFireBomb_Steel.jobString>Making deployable incendiary remote explosive.</rxMakeRemoteFireBomb_Steel.jobString>
+  <!-- EN: make incendiary remote explosive -->
+  <rxMakeRemoteFireBomb_Steel_rxSparkpowder.label>make incendiary remote explosive</rxMakeRemoteFireBomb_Steel_rxSparkpowder.label>
+  <!-- EN: Craft a deployable incendiary remote explosive. -->
+  <rxMakeRemoteFireBomb_Steel_rxSparkpowder.description>Craft a deployable incendiary remote explosive.</rxMakeRemoteFireBomb_Steel_rxSparkpowder.description>
+  <!-- EN: Making deployable incendiary remote explosive. -->
+  <rxMakeRemoteFireBomb_Steel_rxSparkpowder.jobString>Making deployable incendiary remote explosive.</rxMakeRemoteFireBomb_Steel_rxSparkpowder.jobString>
+  <!-- EN: make sealing foam canister -->
+  <rxMakeRemoteFoamCan.label>make sealing foam canister</rxMakeRemoteFoamCan.label>
+  <!-- EN: Craft a sealing foam canister. -->
+  <rxMakeRemoteFoamCan.description>Craft a sealing foam canister.</rxMakeRemoteFoamCan.description>
+  <!-- EN: Making sealing foam canister. -->
+  <rxMakeRemoteFoamCan.jobString>Making sealing foam canister.</rxMakeRemoteFoamCan.jobString>
+  <!-- EN: make sealing foam canister -->
+  <rxMakeRemoteFoamCan_Steel.label>make sealing foam canister</rxMakeRemoteFoamCan_Steel.label>
+  <!-- EN: Craft a sealing foam canister. -->
+  <rxMakeRemoteFoamCan_Steel.description>Craft a sealing foam canister.</rxMakeRemoteFoamCan_Steel.description>
+  <!-- EN: Making sealing foam canister. -->
+  <rxMakeRemoteFoamCan_Steel.jobString>Making sealing foam canister.</rxMakeRemoteFoamCan_Steel.jobString>
+  <!-- EN: make refined sleeping gas canister -->
+  <rxMakeRemoteRefinedSleepingGasCan.label>make refined sleeping gas canister</rxMakeRemoteRefinedSleepingGasCan.label>
+  <!-- EN: Craft a refined sleeping gas canister. -->
+  <rxMakeRemoteRefinedSleepingGasCan.description>Craft a refined sleeping gas canister.</rxMakeRemoteRefinedSleepingGasCan.description>
+  <!-- EN: Making refined sleeping gas canister. -->
+  <rxMakeRemoteRefinedSleepingGasCan.jobString>Making refined sleeping gas canister.</rxMakeRemoteRefinedSleepingGasCan.jobString>
+  <!-- EN: make refined sleeping gas canister -->
+  <rxMakeRemoteRefinedSleepingGasCan_Steel.label>make refined sleeping gas canister</rxMakeRemoteRefinedSleepingGasCan_Steel.label>
+  <!-- EN: Craft a refined sleeping gas canister. -->
+  <rxMakeRemoteRefinedSleepingGasCan_Steel.description>Craft a refined sleeping gas canister.</rxMakeRemoteRefinedSleepingGasCan_Steel.description>
+  <!-- EN: Making refined sleeping gas canister. -->
+  <rxMakeRemoteRefinedSleepingGasCan_Steel.jobString>Making refined sleeping gas canister.</rxMakeRemoteRefinedSleepingGasCan_Steel.jobString>
+  <!-- EN: make sleeping gas canister -->
+  <rxMakeRemoteSleepingGasCan.label>make sleeping gas canister</rxMakeRemoteSleepingGasCan.label>
+  <!-- EN: Craft a canister containing sleeping gas. -->
+  <rxMakeRemoteSleepingGasCan.description>Craft a canister containing sleeping gas.</rxMakeRemoteSleepingGasCan.description>
+  <!-- EN: Making sleeping gas canister. -->
+  <rxMakeRemoteSleepingGasCan.jobString>Making sleeping gas canister.</rxMakeRemoteSleepingGasCan.jobString>
+  <!-- EN: make sleeping gas canister -->
+  <rxMakeRemoteSleepingGasCan_Steel.label>make sleeping gas canister</rxMakeRemoteSleepingGasCan_Steel.label>
+  <!-- EN: Craft a canister containing sleeping gas. -->
+  <rxMakeRemoteSleepingGasCan_Steel.description>Craft a canister containing sleeping gas.</rxMakeRemoteSleepingGasCan_Steel.description>
+  <!-- EN: Making sleeping gas canister. -->
+  <rxMakeRemoteSleepingGasCan_Steel.jobString>Making sleeping gas canister.</rxMakeRemoteSleepingGasCan_Steel.jobString>
+</LanguageData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Remote Tech Arm -->
+  <rxArm.label>Remote Tech Arm</rxArm.label>
+  <!-- EN: Remote Tech auto replace -->
+  <rxAutoReplace.label>Remote Tech auto replace</rxAutoReplace.label>
+  <!-- EN: Detonator, explosives: Switch channel -->
+  <rxNextChannel.label>Detonator, explosives: Switch channel</rxNextChannel.label>
+  <!-- EN: Portable detonator: Detonate -->
+  <rxPortableDetonatorDetonate.label>Portable detonator: Detonate</rxPortableDetonatorDetonate.label>
+  <!-- EN: Stationary detonator: Detonate -->
+  <rxRemoteTableDetonate.label>Stationary detonator: Detonate</rxRemoteTableDetonate.label>
+</LanguageData>

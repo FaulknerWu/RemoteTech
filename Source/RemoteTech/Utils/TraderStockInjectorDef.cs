@@ -8,7 +8,7 @@ namespace RemoteTech;
 
 public class TraderStockInjectorDef : Def
 {
-    public readonly List<StockGenerator> stockGenerators = new List<StockGenerator>();
+    public readonly List<StockGenerator> stockGenerators = [];
     public TraderKindDef traderDef;
 
     public override void ResolveReferences()

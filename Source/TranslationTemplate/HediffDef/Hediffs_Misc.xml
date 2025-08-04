@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: sleeping gas -->
+  <rxSleepingGas.label>sleeping gas</rxSleepingGas.label>
+  <!-- EN: Effects of inhaled sleeping gas. As concentration increases, the body becomes less capable until eventually falling asleep.\n\nRecovers naturally over time, but only if no additional gas is inhaled. -->
+  <rxSleepingGas.description>Effects of inhaled sleeping gas. As concentration increases, the body becomes less capable until eventually falling asleep.
+
+Recovers naturally over time, but only if no additional gas is inhaled.</rxSleepingGas.description>
+  <!-- EN: tired -->
+  <rxSleepingGas.stages.tired.label>tired</rxSleepingGas.stages.tired.label>
+  <!-- EN: drowsy -->
+  <rxSleepingGas.stages.drowsy.label>drowsy</rxSleepingGas.stages.drowsy.label>
+  <!-- EN: sleepy -->
+  <rxSleepingGas.stages.sleepy.label>sleepy</rxSleepingGas.stages.sleepy.label>
+  <!-- EN: out cold -->
+  <rxSleepingGas.stages.out_cold.label>out cold</rxSleepingGas.stages.out_cold.label>
+</LanguageData>

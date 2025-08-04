@@ -11,7 +11,7 @@ namespace RemoteTech;
 /// <see cref="IRedButtonFeverTarget" />
 public class JobGiver_RedButtonFever : ThinkNode_JobGiver
 {
-    private IntRange waitTicks = new IntRange(80, 140);
+    private IntRange waitTicks = new(80, 140);
 
     public override Job TryGiveJob(Pawn pawn)
     {

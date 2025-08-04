@@ -28,7 +28,7 @@ public class GasCloud_DamageDealer : GasCloud_AffectThing
         thing.TakeDamage(new DamageInfo(Props.damageDef, amount, Props.damageArmorPenetration, -1F, this, bodyPart));
     }
 
-    private T RandomElementOrDefault<T>(IEnumerable<T> source)
+    private static T RandomElementOrDefault<T>(IEnumerable<T> source)
     {
         var list = source as IList<T> ?? source.ToList();
         return list.Count > 0 ? list[Rand.Range(0, list.Count)] : default;

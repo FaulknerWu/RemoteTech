@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: gold slag chunk -->
+  <rxChunkSlagGold.label>gold slag chunk</rxChunkSlagGold.label>
+  <!-- EN: A chunk of gold and steel melted together. A smelter might be able to separate them for reuse. -->
+  <rxChunkSlagGold.description>A chunk of gold and steel melted together. A smelter might be able to separate them for reuse.</rxChunkSlagGold.description>
+</LanguageData>

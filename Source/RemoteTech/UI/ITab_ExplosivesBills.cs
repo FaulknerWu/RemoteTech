@@ -11,7 +11,7 @@ namespace RemoteTech;
 /// </summary>
 public class ITab_ExplosivesBills : ITab_Bills
 {
-    private new static readonly Vector2 WinSize = new Vector2(370f, 480f);
+    private new static readonly Vector2 WinSize = new(370f, 480f);
     private RecipeVariantType currentVariant;
     private new Bill mouseoverBill;
     private new Vector2 scrollPosition;
@@ -74,6 +74,10 @@ public class ITab_ExplosivesBills : ITab_Bills
         var recipesRect = new Rect(canvasRect.x, canvasRect.y + settingsRect.height + Spacing, canvasRect.width,
             canvasRect.height - (settingsRect.height + Spacing));
 
+        mouseoverBill =
+            SelTable.billStack.DoListing(recipesRect, RecipeOptionsMaker, ref scrollPosition, ref viewHeight);
+        return;
+
         List<FloatMenuOption> RecipeOptionsMaker()
         {
             var list = new List<FloatMenuOption>();
@@ -118,9 +122,6 @@ public class ITab_ExplosivesBills : ITab_Bills
 
             return list;
         }
-
-        mouseoverBill =
-            SelTable.billStack.DoListing(recipesRect, RecipeOptionsMaker, ref scrollPosition, ref viewHeight);
     }
 
     public override void TabUpdate()

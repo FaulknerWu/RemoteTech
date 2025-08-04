@@ -23,18 +23,9 @@ public class Building_DetonatorWire : Building
 
     private float wetness;
 
-    private BuildingProperties_DetonatorWire CustomProps
-    {
-        get
-        {
-            if (def.building is not BuildingProperties_DetonatorWire wire)
-            {
-                throw new Exception("Building_DetonatorWire requires BuildingProperties_DetonatorWire");
-            }
-
-            return wire;
-        }
-    }
+    private BuildingProperties_DetonatorWire CustomProps => def.building as BuildingProperties_DetonatorWire ??
+                                                            throw new Exception(
+                                                                "Building_DetonatorWire requires BuildingProperties_DetonatorWire");
 
     public bool WantDrying => wantDrying;
 

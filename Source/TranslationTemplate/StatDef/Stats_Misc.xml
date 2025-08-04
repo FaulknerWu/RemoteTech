@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: fracturing efficiency -->
+  <rxExplosiveChunkYield.label>fracturing efficiency</rxExplosiveChunkYield.label>
+  <!-- EN: How efficient this explosive is at producing usable chunks when breaking stone. -->
+  <rxExplosiveChunkYield.description>How efficient this explosive is at producing usable chunks when breaking stone.</rxExplosiveChunkYield.description>
+  <!-- EN: mining yield -->
+  <rxExplosiveMiningYield.label>mining yield</rxExplosiveMiningYield.label>
+  <!-- EN: How efficient this explosive is at breaking resource-rich rocks. -->
+  <rxExplosiveMiningYield.description>How efficient this explosive is at breaking resource-rich rocks.</rxExplosiveMiningYield.description>
+  <!-- EN: wood breaking yield -->
+  <rxExplosiveWoodYield.label>wood breaking yield</rxExplosiveWoodYield.label>
+  <!-- EN: How efficient this explosive is at producing usable wood from destroyed trees. Explosive forestry is best forestry. -->
+  <rxExplosiveWoodYield.description>How efficient this explosive is at producing usable wood from destroyed trees. Explosive forestry is best forestry.</rxExplosiveWoodYield.description>
+  <!-- EN: power capacity -->
+  <rxPowerCapacity.label>power capacity</rxPowerCapacity.label>
+  <!-- EN: The amount of power this battery can store. -->
+  <rxPowerCapacity.description>The amount of power this battery can store.</rxPowerCapacity.description>
+  <!-- EN: power consumption -->
+  <rxPowerConsumption.label>power consumption</rxPowerConsumption.label>
+  <!-- EN: The amount of power consumed by this building. Produces power when the value is negative. -->
+  <rxPowerConsumption.description>The amount of power consumed by this building. Produces power when the value is negative.</rxPowerConsumption.description>
+  <!-- EN: sensor angle -->
+  <rxSensorAngle.label>sensor angle</rxSensorAngle.label>
+  <!-- EN: The angle in which the sensor can simultaneously detect targets. -->
+  <rxSensorAngle.description>The angle in which the sensor can simultaneously detect targets.</rxSensorAngle.description>
+  <!-- EN: sensor range -->
+  <rxSensorRange.label>sensor range</rxSensorRange.label>
+  <!-- EN: The maximum range at which the sensor is able to detect targets. -->
+  <rxSensorRange.description>The maximum range at which the sensor is able to detect targets.</rxSensorRange.description>
+  <!-- EN: sensor rotation speed -->
+  <rxSensorSpeed.label>sensor rotation speed</rxSensorSpeed.label>
+  <!-- EN: How fast the sensor rotates (degrees per second). -->
+  <rxSensorSpeed.description>How fast the sensor rotates (degrees per second).</rxSensorSpeed.description>
+  <!-- EN: detonator signal range -->
+  <rxSignalRange.label>detonator signal range</rxSignalRange.label>
+  <!-- EN: The radius in which a detonator is able to detect and detonate remote explosives. -->
+  <rxSignalRange.description>The radius in which a detonator is able to detect and detonate remote explosives.</rxSignalRange.description>
+  <!-- EN: sun exposure -->
+  <rxSunExposure.label>sun exposure</rxSunExposure.label>
+  <!-- EN: The amount of sunlight this solar panel receives. Boosts power production in the morning and evening hours. -->
+  <rxSunExposure.description>The amount of sunlight this solar panel receives. Boosts power production in the morning and evening hours.</rxSunExposure.description>
+  <!-- EN: gas venting power -->
+  <rxVentingPower.label>gas venting power</rxVentingPower.label>
+  <!-- EN: The amount gas concentration pushed by a vent per second. -->
+  <rxVentingPower.description>The amount gas concentration pushed by a vent per second.</rxVentingPower.description>
+</LanguageData>

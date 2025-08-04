@@ -135,10 +135,7 @@ public class Command_ChannelsKeypad : Command_ChannelsBasic
     public override void MergeWith(Gizmo other)
     {
         // we can't use the default grouping mechanism (GizmoGridDrawer) because other group members don't know the last hovered button
-        if (groupedKeypads == null)
-        {
-            groupedKeypads = new List<Command_ChannelsKeypad>();
-        }
+        groupedKeypads ??= [];
 
         if (other is Command_ChannelsKeypad otherKeypad)
         {

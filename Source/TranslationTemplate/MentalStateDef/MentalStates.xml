@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: red button fever -->
+  <rxRedButtonFever.label>red button fever</rxRedButtonFever.label>
+  <!-- EN: Mental state: Red button fever -->
+  <rxRedButtonFever.baseInspectLine>Mental state: Red button fever</rxRedButtonFever.baseInspectLine>
+  <!-- EN: {0} has had it and is heading for the detonator.\n\n[PAWN_pronoun] must be stopped! -->
+  <rxRedButtonFever.beginLetter>{0} has had it and is heading for the detonator.
+
+[PAWN_pronoun] must be stopped!</rxRedButtonFever.beginLetter>
+  <!-- EN: {0} is no longer craving to trigger a detonator. -->
+  <rxRedButtonFever.recoveryMessage>{0} is no longer craving to trigger a detonator.</rxRedButtonFever.recoveryMessage>
+</LanguageData>

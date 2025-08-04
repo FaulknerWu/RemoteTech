@@ -12,8 +12,7 @@ namespace RemoteTech.Patches;
 ///     Allows faction standing to be reduced below the normal -100 limit
 ///     See CustomFactionGoodwillCaps for details
 /// </summary>
-[HarmonyPatch(typeof(Faction),
-    "TryAffectGoodwillWith",
+[HarmonyPatch(typeof(Faction), nameof(Faction.TryAffectGoodwillWith),
     typeof(Faction),
     typeof(int),
     typeof(bool),
@@ -21,11 +20,10 @@ namespace RemoteTech.Patches;
     typeof(HistoryEventDef),
     typeof(GlobalTargetInfo)
 )]
-internal class Faction_AffectGoodwillWith_Patch
+internal class Faction_AffectGoodwillWith
 {
     private static bool patchApplied;
 
-    [HarmonyPrepare]
     public static void Prepare()
     {
         LongEventHandler.ExecuteWhenFinished(() =>
@@ -38,8 +36,7 @@ internal class Faction_AffectGoodwillWith_Patch
         });
     }
 
-    [HarmonyTranspiler]
-    public static IEnumerable<CodeInstruction> CustomNegativeStandingCap(IEnumerable<CodeInstruction> instructions)
+    public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
         patchApplied = false;
         foreach (var instruction in instructions)

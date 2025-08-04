@@ -1,5 +1,8 @@
 # Changelog for RemoteTech
 
+1.6.0 - Mod updated for 1.6 and passed autotests
+
+
 1.5.3 - Fixed battery-bar for the portable solar panel
 
 

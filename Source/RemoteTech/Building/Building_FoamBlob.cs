@@ -14,14 +14,14 @@ public class Building_FoamBlob : Building
 {
     private const float animationDuration = 1f;
     private const float animationMagnitude = 1.5f;
-    private readonly ValueInterpolator animationProgress = new ValueInterpolator(1f);
+    private readonly ValueInterpolator animationProgress = new(1f);
 
     private List<IntVec3> adjacentCells;
 
     private BuildingProperties_FoamBlob foamProps;
     private bool justCreated;
     private int numSpreadsLeft;
-    public Vector2 spriteScaleMultiplier = new Vector2(1f, 1f);
+    public Vector2 spriteScaleMultiplier = new(1f, 1f);
 
     private int ticksUntilHardened = -1;
     private int ticksUntilNextSpread;

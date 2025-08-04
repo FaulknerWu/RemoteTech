@@ -15,10 +15,10 @@ namespace RemoteTech;
 public class FactionGoodwillCaps(World world) : WorldComponent(world)
 {
     public const int DefaultMinNegativeGoodwill = -100;
-    public const int NegativeGoodwillCap = -5000;
+    private const int NegativeGoodwillCap = -5000;
     private HashSet<int> betrayedFactions = [];
 
-    private Dictionary<int, int> goodwillCaps = new Dictionary<int, int>();
+    private Dictionary<int, int> goodwillCaps = new();
 
     public static FactionGoodwillCaps GetFromWorld()
     {
@@ -35,15 +35,9 @@ public class FactionGoodwillCaps(World world) : WorldComponent(world)
             return;
         }
 
-        if (goodwillCaps == null)
-        {
-            goodwillCaps = new Dictionary<int, int>();
-        }
+        goodwillCaps ??= new Dictionary<int, int>();
 
-        if (betrayedFactions == null)
-        {
-            betrayedFactions = [];
-        }
+        betrayedFactions ??= [];
     }
 
     public void SetMinNegativeGoodwill(Faction faction, int minGoodwill)

@@ -25,7 +25,7 @@ public class MoteProperties_GasEffect : MoteProperties_GasCloud
     ///     GasCloud_DamageDealer: pawn body part tags targeted by damage. A random one will be picked from the list,
     ///     or random outside body parts will be picked when no parts specified.
     /// </summary>
-    public readonly List<BodyPartTagDef> damageBodyPartTags = new List<BodyPartTagDef>(0);
+    public readonly List<BodyPartTagDef> damageBodyPartTags = [];
 
     /// <summary>
     ///     GasCloud_DamageDealer: damage amounts below 1 have a chance to be ignored when true.
@@ -40,7 +40,7 @@ public class MoteProperties_GasEffect : MoteProperties_GasCloud
     /// <summary>
     ///     Things that can be worn by pawns to negate the effects of the gas
     /// </summary>
-    public readonly List<ThingDef> immunizingApparelDefs = new List<ThingDef>(0);
+    public readonly List<ThingDef> immunizingApparelDefs = [];
 
     /// <summary>
     ///     Scales the ability of immunizing apparel to negate the effects of the gas

@@ -35,7 +35,7 @@ public class Command_ChannelsBasic : Command
         activateCallback?.Invoke(GetNextChannel(selectedChannel));
     }
 
-    protected string GetLabelForChannel(int channel, bool switching)
+    protected static string GetLabelForChannel(int channel, bool switching)
     {
         return "RemoteExplosive_channelChanger_label".Translate(channel,
             switching ? "RemoteExplosive_channel_switching".Translate() : TaggedString.Empty);

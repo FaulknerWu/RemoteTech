@@ -22,9 +22,9 @@ public abstract class CompDetonationGridNode : ThingComp
         parent.Map.mapDrawer.MapMeshDirty(parent.Position, MapMeshFlagDefOf.Buildings);
     }
 
-    public override void PostDeSpawn(Map map)
+    public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
     {
-        base.PostDeSpawn(map);
+        base.PostDeSpawn(map, mode);
         if (cachedPosition.IsValid)
         {
             map.mapDrawer.MapMeshDirty(cachedPosition, MapMeshFlagDefOf.Buildings);

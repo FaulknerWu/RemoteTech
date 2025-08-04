@@ -16,10 +16,10 @@ public class PlaceWorker_RoofBreakerExplosive : PlaceWorker
 {
     private const float AdditionalRoofDisplayRadius = 3f;
 
-    private static readonly Color ThickRoofHighlightColor = new Color(1f, 1f, 1f, .5f);
-    private static readonly Color IneffectivePlacementColor = new Color(1f, 0.9215686f, 0.01568628f, .5f);
-    private static readonly Color EffectivePlacementColor = new Color(0f, 1f, 0f, .5f);
-    private static readonly Color OtherEffectiveAreasColor = new Color(.3f, .7f, .3f, .15f);
+    private static readonly Color ThickRoofHighlightColor = new(1f, 1f, 1f, .5f);
+    private static readonly Color IneffectivePlacementColor = new(1f, 0.9215686f, 0.01568628f, .5f);
+    private static readonly Color EffectivePlacementColor = new(0f, 1f, 0f, .5f);
+    private static readonly Color OtherEffectiveAreasColor = new(.3f, .7f, .3f, .15f);
     private static readonly List<IntVec3> cellBuffer = [];
 
     public override void DrawGhost(ThingDef def, IntVec3 center, Rot4 rot, Color ghostCol, Thing thing = null)

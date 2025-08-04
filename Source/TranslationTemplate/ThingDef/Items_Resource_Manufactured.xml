@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: crushed charcoal -->
+  <rxCharcoal.label>crushed charcoal</rxCharcoal.label>
+  <!-- EN: An efficient fuel made by burning wood in low-oxygen conditions. Becomes a great additive for explosives when crushed into powder.\nCan be made at a campfire or a fueled stove. -->
+  <rxCharcoal.description>An efficient fuel made by burning wood in low-oxygen conditions. Becomes a great additive for explosives when crushed into powder.
+Can be made at a campfire or a fueled stove.</rxCharcoal.description>
+  <!-- EN: explosive pouch -->
+  <rxExplosivePouch.label>explosive pouch</rxExplosivePouch.label>
+  <!-- EN: A primitive explosive charge made from volatile powder mixture wrapped in animal leather.\nPlace as a building from the Explosives menu to use. -->
+  <rxExplosivePouch.description>A primitive explosive charge made from volatile powder mixture wrapped in animal leather.
+Place as a building from the Explosives menu to use.</rxExplosivePouch.description>
+  <!-- EN: mining explosive -->
+  <rxMiningExplosiveComponent.label>mining explosive</rxMiningExplosiveComponent.label>
+  <!-- EN: The main part of a remote mining explosive.\nPlace as a building from the Explosives menu to use. -->
+  <rxMiningExplosiveComponent.description>The main part of a remote mining explosive.
+Place as a building from the Explosives menu to use.</rxMiningExplosiveComponent.description>
+  <!-- EN: remote explosive -->
+  <rxRemoteBomb.label>remote explosive</rxRemoteBomb.label>
+  <!-- EN: Explosive trap with a remote trigger.\nPlace as a building from the Explosives menu to use. -->
+  <rxRemoteBomb.description>Explosive trap with a remote trigger.
+Place as a building from the Explosives menu to use.</rxRemoteBomb.description>
+  <!-- EN: EMP remote explosive -->
+  <rxRemoteEmpBomb.label>EMP remote explosive</rxRemoteEmpBomb.label>
+  <!-- EN: A single-use electromagnetic pulse generator.\nPlace as a building from the Explosives menu to use. -->
+  <rxRemoteEmpBomb.description>A single-use electromagnetic pulse generator.
+Place as a building from the Explosives menu to use.</rxRemoteEmpBomb.description>
+  <!-- EN: incendiary remote explosive -->
+  <rxRemoteFireBomb.label>incendiary remote explosive</rxRemoteFireBomb.label>
+  <!-- EN: A canister filled with flammable chemicals with a radio trigger.\nPlace as a building from the Explosives menu to use. -->
+  <rxRemoteFireBomb.description>A canister filled with flammable chemicals with a radio trigger.
+Place as a building from the Explosives menu to use.</rxRemoteFireBomb.description>
+  <!-- EN: sealing foam canister -->
+  <rxRemoteFoamCan.label>sealing foam canister</rxRemoteFoamCan.label>
+  <!-- EN: A remotely triggered canister containing sealing foam.\nPlace as a building from the Explosives menu to use. -->
+  <rxRemoteFoamCan.description>A remotely triggered canister containing sealing foam.
+Place as a building from the Explosives menu to use.</rxRemoteFoamCan.description>
+  <!-- EN: refined sleeping gas canister -->
+  <rxRemoteRefinedSleepingGasCan.label>refined sleeping gas canister</rxRemoteRefinedSleepingGasCan.label>
+  <!-- EN: A remotely triggered canister filled with refined sleeping gas. Significantly more potent than common sleeping gas.\nPlace as a building from the Explosives menu to use. -->
+  <rxRemoteRefinedSleepingGasCan.description>A remotely triggered canister filled with refined sleeping gas. Significantly more potent than common sleeping gas.
+Place as a building from the Explosives menu to use.</rxRemoteRefinedSleepingGasCan.description>
+  <!-- EN: sleeping gas canister -->
+  <rxRemoteSleepingGasCan.label>sleeping gas canister</rxRemoteSleepingGasCan.label>
+  <!-- EN: A remotely triggered canister containing sleeping gas.\nPlace as a building from the Explosives menu to use. -->
+  <rxRemoteSleepingGasCan.description>A remotely triggered canister containing sleeping gas.
+Place as a building from the Explosives menu to use.</rxRemoteSleepingGasCan.description>
+  <!-- EN: sparkpowder -->
+  <rxSparkpowder.label>sparkpowder</rxSparkpowder.label>
+  <!-- EN: Harvested from Sparkweed plants and specially preserved to prevent spontaneous combustion. Keep away from fire. -->
+  <rxSparkpowder.description>Harvested from Sparkweed plants and specially preserved to prevent spontaneous combustion. Keep away from fire.</rxSparkpowder.description>
+</LanguageData>

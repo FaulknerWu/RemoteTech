@@ -176,7 +176,7 @@ public class CompMiningExplosive : CompCustomExplosive
         return affected;
     }
 
-    private void DamageResourceHolder(Thing thing, float efficiency)
+    private static void DamageResourceHolder(Thing thing, float efficiency)
     {
         // remaining hitpoints affect the amount of ore drops
         // make sure we don't destroy our resource holder at this point

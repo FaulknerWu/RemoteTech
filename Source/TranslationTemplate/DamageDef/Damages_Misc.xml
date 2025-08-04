@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: flame bomb -->
+  <rxFlameBomb.label>flame bomb</rxFlameBomb.label>
+  <!-- EN: {0} has burned to death. -->
+  <rxFlameBomb.deathMessage>{0} has burned to death.</rxFlameBomb.deathMessage>
+  <!-- EN: trapped -->
+  <rxFoamWallStuck.label>trapped</rxFoamWallStuck.label>
+  <!-- EN: {0} died in a solidifying foam wall. -->
+  <rxFoamWallStuck.deathMessage>{0} died in a solidifying foam wall.</rxFoamWallStuck.deathMessage>
+  <!-- EN: EMP -->
+  <rxSuperEMP.label>EMP</rxSuperEMP.label>
+  <!-- EN: {0} has been EMPed to death. -->
+  <rxSuperEMP.deathMessage>{0} has been EMPed to death.</rxSuperEMP.deathMessage>
+</LanguageData>

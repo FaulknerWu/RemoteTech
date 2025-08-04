@@ -37,11 +37,11 @@ public class GasCloud_HediffGiver : GasCloud_AffectThing
         }
     }
 
-    private void ApplyGoodwillPenalty(Faction targetFaction, int goodwillLoss)
+    private static void ApplyGoodwillPenalty(Faction targetFaction, int goodwillLoss)
     {
         var gasOwnerFaction = Faction.OfPlayer;
         var goodwillBefore = targetFaction.GoodwillWith(gasOwnerFaction);
-        // ensure that faction goodwill drops below the usual cap- relevant when gassing large groups
+        // ensure that faction goodwill drops below the usual cap-relevant when gassing large groups
         var caps = FactionGoodwillCaps.GetFromWorld();
         if (!targetFaction.HostileTo(gasOwnerFaction) && gasOwnerFaction == Faction.OfPlayer)
         {

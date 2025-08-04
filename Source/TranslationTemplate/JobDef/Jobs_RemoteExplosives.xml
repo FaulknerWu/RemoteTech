@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Detonating explosives. -->
+  <rxDetonateExplosives.reportString>Detonating explosives.</rxDetonateExplosives.reportString>
+  <!-- EN: Drying off detonator wire. -->
+  <rxDryDetonatorWire.reportString>Drying off detonator wire.</rxDryDetonatorWire.reportString>
+  <!-- EN: Installing upgrade. -->
+  <rxInstallUpgrade.reportString>Installing upgrade.</rxInstallUpgrade.reportString>
+  <!-- EN: Triggering TargetA. -->
+  <rxRedButtonFever.reportString>Triggering TargetA.</rxRedButtonFever.reportString>
+  <!-- EN: Smoothing foam wall. -->
+  <rxSmoothFoamWall.reportString>Smoothing foam wall.</rxSmoothFoamWall.reportString>
+  <!-- EN: Switching TargetA. -->
+  <rxSwitchThing.reportString>Switching TargetA.</rxSwitchThing.reportString>
+</LanguageData>

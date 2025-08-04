@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: explosives workshop -->
+  <rxBench.label>explosives workshop</rxBench.label>
+  <!-- EN: An electric-powered station equipped for crafting remotely detonated explosives.\nResearch different types of remote explosives to unlock available recipes. -->
+  <rxBench.description>An electric-powered station equipped for crafting remotely detonated explosives.
+Research different types of remote explosives to unlock available recipes.</rxBench.description>
+  <!-- EN: Idle power relay -->
+  <rxBench.comps.CompUpgrade-0.label>Idle power relay</rxBench.comps.CompUpgrade-0.label>
+  <!-- EN: Effects: The workbench will consume very little power when not in use. -->
+  <rxBench.comps.CompUpgrade-0._effectDescription>Effects: The workbench will consume very little power when not in use.</rxBench.comps.CompUpgrade-0._effectDescription>
+  <!-- EN: Required materials: 2x component -->
+  <rxBench.comps.CompUpgrade-0._materialsDescription>Required materials: 2x component</rxBench.comps.CompUpgrade-0._materialsDescription>
+  <!-- EN: The workbench will consume very little power when not in use. -->
+  <rxBench.comps.CompUpgrade-0.effectDescription>The workbench will consume very little power when not in use.</rxBench.comps.CompUpgrade-0.effectDescription>
+  <!-- EN: High-quality tools -->
+  <rxBench.comps.CompUpgrade-1.label>High-quality tools</rxBench.comps.CompUpgrade-1.label>
+  <!-- EN: Effects: Boost production speed by 25% by making harder and more precise tools.
+\nWork speed factor: x125% -->
+  <rxBench.comps.CompUpgrade-1._effectDescription>Effects: Boost production speed by 25% by making harder and more precise tools.
+Work speed factor: x125%</rxBench.comps.CompUpgrade-1._effectDescription>
+  <!-- EN: Required materials: 2x advanced component, 40x plasteel -->
+  <rxBench.comps.CompUpgrade-1._materialsDescription>Required materials: 2x advanced component, 40x plasteel</rxBench.comps.CompUpgrade-1._materialsDescription>
+  <!-- EN: Boost production speed by 25% by making harder and more precise tools. -->
+  <rxBench.comps.CompUpgrade-1.effectDescription>Boost production speed by 25% by making harder and more precise tools.</rxBench.comps.CompUpgrade-1.effectDescription>
+  <!-- EN: manual detonator -->
+  <rxDetonatorManual.label>manual detonator</rxDetonatorManual.label>
+  <!-- EN: A simple plunger-type detonator. When activated, sends a pulse along the attached detonator wire to all connected explosives, lighting their fuses.\nRight-click with a drafted colonist for better timing. -->
+  <rxDetonatorManual.description>A simple plunger-type detonator. When activated, sends a pulse along the attached detonator wire to all connected explosives, lighting their fuses.
+Right-click with a drafted colonist for better timing.</rxDetonatorManual.description>
+  <!-- EN: detonator wire -->
+  <rxDetonatorWire.label>detonator wire</rxDetonatorWire.label>
+  <!-- EN: A special wire used to connect the manual detonator to makeshift explosives, remote explosives and IEDs. Can be placed under walls and other buildings.\nCan fail if used while wet. -->
+  <rxDetonatorWire.description>A special wire used to connect the manual detonator to makeshift explosives, remote explosives and IEDs. Can be placed under walls and other buildings.
+Can fail if used while wet.</rxDetonatorWire.description>
+  <!-- EN: detonator wire crossing -->
+  <rxDetonatorWireCrossing.label>detonator wire crossing</rxDetonatorWireCrossing.label>
+  <!-- EN: Allows two detonator wires to cross without causing signal transmission between them.\n		Waterproof. -->
+  <rxDetonatorWireCrossing.description>Allows two detonator wires to cross without causing signal transmission between them.
+		Waterproof.</rxDetonatorWireCrossing.description>
+  <!-- EN: makeshift explosive -->
+  <rxExplosivePouchPlaced.label>makeshift explosive</rxExplosivePouchPlaced.label>
+  <!-- EN: A primitive bomb made from explosive powder and animal leather.\nCraft at a crafting spot or tailoring bench.\nDetonate using a Manual Detonator and Detonator Wire. -->
+  <rxExplosivePouchPlaced.description>A primitive bomb made from explosive powder and animal leather.
+Craft at a crafting spot or tailoring bench.
+Detonate using a Manual Detonator and Detonator Wire.</rxExplosivePouchPlaced.description>
+  <!-- EN: improved detonator wire -->
+  <rxImprovedDetonatorWire.label>improved detonator wire</rxImprovedDetonatorWire.label>
+  <!-- EN: An improved version of the detonator wire for use with the manual detonator. Tougher, fully waterproof, and with a much lower signal transmission delay. \nCan be placed under walls and other buildings. -->
+  <rxImprovedDetonatorWire.description>An improved version of the detonator wire for use with the manual detonator. Tougher, fully waterproof, and with a much lower signal transmission delay. 
+Can be placed under walls and other buildings.</rxImprovedDetonatorWire.description>
+  <!-- EN: fracturing explosive -->
+  <rxMiningChargeChunks.label>fracturing explosive</rxMiningChargeChunks.label>
+  <!-- EN: A remote mining explosive that creates a lot of rock chunks.\nRequires a part crafted at the Explosives Workshop.\nDetonate from the Remote Explosives Console. -->
+  <rxMiningChargeChunks.description>A remote mining explosive that creates a lot of rock chunks.
+Requires a part crafted at the Explosives Workshop.
+Detonate from the Remote Explosives Console.</rxMiningChargeChunks.description>
+  <!-- EN: clearing explosive -->
+  <rxMiningChargeClearing.label>clearing explosive</rxMiningChargeClearing.label>
+  <!-- EN: A remote mining explosive that can clear a room-sized area without creating much rubble.\nRequires a part crafted at the Explosives Workshop.\nDetonate from the Remote Explosives Console. -->
+  <rxMiningChargeClearing.description>A remote mining explosive that can clear a room-sized area without creating much rubble.
+Requires a part crafted at the Explosives Workshop.
+Detonate from the Remote Explosives Console.</rxMiningChargeClearing.description>
+  <!-- EN: shaped charge -->
+  <rxMiningChargeShaped.label>shaped charge</rxMiningChargeShaped.label>
+  <!-- EN: A specialized explosive that focuses its power upwards to attempt to break thick overhead mountain roof. It must be applied from the edge of the thick roof to be effective.\n\nThe white overlay shows nearby mountain roof, while the area around the charge is its effective radius. A green outline indicates that the charge is properly placed and will successfully break through the roof. -->
+  <rxMiningChargeShaped.description>A specialized explosive that focuses its power upwards to attempt to break thick overhead mountain roof. It must be applied from the edge of the thick roof to be effective.
+
+The white overlay shows nearby mountain roof, while the area around the charge is its effective radius. A green outline indicates that the charge is properly placed and will successfully break through the roof.</rxMiningChargeShaped.description>
+  <!-- EN: radio mast -->
+  <rxRadioMast.label>radio mast</rxRadioMast.label>
+  <!-- EN: Extends the range of detonators, provided that the mast is within their range. Masts connect to each other, as well, making it possible to cover even large maps with a single detonator. -->
+  <rxRadioMast.description>Extends the range of detonators, provided that the mast is within their range. Masts connect to each other, as well, making it possible to cover even large maps with a single detonator.</rxRadioMast.description>
+  <!-- EN: More power! -->
+  <rxRadioMast.comps.CompUpgrade.label>More power!</rxRadioMast.comps.CompUpgrade.label>
+  <!-- EN: Effects: Detonator signal range: x150%, Power consumption: x200% -->
+  <rxRadioMast.comps.CompUpgrade._effectDescription>Effects: Detonator signal range: x150%, Power consumption: x200%</rxRadioMast.comps.CompUpgrade._effectDescription>
+  <!-- EN: Required materials: 2x component -->
+  <rxRadioMast.comps.CompUpgrade._materialsDescription>Required materials: 2x component</rxRadioMast.comps.CompUpgrade._materialsDescription>
+  <!-- EN: remote explosive charge -->
+  <rxRemoteBombPlaced.label>remote explosive charge</rxRemoteBombPlaced.label>
+  <!-- EN: An explosive canister with a radio trigger.\nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console. -->
+  <rxRemoteBombPlaced.description>An explosive canister with a radio trigger.
+Craft at the Explosives Workshop.
+Arm, then detonate from the Remote Explosives Console.</rxRemoteBombPlaced.description>
+  <!-- EN: remote EMP charge -->
+  <rxRemoteEmpBombPlaced.label>remote EMP charge</rxRemoteEmpBombPlaced.label>
+  <!-- EN: A single-use electromagnetic pulse generator.\nVery powerful against mechanoids.\nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console. -->
+  <rxRemoteEmpBombPlaced.description>A single-use electromagnetic pulse generator.
+Very powerful against mechanoids.
+Craft at the Explosives Workshop.
+Arm, then detonate from the Remote Explosives Console.</rxRemoteEmpBombPlaced.description>
+  <!-- EN: remote incendiary charge -->
+  <rxRemoteFireBombPlaced.label>remote incendiary charge</rxRemoteFireBombPlaced.label>
+  <!-- EN: A canister filled with flammable chemicals with a radio trigger.\nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console. -->
+  <rxRemoteFireBombPlaced.description>A canister filled with flammable chemicals with a radio trigger.
+Craft at the Explosives Workshop.
+Arm, then detonate from the Remote Explosives Console.</rxRemoteFireBombPlaced.description>
+  <!-- EN: sealing foam can -->
+  <rxRemoteFoamCanPlaced.label>sealing foam can</rxRemoteFoamCanPlaced.label>
+  <!-- EN: A remotely triggered canister that releases a rapidly hardening foam. \nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console. -->
+  <rxRemoteFoamCanPlaced.description>A remotely triggered canister that releases a rapidly hardening foam. 
+Craft at the Explosives Workshop.
+Arm, then detonate from the Remote Explosives Console.</rxRemoteFoamCanPlaced.description>
+  <!-- EN: refined sleeping gas can -->
+  <rxRemoteRefinedSleepingGasCanPlaced.label>refined sleeping gas can</rxRemoteRefinedSleepingGasCanPlaced.label>
+  <!-- EN: A remotely triggered canister filled with refined sleeping gas. Significantly more potent than common sleeping gas. \nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console. -->
+  <rxRemoteRefinedSleepingGasCanPlaced.description>A remotely triggered canister filled with refined sleeping gas. Significantly more potent than common sleeping gas. 
+Craft at the Explosives Workshop.
+Arm, then detonate from the Remote Explosives Console.</rxRemoteRefinedSleepingGasCanPlaced.description>
+  <!-- EN: sleeping gas can -->
+  <rxRemoteSleepingGasCanPlaced.label>sleeping gas can</rxRemoteSleepingGasCanPlaced.label>
+  <!-- EN: A remotely triggered canister filled with sleeping gas. \nCraft at the Explosives Workshop.\nArm, then detonate from the Remote Explosives Console. -->
+  <rxRemoteSleepingGasCanPlaced.description>A remotely triggered canister filled with sleeping gas. 
+Craft at the Explosives Workshop.
+Arm, then detonate from the Remote Explosives Console.</rxRemoteSleepingGasCanPlaced.description>
+  <!-- EN: remote detonator -->
+  <rxTableDetonator.label>remote detonator</rxTableDetonator.label>
+  <!-- EN: A transmitter to detonate armed explosives in range.\nRight-click with a drafted colonist for better timing. -->
+  <rxTableDetonator.description>A transmitter to detonate armed explosives in range.
+Right-click with a drafted colonist for better timing.</rxTableDetonator.description>
+  <!-- EN: Basic channels -->
+  <rxTableDetonator.comps.CompUpgrade-0.label>Basic channels</rxTableDetonator.comps.CompUpgrade-0.label>
+  <!-- EN: Enables the detonator to trigger explosives on 3 separate channels. -->
+  <rxTableDetonator.comps.CompUpgrade-0.effectDescription>Enables the detonator to trigger explosives on 3 separate channels.</rxTableDetonator.comps.CompUpgrade-0.effectDescription>
+  <!-- EN: Advanced channels -->
+  <rxTableDetonator.comps.CompUpgrade-1.label>Advanced channels</rxTableDetonator.comps.CompUpgrade-1.label>
+  <!-- EN: Enables the detonator to use the channels keypad with access to 8 distinct channels. -->
+  <rxTableDetonator.comps.CompUpgrade-1.effectDescription>Enables the detonator to use the channels keypad with access to 8 distinct channels.</rxTableDetonator.comps.CompUpgrade-1.effectDescription>
+  <!-- EN: Idle power relay -->
+  <rxTableDetonator.comps.CompUpgrade-2.label>Idle power relay</rxTableDetonator.comps.CompUpgrade-2.label>
+  <!-- EN: Effects: The detonator will consume very little power when not in use. -->
+  <rxTableDetonator.comps.CompUpgrade-2._effectDescription>Effects: The detonator will consume very little power when not in use.</rxTableDetonator.comps.CompUpgrade-2._effectDescription>
+  <!-- EN: Required materials: 4x component -->
+  <rxTableDetonator.comps.CompUpgrade-2._materialsDescription>Required materials: 4x component</rxTableDetonator.comps.CompUpgrade-2._materialsDescription>
+  <!-- EN: The detonator will consume very little power when not in use. -->
+  <rxTableDetonator.comps.CompUpgrade-2.effectDescription>The detonator will consume very little power when not in use.</rxTableDetonator.comps.CompUpgrade-2.effectDescription>
+</LanguageData>

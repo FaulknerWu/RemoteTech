@@ -11,11 +11,11 @@ namespace RemoteTech;
 public class CachedValue<T>
 {
     private readonly int recacheIntervalTicks;
+    private readonly int tickOffset;
 
     private readonly Func<T> valueGetter;
     private int cachedTick;
     private T cachedValue;
-    private readonly int tickOffset;
 
     public CachedValue(Func<T> valueGetter, int recacheIntervalTicks = GenTicks.TicksPerRealSecond,
         bool useTickOffset = true)
@@ -58,7 +58,7 @@ public class CachedValue<T>
         }
     }
 
-    public bool IsValid => valueGetter != null;
+    private bool IsValid => valueGetter != null;
 
     public static implicit operator T(CachedValue<T> val)
     {

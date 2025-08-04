@@ -2,11 +2,18 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5",
+  "PreviewVersion": "1.6",
   "SocialImageSet": true,
   "SearchTags": [
     "explosives",
     "defense strategy",
     "advanced technology"
-  ]
+  ],
+  "Patches": false,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 353345,
+  "LinesOfXML": 148581,
+  "CodeBaseSize": 90,
+  "LastXmlCleaning": "2025-08-04T22:43:24.6869554+02:00"
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: trigger detonator -->
+  <rxDetonateExplosives.label>trigger detonator</rxDetonateExplosives.label>
+  <!-- EN: detonating -->
+  <rxDetonateExplosives.gerund>detonating</rxDetonateExplosives.gerund>
+  <!-- EN: detonate -->
+  <rxDetonateExplosives.verb>detonate</rxDetonateExplosives.verb>
+  <!-- EN: assemble explosive -->
+  <rxDoBillsBench.label>assemble explosive</rxDoBillsBench.label>
+  <!-- EN: assembling explosive at -->
+  <rxDoBillsBench.gerund>assembling explosive at</rxDoBillsBench.gerund>
+  <!-- EN: assemble explosive -->
+  <rxDoBillsBench.verb>assemble explosive</rxDoBillsBench.verb>
+  <!-- EN: do bills at fireplace -->
+  <rxDoBillsCraftFire.label>do bills at fireplace</rxDoBillsCraftFire.label>
+  <!-- EN: crafting at -->
+  <rxDoBillsCraftFire.gerund>crafting at</rxDoBillsCraftFire.gerund>
+  <!-- EN: craft -->
+  <rxDoBillsCraftFire.verb>craft</rxDoBillsCraftFire.verb>
+  <!-- EN: dry off detonator wire -->
+  <rxDryOffDetonatorWire.label>dry off detonator wire</rxDryOffDetonatorWire.label>
+  <!-- EN: drying off -->
+  <rxDryOffDetonatorWire.gerund>drying off</rxDryOffDetonatorWire.gerund>
+  <!-- EN: dry off -->
+  <rxDryOffDetonatorWire.verb>dry off</rxDryOffDetonatorWire.verb>
+  <!-- EN: install upgrade -->
+  <rxInstallUpgrade.label>install upgrade</rxInstallUpgrade.label>
+  <!-- EN: upgrading -->
+  <rxInstallUpgrade.gerund>upgrading</rxInstallUpgrade.gerund>
+  <!-- EN: upgrade -->
+  <rxInstallUpgrade.verb>upgrade</rxInstallUpgrade.verb>
+  <!-- EN: smooth foam wall -->
+  <rxSmoothFoamWall.label>smooth foam wall</rxSmoothFoamWall.label>
+  <!-- EN: smoothing -->
+  <rxSmoothFoamWall.gerund>smoothing</rxSmoothFoamWall.gerund>
+  <!-- EN: smooth foam wall -->
+  <rxSmoothFoamWall.verb>smooth foam wall</rxSmoothFoamWall.verb>
+  <!-- EN: switch remote explosive -->
+  <rxSwitchThings.label>switch remote explosive</rxSwitchThings.label>
+  <!-- EN: switching -->
+  <rxSwitchThings.gerund>switching</rxSwitchThings.gerund>
+  <!-- EN: switch -->
+  <rxSwitchThings.verb>switch</rxSwitchThings.verb>
+</LanguageData>

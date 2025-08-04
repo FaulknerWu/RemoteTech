@@ -28,7 +28,7 @@ public class CompCustomExplosive : ThingComp
 
     public int WickTicksLeft => wickTicksLeft;
 
-    protected int StartWickThreshold =>
+    private int StartWickThreshold =>
         Mathf.RoundToInt(ExplosiveProps.startWickHitPointsPercent * parent.MaxHitPoints);
 
     public bool WickStarted => wickStarted;
