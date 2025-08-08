@@ -395,6 +395,8 @@ Right-click with a drafted colonist for better timing.</description>
       <isInert>true</isInert>
       <isEdifice>false</isEdifice>
       <canPlaceOverWall>true</canPlaceOverWall>
+      <canLandGravshipOn>true</canLandGravshipOn>
+      <canConstructInCorner>true</canConstructInCorner>
       <failureChanceWhenFullyWet>.015</failureChanceWhenFullyWet>
       <daysToSelfDry>.8</daysToSelfDry>
       <baseDryingTemperature>20</baseDryingTemperature>
