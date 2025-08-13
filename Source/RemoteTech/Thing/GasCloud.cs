@@ -114,13 +114,7 @@ public class GasCloud : Thing
                 HugsLibController.Instance.DistributedTicker.RegisterTickability(GasTick, gasProps.GastickInterval,
                     this)
             , 1, this);
-        PlayerAvoidanceGrids.AddAvoidanceSource(this, AvoidanceGridPathCost);
-    }
-
-    public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
-    {
-        PlayerAvoidanceGrids.RemoveAvoidanceSource(this);
-        base.DeSpawn(mode);
+        //PlayerAvoidanceGrids.AddAvoidanceSource(this, AvoidanceGridPathCost);
     }
 
     public override void ExposeData()

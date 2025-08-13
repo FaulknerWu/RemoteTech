@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using HugsLib;
+﻿using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -24,21 +22,14 @@ public class Plant_Sparkweed : Plant
                 return plantDef;
             }
 
-            throw new Exception("Plant_Sparkweed requires ThingDef of type SparkweedPlantDef");
+            return null;
         }
     }
 
-    public override void SpawnSetup(Map map, bool respawningAfterLoad)
+    public override void TickInterval(int delta)
     {
-        base.SpawnSetup(map, respawningAfterLoad);
-        HugsLibController.Instance.DistributedTicker.RegisterTickability(CustomTick, CustomDef.detectEveryTicks, this);
-        PlayerAvoidanceGrids.AddAvoidanceSource(this, FriendlyPathCost);
-    }
-
-    public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
-    {
-        PlayerAvoidanceGrids.RemoveAvoidanceSource(this);
-        base.DeSpawn(mode);
+        base.TickInterval(delta);
+        CustomTick();
     }
 
     public override void ExposeData()
@@ -53,6 +44,7 @@ public class Plant_Sparkweed : Plant
 
     private void CustomTick()
     {
+        touchingPawns ??= [];
         var thingsInCell = Map.thingGrid.ThingsListAtFast(Position);
         // detect pawns
         foreach (var thing in thingsInCell)
@@ -93,7 +85,7 @@ public class Plant_Sparkweed : Plant
         var doEffects = false;
         if (Rand.Range(0f, 1f) < CustomDef.ignitePlantChance)
         {
-            if (!BlockedByIgnitionSuppressor())
+            if (!blockedByIgnitionSuppressor())
             {
                 FireUtility.TryStartFireIn(Position, Map, Rand.Range(0.15f, 0.4f), null);
             }
@@ -103,7 +95,7 @@ public class Plant_Sparkweed : Plant
 
         if (Rand.Range(0f, 1f) < CustomDef.ignitePawnChance)
         {
-            if (!BlockedByIgnitionSuppressor())
+            if (!blockedByIgnitionSuppressor())
             {
                 pawn.TryAttachFire(Rand.Range(0.15f, 0.25f), null);
             }
@@ -117,7 +109,7 @@ public class Plant_Sparkweed : Plant
         }
     }
 
-    private bool BlockedByIgnitionSuppressor()
+    private bool blockedByIgnitionSuppressor()
     {
         var thingsInCell = Map.thingGrid.ThingsListAt(Position);
         foreach (var thing in thingsInCell)

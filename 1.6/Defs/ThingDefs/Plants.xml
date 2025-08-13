@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="rxPlantBase" Abstract="True">
+  <ThingDef Name="rxPlantBase" Abstract="True" ParentName="PlantBase">
     <category>Plant</category>
     <thingClass>Plant</thingClass>
     <altitudeLayer>LowPlant</altitudeLayer>
@@ -28,10 +28,7 @@
       <fertilityMin>0.5</fertilityMin>
       <topWindExposure>0.1</topWindExposure>
       <harvestTag>Standard</harvestTag>
-      <visualSizeRange>
-        <min>0.3</min>
-        <max>1.00</max>
-      </visualSizeRange>
+      <visualSizeRange>0.3~1</visualSizeRange>
     </plant>
   </ThingDef>
   <ThingDef ParentName="rxPlantBase" Class="RemoteTech.SparkweedPlantDef">
@@ -67,10 +64,7 @@ It is cultivated as a source of low-grade explosive and gunpowder.</description>
       <topWindExposure>0.1</topWindExposure>
       <fertilitySensitivity>0.3</fertilitySensitivity>
       <growDays>3.5</growDays>
-      <visualSizeRange>
-        <min>0.3</min>
-        <max>1.4</max>
-      </visualSizeRange>
+      <visualSizeRange>0.3~1.4</visualSizeRange>
     </plant>
     <!-- Cannot use PlantProperties for these, as the field won't accept Class overrides for whatever reason -->
     <detectEveryTicks>30</detectEveryTicks>

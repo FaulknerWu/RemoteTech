@@ -1,5 +1,8 @@
 # Changelog for RemoteTech
 
+1.6.2 - Fixed the plant crash
+
+
 1.6.1 - Wires should now be buildable in corners
 
 
