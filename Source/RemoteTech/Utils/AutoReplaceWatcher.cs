@@ -52,8 +52,8 @@ public class AutoReplaceWatcher : IExposable
         if (building.Stuff == null && building.def.MadeFromStuff ||
             building.Stuff != null && !building.def.MadeFromStuff)
         {
-            RemoteTechController.Instance.Logger.Warning(
-                "Could not schedule {0} auto-replacement due to Stuff discrepancy.", building);
+            Log.Warning(
+                "Could not schedule {building} auto-replacement due to Stuff discrepancy.");
             return;
         }
 
@@ -61,7 +61,7 @@ public class AutoReplaceWatcher : IExposable
             replaceableComp.ParentRotation, map);
         if (!report.Accepted)
         {
-            RemoteTechController.Instance.Logger.Message(
+            Log.Message(
                 $"Could not auto-replace {building.LabelCap}: {report.Reason}");
             return;
         }
@@ -147,7 +147,7 @@ public class AutoReplaceWatcher : IExposable
                 }
                 catch (Exception e)
                 {
-                    RemoteTechController.Instance.Logger.Error(
+                    Log.Error(
                         $"Failed to parse value \"{storedValue}\" as {typeof(T).Name}, using fallback value. Exception was: {e}"
                     );
                 }

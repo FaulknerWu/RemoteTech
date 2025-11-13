@@ -19,7 +19,7 @@ public abstract class GasCloud_AffectThing : GasCloud
         base.SpawnSetup(map, respawningAfterLoad);
         if ((Props = def.mote as MoteProperties_GasEffect) == null)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"{nameof(GasCloud_AffectThing)} needs {nameof(MoteProperties_GasEffect)} in def {def.defName}");
         }
     }

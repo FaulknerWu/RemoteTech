@@ -64,7 +64,7 @@ public class ValueInterpolator : IExposable
         var curveMethod = typeof(InterpolationCurves).GetMethod(curveName, HugsLibUtility.AllBindingFlags);
         if (curveMethod == null)
         {
-            RemoteTechController.Instance.Logger.Error($"Failed to load interpolation curve: {curveName}");
+            Log.Error($"Failed to load interpolation curve: {curveName}");
         }
         else
         {

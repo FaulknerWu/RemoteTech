@@ -1,9 +1,7 @@
-﻿// ReSharper disable UnassignedField.Global
-
-using HugsLib.Utils;
-using RimWorld;
+﻿using RimWorld;
 using UnityEngine;
 using Verse;
+using HugsLib.Utils;
 
 namespace RemoteTech;
 

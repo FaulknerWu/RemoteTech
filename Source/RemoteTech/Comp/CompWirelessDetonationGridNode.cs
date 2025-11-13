@@ -81,13 +81,13 @@ public class CompWirelessDetonationGridNode : ThingComp
         powerComp = parent.GetComp<CompPowerTrader>();
         if (Radius < float.Epsilon)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"CompWirelessDetonationGridNode has zero radius. Missing signal range property on def {parent.def.defName}?");
         }
 
         if (Props == null)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"CompWirelessDetonationGridNode needs CompProperties_WirelessDetonationGridNode on def {parent.def.defName}");
         }
 

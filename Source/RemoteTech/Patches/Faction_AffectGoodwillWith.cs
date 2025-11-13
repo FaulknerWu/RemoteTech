@@ -30,7 +30,7 @@ internal class Faction_AffectGoodwillWith
         {
             if (!patchApplied)
             {
-                RemoteTechController.Instance.Logger.Error(
+                Log.Error(
                     "Faction_AffectGoodwillWith_Patch infix could not be applied");
             }
         });

@@ -30,4 +30,18 @@ public class MapComponent_RemoteTech : MapComponent
         base.MapComponentTick();
         replaceWatcher.Tick();
     }
+
+    public override void MapRemoved()
+    {
+        base.MapRemoved();
+        try
+        {
+            PlayerAvoidanceGrids.DiscardMap(map);
+        }
+        catch (System.Exception e)
+        {
+            Log.Error($"RemoteTech: Error in MapComponent_RemoteTech.MapRemoved: {e}");
+        }
+    }
+
 }

@@ -42,7 +42,7 @@ public class CompStatBattery : CompPowerBattery
         UpdateStoredEnergyMax();
         if (statMaxEnergy <= 0f)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"{nameof(CompStatBattery)} has zero power capacity. Missing rxPowerCapacity stat in def {parent.def.defName}?");
         }
     }

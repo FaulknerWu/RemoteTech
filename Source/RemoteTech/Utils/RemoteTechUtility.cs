@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using HugsLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -25,6 +24,8 @@ public static class RemoteTechUtility
 
     // how long it will take to trigger an additional explosive
     private const int TicksBetweenTriggers = 2;
+
+    static TickDelayScheduler tickDelayScheduler = null;
 
     public static ChannelType GetChannelsUnlockLevel()
     {
@@ -63,6 +64,20 @@ public static class RemoteTechUtility
             throw new Exception("Missing CompWirelessDetonationGridNode on sender");
         }
 
+        // get instance
+        var gameComponent = Current.Game.GetComponent<GameComponent_TickDelayScheduler>();
+        if (gameComponent != null)
+        {
+            tickDelayScheduler = gameComponent.scheduler;
+        }
+        // check if valid
+        if (tickDelayScheduler == null || tickDelayScheduler.lastProcessedTick < 0)
+        {
+            //Log.Message($"Last processed tick: {tickDelayScheduler?.lastProcessedTick}");
+            //Log.Warning("TickDelayScheduler is either null or not initialized.");
+            throw new Exception("TickDelayScheduler is either null or not initialized");
+        }
+
         var sample = comp.FindReceiversInNetworkRange().Where(pair => pair.Receiver.CurrentChannel == channel);
         // closer ones to their transmitters will go off first. This is used to simulate a bit of signal delay
         var sortedByDistance = sample
@@ -71,7 +86,7 @@ public static class RemoteTechUtility
         var counter = 0;
         foreach (var receiver in sortedByDistance)
         {
-            HugsLibController.Instance.TickDelayScheduler.ScheduleCallback(() =>
+            tickDelayScheduler.ScheduleCallback(() =>
             {
                 if (receiver.CanReceiveWirelessSignal)
                 {
@@ -250,7 +265,7 @@ public static class RemoteTechUtility
     {
         if (gasDef == null)
         {
-            RemoteTechController.Instance.Logger.Error($"Tried to deploy null GasDef: {Environment.StackTrace}");
+            Log.Error($"Tried to deploy null GasDef: {Environment.StackTrace}");
             return;
         }
 
@@ -260,7 +275,7 @@ public static class RemoteTechUtility
             cloud = ThingMaker.MakeThing(gasDef) as GasCloud;
             if (cloud == null)
             {
-                RemoteTechController.Instance.Logger.Error($"Deployed thing was not a GasCloud: {gasDef}");
+                Log.Error($"Deployed thing was not a GasCloud: {gasDef}");
                 return;
             }
 
@@ -360,7 +375,7 @@ public static class RemoteTechUtility
         var c = thing.GetComp<T>();
         if (c == null)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"{thing.GetType().Name} requires ThingComp of type {nameof(T)} in def {thing.def.defName}");
         }
 
@@ -371,7 +386,7 @@ public static class RemoteTechUtility
     {
         if (component == null)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"{thing.GetType().Name} requires {nameof(T)} in def {thing.def.defName}");
         }
 
@@ -382,7 +397,7 @@ public static class RemoteTechUtility
     {
         if (component == null)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"{comp.GetType().Name} requires {nameof(T)} in def {comp.parent.def.defName}");
         }
     }
@@ -391,7 +406,7 @@ public static class RemoteTechUtility
     {
         if (comp.parent.def.tickerType != type)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"{comp.GetType().Name} requires tickerType:{type} in def {comp.parent.def.defName}");
         }
     }

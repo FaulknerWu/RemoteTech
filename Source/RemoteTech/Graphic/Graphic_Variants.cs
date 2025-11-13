@@ -29,7 +29,7 @@ public class Graphic_Variants : Graphic_Collection
             return subGraphics[variantIndex].MatSingleFor(thing);
         }
 
-        RemoteTechController.Instance.Logger.Error(
+        Log.Error(
             $"No material with index {variantIndex} available, as requested by {thing.GetType()}");
         return GetDefaultMat();
     }

@@ -1,5 +1,6 @@
 ﻿using HugsLib;
 using RimWorld;
+using System;
 using Verse;
 using Verse.Sound;
 
@@ -11,6 +12,7 @@ public class CompRoofBreakerExplosive : CompMiningExplosive
 {
     private const int RoofFilthAmount = 3;
     private readonly IntRange CollapseDelay = new(0, 120);
+    static TickDelayScheduler tickDelayScheduler = null;
 
     protected override void Detonate()
     {
@@ -55,7 +57,21 @@ public class CompRoofBreakerExplosive : CompMiningExplosive
             {
                 anyThickRoofAffected = true;
                 var roofCell = cell;
-                HugsLibController.Instance.TickDelayScheduler.ScheduleCallback(() =>
+
+                // get instance
+                var gameComponent = Current.Game.GetComponent<GameComponent_TickDelayScheduler>();
+                if (gameComponent != null)
+                {
+                    tickDelayScheduler = gameComponent.scheduler;
+                }
+                // check if valid
+                if (tickDelayScheduler == null || tickDelayScheduler.lastProcessedTick < 0)
+                {
+                    //Log.Message($"Last processed tick: {tickDelayScheduler?.lastProcessedTick}");
+                    //Log.Warning("TickDelayScheduler is either null or not initialized.");
+                    throw new Exception("TickDelayScheduler is either null or not initialized");
+                }
+                tickDelayScheduler.ScheduleCallback(() =>
                 {
                     // delay collapse for more interesting visual effect
                     CollapseRockOnCell(roofCell, map);
