@@ -25,7 +25,7 @@ internal static class Compat_DoorsExpanded
             return;
         }
 
-        var logger = RemoteTechController.Instance.Logger;
+        
         try
         {
             if (!typeof(Building).IsAssignableFrom(doorExpandedType))
@@ -48,7 +48,7 @@ internal static class Compat_DoorsExpanded
 
             void LogDefWarning(string defName)
             {
-                logger.Warning($"Expected to find def {defName} in {doorsModName}");
+                Log.Warning($"Expected to find def {defName} in {doorsModName}");
             }
 
             var curtainDoorDef = DefDatabase<ThingDef>.GetNamedSilentFail(curtainDoorDefName);
@@ -74,11 +74,11 @@ internal static class Compat_DoorsExpanded
                 (building, _) => isOpenGetter(building)
             );
 
-            logger.Message($"Applied compatibility layer for {doorsModName}");
+            Log.Message($"Applied compatibility layer for {doorsModName}");
         }
         catch (Exception e)
         {
-            logger.Error($"Failed to apply compatibility layer for {doorsModName}: {e}");
+            Log.Error($"Failed to apply compatibility layer for {doorsModName}: {e}");
         }
     }
 

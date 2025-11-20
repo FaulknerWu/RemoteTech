@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using HugsLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -96,6 +95,9 @@ public class GasCloud : Thing
         }
     }
 
+    static TickDelayScheduler tickDelayScheduler = null;
+    static DistributedTickScheduler distributedTickScheduler = null;
+
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
         base.SpawnSetup(map, respawningAfterLoad);
@@ -106,12 +108,28 @@ public class GasCloud : Thing
             throw new Exception($"Missing required gas mote properties in {def.defName}");
         }
 
+        // get instance
+        var gameComponent = Current.Game.GetComponent<GameComponent_TickDelayScheduler>();
+        if (gameComponent != null)
+        {
+            tickDelayScheduler = gameComponent.scheduler;
+            distributedTickScheduler = gameComponent.distScheduler;
+        }
+        // check if valid
+        if (tickDelayScheduler == null || tickDelayScheduler.lastProcessedTick < 0)
+        {
+            //Log.Message($"Last processed tick: {tickDelayScheduler?.lastProcessedTick}");
+            //Log.Warning("TickDelayScheduler is either null or not initialized.");
+            throw new Exception("TickDelayScheduler is either null or not initialized");
+        }
+
+
         interpolatedScale.value = GetRandomGasScale();
         interpolatedRotation.value = GetRandomGasRotation();
         // uniformly distribute gas ticks to reduce per frame workload
         // wait for next tick to avoid registering while DistributedTickScheduler is mid-tick
-        HugsLibController.Instance.TickDelayScheduler.ScheduleCallback(() =>
-                HugsLibController.Instance.DistributedTicker.RegisterTickability(GasTick, gasProps.GastickInterval,
+        tickDelayScheduler.ScheduleCallback(() =>
+                distributedTickScheduler.RegisterTickability(GasTick, gasProps.GastickInterval,
                     this)
             , 1, this);
         //PlayerAvoidanceGrids.AddAvoidanceSource(this, AvoidanceGridPathCost);

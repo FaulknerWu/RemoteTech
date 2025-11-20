@@ -221,7 +221,7 @@ public class CompMiningExplosive : CompCustomExplosive
         resourceDrop.stackCount = resourceYield;
         GenSpawn.Spawn(resourceDrop, mineablePosition, mineableMap);
         if (resourceDrop.def.EverHaulable && !resourceDrop.def.designateHaulable
-                                          && RemoteTechController.Instance.SettingMiningChargesForbid.Value)
+                                          && RemoteTechController.Instance.settings.miningChargesForbid)
         {
             resourceDrop.SetForbidden(true);
         }

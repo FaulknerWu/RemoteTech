@@ -1,5 +1,6 @@
 ﻿using HugsLib;
 using RimWorld;
+using System;
 using Verse;
 
 namespace RemoteTech;
@@ -9,6 +10,8 @@ namespace RemoteTech;
 /// </summary>
 public class CompWiredDetonationReceiver : CompDetonationGridNode
 {
+
+    static TickDelayScheduler tickDelayScheduler = null;
     public void ReceiveSignal(int delayTicks)
     {
         if (parent is Building_RemoteExplosive { IsArmed: false })
@@ -16,17 +19,32 @@ public class CompWiredDetonationReceiver : CompDetonationGridNode
             return;
         }
 
+
+        // get instance
+        var gameComponent = Current.Game.GetComponent<GameComponent_TickDelayScheduler>();
+        if (gameComponent != null)
+        {
+            tickDelayScheduler = gameComponent.scheduler;
+        }
+        // check if valid
+        if (tickDelayScheduler == null || tickDelayScheduler.lastProcessedTick < 0)
+        {
+            //Log.Message($"Last processed tick: {tickDelayScheduler?.lastProcessedTick}");
+            //Log.Warning("TickDelayScheduler is either null or not initialized.");
+            throw new Exception("TickDelayScheduler is either null or not initialized");
+        }
+
         var customExplosive = parent.GetComp<CompCustomExplosive>();
         var vanillaExplosive = parent.GetComp<CompExplosive>();
         if (customExplosive != null)
         {
-            HugsLibController.Instance.TickDelayScheduler.ScheduleCallback(() => customExplosive.StartWick(true),
+            tickDelayScheduler.ScheduleCallback(() => customExplosive.StartWick(true),
                 delayTicks, parent);
         }
 
         if (vanillaExplosive != null)
         {
-            HugsLibController.Instance.TickDelayScheduler.ScheduleCallback(() => vanillaExplosive.StartWick(),
+            tickDelayScheduler.ScheduleCallback(() => vanillaExplosive.StartWick(),
                 delayTicks, parent);
         }
     }

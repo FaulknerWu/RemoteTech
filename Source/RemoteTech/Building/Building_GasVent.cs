@@ -29,7 +29,7 @@ public class Building_GasVent : Building
         ventProps = def.building as BuildingProperties_GasVent;
         if (ventProps == null)
         {
-            RemoteTechController.Instance.Logger.Error("Building_GasVent requires BuildingProperties_GasVent");
+            Log.Error("Building_GasVent requires BuildingProperties_GasVent");
         }
     }
 

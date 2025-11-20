@@ -47,7 +47,7 @@ public class FactionGoodwillCaps(World world) : WorldComponent(world)
 
     public int GetMinNegativeGoodwill(Faction faction)
     {
-        if (!RemoteTechController.Instance.SettingLowerStandingCap.Value)
+        if (!RemoteTechController.Instance.settings.lowerStandingCap)
         {
             return DefaultMinNegativeGoodwill;
         }

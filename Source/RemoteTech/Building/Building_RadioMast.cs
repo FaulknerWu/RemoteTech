@@ -21,7 +21,7 @@ public class Building_RadioMast : Building
         base.SpawnSetup(map, respawningAfterLoad);
         if (BlinkerData == null)
         {
-            RemoteTechController.Instance.Logger.Error(
+            Log.Error(
                 $"{nameof(Building_RadioMast)} needs {nameof(GraphicData_Blinker)} in def {def.defName}");
         }
 

@@ -122,11 +122,11 @@ public class Building_RemoteExplosive : Building, ISwitchable, IWirelessDetonati
 
         var typeShouldAutoArm =
             CustomProps.explosiveType == RemoteExplosiveType.Combat &&
-            RemoteTechController.Instance.SettingAutoArmCombat ||
+            RemoteTechController.Instance.settings.autoArmCombat ||
             CustomProps.explosiveType == RemoteExplosiveType.Mining &&
-            RemoteTechController.Instance.SettingAutoArmMining ||
+            RemoteTechController.Instance.settings.autoArmMining ||
             CustomProps.explosiveType == RemoteExplosiveType.Utility &&
-            RemoteTechController.Instance.SettingAutoArmUtility;
+            RemoteTechController.Instance.settings.autoArmUtility;
         var builtFromAutoReplacedBlueprint = replaceComp?.WasAutoReplaced ?? false;
         if (typeShouldAutoArm && !builtFromAutoReplacedBlueprint)
         {
