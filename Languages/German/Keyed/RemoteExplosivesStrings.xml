@@ -101,4 +101,5 @@
   <proxSensor_sWirelessUpgrade>Drahtloses Upgrade:</proxSensor_sWirelessUpgrade>
   <proxSensor_sAIUpgrade>KI-Aufrüstung:</proxSensor_sAIUpgrade>
   <buildGizmo_label>Platz {0}</buildGizmo_label>
+  <Setting_currentVersion_label>Installierte Mod-Version: {0}</Setting_currentVersion_label>
 </LanguageData>

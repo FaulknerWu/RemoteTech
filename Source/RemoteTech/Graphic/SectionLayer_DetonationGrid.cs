@@ -21,7 +21,7 @@ public class SectionLayer_DetonationGrid : SectionLayer_Things
         relevantChangeTypes = MapMeshFlagDefOf.Buildings;
     }
 
-    public override void TakePrintFrom(Thing t)
+    protected override void TakePrintFrom(Thing t)
     {
         if (t is not ThingWithComps compThing)
         {

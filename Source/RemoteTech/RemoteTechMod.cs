@@ -1,8 +1,13 @@
 ﻿using HarmonyLib;
 using System;
+using System.IO;
+using System.Reflection;
+using System.Xml.Linq;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using Verse;
 using static HugsLib.Utils.HugsLibUtility;
+using Mlie;
 
 namespace RemoteTech
 {
@@ -10,14 +15,18 @@ namespace RemoteTech
     // queues a LongEvent to call the old DefsLoaded logic after defs are available.
     public class RemoteTechMod : Mod
     {
-        public readonly RemoteTechSettings settings;
+        public readonly RemoteTechSettings Settings;
+        public static RemoteTechMod Instance;
+        private static string currentVersion;
 
         public RemoteTechMod(ModContentPack content) : base(content)
         {
             // load or create settings object
-            settings = GetSettings<RemoteTechSettings>();
-
-            new Harmony("Mlie.RemoteTech").PatchAll();
+            Settings = GetSettings<RemoteTechSettings>();
+            Instance = this;
+            currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
+            importOldHugsLibSettings();
+            new Harmony("Mlie.RemoteTech").PatchAll(Assembly.GetExecutingAssembly());
 
             InjectedDefHasher.PrepareReflection();
 
@@ -27,7 +36,7 @@ namespace RemoteTech
                 try
                 {
                     // instantiate controller (previously ModBase instance) and call DefsLoaded
-                    RemoteTechController.Initialize(settings);
+                    RemoteTechController.Initialize(Settings);
                     RemoteTechController.Instance.DefsLoaded();
                 }
                 catch (Exception e)
@@ -38,6 +47,62 @@ namespace RemoteTech
 
             // Hook sceneLoaded to approximate ModBase.SceneLoaded
             SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        private static void importOldHugsLibSettings()
+        {
+            var hugsLibConfig = Path.Combine(GenFilePaths.SaveDataFolderPath, "HugsLib", "ModSettings.xml");
+            if (!new FileInfo(hugsLibConfig).Exists)
+            {
+                return;
+            }
+
+            var xml = XDocument.Load(hugsLibConfig);
+            var modNodeName = "RemoteTech";
+
+            var modSettings = xml.Root?.Element(modNodeName);
+            if (modSettings == null)
+            {
+                return;
+            }
+
+            foreach (var modSetting in modSettings.Elements())
+            {
+                if (modSetting.Name == "forbidReplaced")
+                {
+                    Instance.Settings.forbidReplaced = bool.Parse(modSetting.Value);
+                }
+                if (modSetting.Name == "forbidTimeout")
+                {
+                    Instance.Settings.forbidTimeout = int.Parse(modSetting.Value);
+                }
+                if (modSetting.Name == "autoArmCombat")
+                {
+                    Instance.Settings.autoArmCombat = bool.Parse(modSetting.Value);
+                }
+                if (modSetting.Name == "autoArmMining")
+                {
+                    Instance.Settings.autoArmMining = bool.Parse(modSetting.Value);
+                }
+                if (modSetting.Name == "autoArmUtility")
+                {
+                    Instance.Settings.autoArmUtility = bool.Parse(modSetting.Value);
+                }
+                if (modSetting.Name == "miningChargesForbid")
+                {
+                    Instance.Settings.miningChargesForbid = bool.Parse(modSetting.Value);
+                }
+                if (modSetting.Name == "lowerStandingCap")
+                {
+                    Instance.Settings.lowerStandingCap = bool.Parse(modSetting.Value);
+                }
+            }
+
+            Instance.Settings.Write();
+            xml.Root.Element(modNodeName)?.Remove();
+            xml.Save(hugsLibConfig);
+
+            Log.Message($"[{modNodeName}]: Imported old HugLib-settings");
         }
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -64,36 +129,44 @@ namespace RemoteTech
             listing.Gap();
 
             // draw toggles bound to settings object
-            listing.CheckboxLabeled("Setting_autoArmCombat_label".Translate(), ref settings.autoArmCombat,
+            listing.CheckboxLabeled("Setting_autoArmCombat_label".Translate(), ref Settings.autoArmCombat,
                 "Setting_autoArmCombat_desc".Translate());
-            listing.CheckboxLabeled("Setting_autoArmMining_label".Translate(), ref settings.autoArmMining,
+            listing.CheckboxLabeled("Setting_autoArmMining_label".Translate(), ref Settings.autoArmMining,
                 "Setting_autoArmMining_desc".Translate());
-            listing.CheckboxLabeled("Setting_autoArmUtility_label".Translate(), ref settings.autoArmUtility,
+            listing.CheckboxLabeled("Setting_autoArmUtility_label".Translate(), ref Settings.autoArmUtility,
                 "Setting_autoArmUtility_desc".Translate());
-            listing.CheckboxLabeled("Setting_miningChargesForbid_label".Translate(), ref settings.miningChargesForbid,
+            listing.CheckboxLabeled("Setting_miningChargesForbid_label".Translate(), ref Settings.miningChargesForbid,
                 "Setting_miningChargesForbid_desc".Translate());
 
             listing.Gap();
 
             // forbid replaced / timeout
-            listing.CheckboxLabeled("Setting_forbidReplaced_label".Translate(), ref settings.forbidReplaced,
+            listing.CheckboxLabeled("Setting_forbidReplaced_label".Translate(), ref Settings.forbidReplaced,
                 "Setting_forbidReplaced_desc".Translate());
 
-            if (settings.forbidReplaced)
+            if (Settings.forbidReplaced)
             {
-                listing.Label("Setting_forbidTimeout_label".Translate() + $": {settings.forbidTimeout}");
+                listing.Label("Setting_forbidTimeout_label".Translate() + $": {Settings.forbidTimeout}");
                 // integer field
-                int temp = settings.forbidTimeout;
+                int temp = Settings.forbidTimeout;
                 string s = listing.TextEntry(temp.ToString());
-                if (int.TryParse(s, out var parsed)) settings.forbidTimeout = parsed;
+                if (int.TryParse(s, out var parsed)) Settings.forbidTimeout = parsed;
             }
 
             // developer-only setting visibility
             if (Prefs.DevMode)
             {
                 listing.Gap();
-                listing.CheckboxLabeled("Setting_lowerStandingCap_label".Translate(), ref settings.lowerStandingCap,
+                listing.CheckboxLabeled("Setting_lowerStandingCap_label".Translate(), ref Settings.lowerStandingCap,
                     "Setting_lowerStandingCap_desc".Translate());
+            }
+
+            if (currentVersion != null)
+            {
+                listing.Gap();
+                GUI.contentColor = Color.gray;
+                listing.Label("Setting_currentVersion_label".Translate(currentVersion));
+                GUI.contentColor = Color.white;
             }
 
             listing.End();
@@ -108,7 +181,7 @@ namespace RemoteTech
         {
             base.WriteSettings();
             // ensure the controller reads the latest settings
-            RemoteTechController.Instance?.UpdateFromSettings(settings);
+            RemoteTechController.Instance?.UpdateFromSettings(Settings);
         }
     }
 }

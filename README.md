@@ -1,12 +1,12 @@
 # [Remote Tech (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3004917209)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of UnlimitedHugss mod https://steamcommunity.com/sharedfiles/filedetails/?id=761379469
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 Remote Tech is a rich content mod focused on remotely detonated explosives. These allow to set up more effective and strategic base defenses, mine for resources, and many other things.
 Early colonies and tribal settlements will benefit from low-tech makeshift explosives that can be made with renewable materials. The late-game is extended with advanced chemical charges and automated defenses.
@@ -28,13 +28,13 @@ The B19 version is still available, and can be found here: [Remote Tech (B19)](h
 
 My other mods: [HugsLib](https://steamcommunity.com/sharedfiles/filedetails/?id=818773962) · [Allow Tool](https://steamcommunity.com/sharedfiles/filedetails/?id=761421485) · [Map Reroll](https://steamcommunity.com/sharedfiles/filedetails/?id=761315214) · [Defensive Positions](https://steamcommunity.com/sharedfiles/filedetails/?id=761219125)
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.

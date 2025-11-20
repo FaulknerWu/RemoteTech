@@ -13,7 +13,7 @@ public class JobGiver_RedButtonFever : ThinkNode_JobGiver
 {
     private IntRange waitTicks = new(80, 140);
 
-    public override Job TryGiveJob(Pawn pawn)
+    protected override Job TryGiveJob(Pawn pawn)
     {
         var possibleBuildings = pawn.Map.listerBuildings.allBuildingsColonist;
         var targets = possibleBuildings?

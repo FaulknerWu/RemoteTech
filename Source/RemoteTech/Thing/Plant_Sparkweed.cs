@@ -26,7 +26,7 @@ public class Plant_Sparkweed : Plant
         }
     }
 
-    public override void TickInterval(int delta)
+    protected override void TickInterval(int delta)
     {
         base.TickInterval(delta);
         CustomTick();

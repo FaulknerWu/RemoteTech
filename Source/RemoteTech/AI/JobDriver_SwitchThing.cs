@@ -14,7 +14,7 @@ public class JobDriver_SwitchThing : JobDriver
         return pawn.Reserve(job.targetA, job);
     }
 
-    public override IEnumerable<Toil> MakeNewToils()
+    protected override IEnumerable<Toil> MakeNewToils()
     {
         AddFailCondition(JobHasFailed);
         this.FailOnDestroyedNullOrForbidden(TargetIndex.A);

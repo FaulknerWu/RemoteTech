@@ -146,7 +146,7 @@ public class TickDelayScheduler
                 entry.callback();
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Log.Error("TickDelayScheduler caught an exception while calling {0} registered by {1}: {2}");
             }

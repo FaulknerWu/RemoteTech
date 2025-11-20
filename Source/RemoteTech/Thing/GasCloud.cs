@@ -142,7 +142,7 @@ public class GasCloud : Thing
         Scribe_Values.Look(ref gasTicksProcessed, "ticks");
     }
 
-    public override void DrawAt(Vector3 drawLoc, bool flip = false)
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         if (!Find.TickManager.Paused)
         {

@@ -33,7 +33,7 @@ public class Building_GasVent : Building
         }
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (!PowerOn || ventProps == null)
@@ -125,7 +125,7 @@ public class Building_GasVent : Building
         }
     }
 
-    public override void ReceiveCompSignal(string signal)
+    protected override void ReceiveCompSignal(string signal)
     {
         base.ReceiveCompSignal(signal);
         statVentAmount.Recache();

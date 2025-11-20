@@ -15,7 +15,7 @@ public class JobDriver_RedButtonFever : JobDriver
         return true;
     }
 
-    public override IEnumerable<Toil> MakeNewToils()
+    protected override IEnumerable<Toil> MakeNewToils()
     {
         AddFailCondition(() => TargetThingA is not IRedButtonFeverTarget { RedButtonFeverCanInteract: true });
         var pathEndMode = TargetThingA?.def?.hasInteractionCell ?? false

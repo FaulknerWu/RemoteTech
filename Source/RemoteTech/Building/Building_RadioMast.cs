@@ -28,7 +28,7 @@ public class Building_RadioMast : Building
         compPower = GetComp<CompPowerTrader>();
     }
 
-    public override void DrawAt(Vector3 drawLoc, bool flip = false)
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         base.DrawAt(drawLoc, flip);
         if (compPower is not { PowerOn: true })

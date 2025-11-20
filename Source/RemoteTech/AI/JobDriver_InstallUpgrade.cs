@@ -15,7 +15,7 @@ public class JobDriver_InstallUpgrade : JobDriver
         return pawn.Reserve(job.targetA, job);
     }
 
-    public override IEnumerable<Toil> MakeNewToils()
+    protected override IEnumerable<Toil> MakeNewToils()
     {
         var upgrade = TargetThingA.FirstUpgradeableComp();
         if (upgrade == null)

@@ -101,4 +101,5 @@
   <proxSensor_sWirelessUpgrade>Mise à niveau du réseau sans fil :</proxSensor_sWirelessUpgrade>
   <proxSensor_sAIUpgrade>Amélioration de l'IA :</proxSensor_sAIUpgrade>
   <buildGizmo_label>Place {0}</buildGizmo_label>
+  <Setting_currentVersion_label>Version installée du mod : {0}</Setting_currentVersion_label>
 </LanguageData>

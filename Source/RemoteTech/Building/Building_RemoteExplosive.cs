@@ -142,7 +142,7 @@ public class Building_RemoteExplosive : Building, ISwitchable, IWirelessDetonati
         Scribe_Values.Look(ref desiredArmState, "desiredArmState");
     }
 
-    public override void ReceiveCompSignal(string signal)
+    protected override void ReceiveCompSignal(string signal)
     {
         base.ReceiveCompSignal(signal);
         if (signal == CompChannelSelector.ChannelChangedSignal)
@@ -240,7 +240,7 @@ public class Building_RemoteExplosive : Building, ISwitchable, IWirelessDetonati
         }
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         ticksSinceFlare++;
@@ -266,7 +266,7 @@ public class Building_RemoteExplosive : Building, ISwitchable, IWirelessDetonati
         }
     }
 
-    public override void DrawAt(Vector3 drawLoc, bool flip = false)
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         base.DrawAt(drawLoc, flip);
         if (!isArmed)

@@ -125,7 +125,7 @@ public class Building_DetonatorTable : Building, IPawnDetonateable, IRedButtonFe
         wantDetonation = !wantDetonation;
     }
 
-    public override void ReceiveCompSignal(string signal)
+    protected override void ReceiveCompSignal(string signal)
     {
         base.ReceiveCompSignal(signal);
         if (signal == CompUpgrade.UpgradeCompleteSignal)

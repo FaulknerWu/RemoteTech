@@ -77,7 +77,7 @@ public class PortableDetonator : Apparel
             defaultLabel = "PortableDetonator_detonateChannel_label".Translate(Channel),
             defaultDesc = $"{DetonateButtonDesc}\n{GetInspectString()}",
             hotKey = Resources.KeyBinging.rxPortableDetonatorDetonate,
-            disabled = !wearer.IsColonist || wearer.Dead || wearer.InMentalState
+            Disabled = !wearer.IsColonist || wearer.Dead || wearer.InMentalState
         };
         if (channelsUpgrade == null || channelsComp == null)
         {

@@ -14,7 +14,7 @@ public class JobDriver_DetonateExplosives : JobDriver
         return pawn.Reserve(job.targetA, job);
     }
 
-    public override IEnumerable<Toil> MakeNewToils()
+    protected override IEnumerable<Toil> MakeNewToils()
     {
         if (TargetThingA is not IPawnDetonateable detonator)
         {

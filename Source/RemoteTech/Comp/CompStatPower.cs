@@ -30,10 +30,10 @@ public class CompStatPower : CompPowerTrader
     public override void SetUpPowerVars()
     {
         // allows the comp to switch from consumer to producer
-        var prevDefValue = Props.basePowerConsumption;
-        Props.basePowerConsumption = PowerConsumption;
+        var prevDefValue = RemoteTechUtility.BasePowerConsumptionField.GetValue(Props);
+        RemoteTechUtility.BasePowerConsumptionField.SetValue(Props, PowerConsumption);
         base.SetUpPowerVars();
-        Props.basePowerConsumption = prevDefValue;
+        RemoteTechUtility.BasePowerConsumptionField.SetValue(Props, prevDefValue);
     }
 
     public override void CompTick()

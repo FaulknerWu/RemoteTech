@@ -12,7 +12,7 @@ public class CompStatSolarGenerator : CompPowerPlantSolar
     private CachedValue<float> statPowerConsumption;
     private CachedValue<float> statSunExposure;
 
-    public override float DesiredPowerOutput
+    protected override float DesiredPowerOutput
     {
         get
         {
@@ -21,7 +21,7 @@ public class CompStatSolarGenerator : CompPowerPlantSolar
         }
     }
 
-    private new float RoofedPowerOutputFactor
+    private float RoofedPowerOutputFactor
     {
         // swiped from CompPowerPlantSolar
         get

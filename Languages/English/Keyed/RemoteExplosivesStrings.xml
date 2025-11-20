@@ -100,4 +100,5 @@
   <proxSensor_sWirelessUpgrade>Wireless upgrade:</proxSensor_sWirelessUpgrade>
   <proxSensor_sAIUpgrade>AI upgrade:</proxSensor_sAIUpgrade>
   <buildGizmo_label>Place {0}</buildGizmo_label>
+  <Setting_currentVersion_label>Installed mod-version: {0}</Setting_currentVersion_label>
 </LanguageData>

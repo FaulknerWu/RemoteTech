@@ -86,7 +86,7 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
     {
         base.ExposeData();
         Scribe_Deep.Look(ref slice, "slice");
-        Scribe_Collections.Look(ref trackedPawns, false, "trackedPawns", LookMode.Reference);
+        Scribe_Collections.Look(ref trackedPawns, "trackedPawns",false,  LookMode.Reference);
         Scribe_Values.Look(ref lastTriggeredTick, "lastTriggered");
         Scribe_Deep.Look(ref settings, "settings");
         Scribe_Deep.Look(ref pendingSettings, "pendingSettings");
@@ -101,7 +101,7 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
         settings ??= new SensorSettings();
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         if (!PowerOn)
         {
@@ -239,13 +239,13 @@ public class Building_ProximitySensor : Building, ISwitchable, ISensorSettingsPr
         return s.ToString();
     }
 
-    public override void ReceiveCompSignal(string signal)
+    protected override void ReceiveCompSignal(string signal)
     {
         base.ReceiveCompSignal(signal);
         UpdateUpgradeableStuff();
     }
 
-    public override void DrawAt(Vector3 drawLoc, bool flip = false)
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         base.DrawAt(drawLoc, flip);
         if (!PowerOn)

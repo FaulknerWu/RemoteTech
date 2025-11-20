@@ -24,7 +24,7 @@ public class Building_RemoteExplosiveEmp : Building_RemoteExplosive
         base.LightFuse();
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (!chargeSoundRequested)

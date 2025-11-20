@@ -82,7 +82,7 @@ public class Building_DetonatorManual : Building, IGraphicVariantProvider, IPawn
         }
     }
 
-    public override void DrawAt(Vector3 drawLoc, bool flip = false)
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         if (plungerExpireTime < Time.realtimeSinceStartup)
         {

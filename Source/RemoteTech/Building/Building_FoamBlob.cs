@@ -80,7 +80,7 @@ public class Building_FoamBlob : Building
         Resources.Sound.rxFoamSolidify.PlayOneShot(this);
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (numSpreadsLeft > 0)
@@ -101,7 +101,7 @@ public class Building_FoamBlob : Building
         }
     }
 
-    public override void DrawAt(Vector3 drawLoc, bool flip = false)
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
         UpdateScale();
         base.DrawAt(drawLoc, flip);

@@ -24,7 +24,7 @@ public class JobDriver_SmoothFoamWall : JobDriver
         Scribe_Values.Look(ref workLeft, "workLeft");
     }
 
-    public override IEnumerable<Toil> MakeNewToils()
+    protected override IEnumerable<Toil> MakeNewToils()
     {
         if (TargetThingA is not Building_FoamWall wall)
         {
